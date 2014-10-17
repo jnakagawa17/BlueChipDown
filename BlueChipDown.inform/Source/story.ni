@@ -1,5 +1,7 @@
 "BlueChipDown" by Jonathan Nakagawa
 
+When play begins: say "'Hurry up! I thought I asked you for those copies five minutes ago and this coffee is cold get me another.' You have had this job for less than two days and already contimplated 'acidently' pushing your Boss out a window 12 times. 'Hell, Michael was a better assitant than you are and he couldn't tell the differance between a pen and pencil.' Your jaw begins to ache from holding tightly clenched shut to contain the fowl stream of profanity that you would otherwise end up hurrling at your boss. Standing up from the file you've been sorting you turn to your boss and manage to say, 'Alright I'm going to make copies and get your coffee i'll be back soon.' His face turns and even darker shade of red as he shouts, 'No! You stay here I don't want to have to wait another hour for my coffee.'"
+
 [Code to display a players location in the game and possible exits in the header.]
 When play begins:
 now left hand status line is "Exits: [exit list]";
@@ -18,38 +20,9 @@ Understand "talk to [someone]" or “converse with
 Check talking to: say "[The noun] doesn't reply."
 [taken from http://www.musicwords.net/if/InformHandbook.pdf chapter 5]
 
-A person has a table name called conversation.
-Instead of asking someone about something: 
-    let the source be the conversation of the noun; 
-    if topic understood is a topic listed in source: 
-        if there is a turn stamp entry: 
-            say "[The noun] has already told you that [summary entry]."; 
-        otherwise: 
-            now turn stamp entry is the turn count; 
-            say "[reply entry][paragraph break]"; 
-    otherwise: 
-        say "[The noun] stares at you blankly."
-
-Definition: a person is other if it is not the player.
-Understand "recap" or "recall" or "review" as recalling conversations.
-Recalling conversations is an action applying to nothing.
-
-Carry out recalling conversations: 
-    repeat with speaker running through other people: 
-        let source be the conversation of the speaker; 
-        sort source in turn stamp order; 
-        say "[The speaker] has so far told you: [line break]"; 
-        let index be 0; 
-        repeat through source: 
-            if there is a turn stamp entry: 
-                let index be 1; 
-                say " [summary entry][line break]"; 
-        if index is 0, say " absolutely nothing[line break]"; 
-        say conditional paragraph break.
-
 Boss's Cubical is a room. 
 
-Boss is a man in Boss's Cubical. The conversation of Boss is the Table of Boss's Chatter. 
+Boss is a man in Boss's Cubical.  
 
 Old Computer is scenery. It is in Boss's Cubical.
 

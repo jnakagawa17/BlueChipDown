@@ -1,27 +1,28 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x575a10" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0x3cc3e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x9e274d0" />
-  <item nodeId="node-0x575a10">
+  <activeNode nodeId="node-0x3cc3e0" />
+  <item nodeId="node-0x3cc3e0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
 BlueChipDown
-An Interactive Fiction by Jonathan Nakagawa
-Release 1 / Serial number 141013 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+An Interactive Fiction by Jonathan Nakagawa &quot;&quot;Hurry up! I thought I asked you for those copies five minutes ago and this coffee is cold get me another.&quot; You have had this job for less than two days and already contimplated &quot;acidently&quot; pushing your Boss out a window 12 times. &quot;Hell, Michael was a better assitant than you are and he couldn&apos;t tell the differance between a pen and pencil.&quot; Your jaw begins to ache from holding tightly clenched shut to contain the fowl stream of profanity that you would otherwise end up hurrling at your boss. Standing up from the file you&apos;ve been sorting you turn to your boss and manage to say, &quot;Alright I&apos;m going to make copies and get your coffee i&apos;ll be back soon.&quot;&quot;
+Release 1 / Serial number 141017 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
 
 Boss&apos;s Cubical
+You can see Boss here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="46">NO</temporary>
     <children>
-      <child nodeId="node-0x7a6bd50" />
+      <child nodeId="node-0x3cc2b0" />
     </children>
   </item>
-  <item nodeId="node-0x7a6bd50">
+  <item nodeId="node-0x3cc2b0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Floor One Hallway
@@ -31,11 +32,11 @@ Floor One Hallway
     <changed>NO</changed>
     <temporary score="46">YES</temporary>
     <children>
-      <child nodeId="node-0x1cb980" />
-      <child nodeId="node-0x8341ae0" />
+      <child nodeId="node-0x3ccb60" />
+      <child nodeId="node-0x3cc430" />
     </children>
   </item>
-  <item nodeId="node-0x8341ae0">
+  <item nodeId="node-0x3cc430">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Floor One Elevator
@@ -45,12 +46,12 @@ Floor One Elevator
     <changed>NO</changed>
     <temporary score="46">YES</temporary>
     <children>
-      <child nodeId="node-0x7a78d20" />
-      <child nodeId="node-0x7a3e460" />
-      <child nodeId="node-0xb9abed0" />
+      <child nodeId="node-0x3cc800" />
+      <child nodeId="node-0x3cc6d0" />
+      <child nodeId="node-0x3cc480" />
     </children>
   </item>
-  <item nodeId="node-0xb9abed0">
+  <item nodeId="node-0x3cc480">
     <command xml:space="preserve">push ground button</command>
     <result xml:space="preserve">Lobby
 You disintrestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a bustling lobby.
@@ -60,10 +61,10 @@ You disintrestedly drum out a tatto on the posters wooden frame waiting for the 
     <changed>YES</changed>
     <temporary score="46">YES</temporary>
     <children>
-      <child nodeId="node-0x9e8ad20" />
+      <child nodeId="node-0x3cc4d0" />
     </children>
   </item>
-  <item nodeId="node-0x9e8ad20">
+  <item nodeId="node-0x3cc4d0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Car
@@ -74,10 +75,10 @@ You can see Driver here.
     <changed>YES</changed>
     <temporary score="46">YES</temporary>
     <children>
-      <child nodeId="node-0xc43a8a0" />
+      <child nodeId="node-0x3cc520" />
     </children>
   </item>
-  <item nodeId="node-0xc43a8a0">
+  <item nodeId="node-0x3cc520">
     <command xml:space="preserve">talk to driver</command>
     <result xml:space="preserve">Driver doesn&apos;t reply.
 
@@ -93,10 +94,10 @@ SEC
     <changed>YES</changed>
     <temporary score="46">YES</temporary>
     <children>
-      <child nodeId="node-0xba4b7b0" />
+      <child nodeId="node-0x3cc590" />
     </children>
   </item>
-  <item nodeId="node-0xba4b7b0">
+  <item nodeId="node-0x3cc590">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">
 Taxi
@@ -107,16 +108,16 @@ You can see Taxi Driver here.
     <changed>YES</changed>
     <temporary score="46">YES</temporary>
     <children>
-      <child nodeId="node-0x9e274d0" />
+      <child nodeId="node-0x3cc680" />
     </children>
   </item>
-  <item nodeId="node-0x9e274d0">
+  <item nodeId="node-0x3cc680">
     <command xml:space="preserve">talk to taxi driver</command>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="45">YES</temporary>
   </item>
-  <item nodeId="node-0x7a3e460">
+  <item nodeId="node-0x3cc6d0">
     <command xml:space="preserve">push ground floor button</command>
     <result xml:space="preserve">Lobby
 You disintrestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a bustling lobby.
@@ -126,10 +127,10 @@ You disintrestedly drum out a tatto on the posters wooden frame waiting for the 
     <changed>NO</changed>
     <temporary score="39">YES</temporary>
     <children>
-      <child nodeId="node-0x8388070" />
+      <child nodeId="node-0x3cc720" />
     </children>
   </item>
-  <item nodeId="node-0x8388070">
+  <item nodeId="node-0x3cc720">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Car
@@ -140,10 +141,10 @@ You can see Driver here.
     <changed>YES</changed>
     <temporary score="39">YES</temporary>
     <children>
-      <child nodeId="node-0xd42e6c0" />
+      <child nodeId="node-0x3cc790" />
     </children>
   </item>
-  <item nodeId="node-0xd42e6c0">
+  <item nodeId="node-0x3cc790">
     <command xml:space="preserve">talk to driver</command>
     <result xml:space="preserve">Driver doesn&apos;t reply.
 
@@ -154,7 +155,7 @@ SEC
     <changed>YES</changed>
     <temporary score="38">YES</temporary>
   </item>
-  <item nodeId="node-0x7a78d20">
+  <item nodeId="node-0x3cc800">
     <command xml:space="preserve">push the ground floor button</command>
     <result xml:space="preserve">Lobby
 You disintrestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a bustling lobby.
@@ -164,10 +165,10 @@ You disintrestedly drum out a tatto on the posters wooden frame waiting for the 
     <changed>YES</changed>
     <temporary score="20">YES</temporary>
     <children>
-      <child nodeId="node-0x83391f0" />
+      <child nodeId="node-0x3cc930" />
     </children>
   </item>
-  <item nodeId="node-0x83391f0">
+  <item nodeId="node-0x3cc930">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Lobby Elevator
@@ -177,10 +178,10 @@ Lobby Elevator
     <changed>YES</changed>
     <temporary score="20">YES</temporary>
     <children>
-      <child nodeId="node-0x5150d0" />
+      <child nodeId="node-0x3cc620" />
     </children>
   </item>
-  <item nodeId="node-0x5150d0">
+  <item nodeId="node-0x3cc620">
     <command xml:space="preserve">push the Floor two button</command>
     <result xml:space="preserve">Floor Two Hallway
 You disintrestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a quiet hallway flanked by offices.
@@ -190,10 +191,10 @@ You disintrestedly drum out a tatto on the posters wooden frame waiting for the 
     <changed>YES</changed>
     <temporary score="20">YES</temporary>
     <children>
-      <child nodeId="node-0x5f7210" />
+      <child nodeId="node-0x3cc9a0" />
     </children>
   </item>
-  <item nodeId="node-0x5f7210">
+  <item nodeId="node-0x3cc9a0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -202,10 +203,10 @@ You disintrestedly drum out a tatto on the posters wooden frame waiting for the 
     <changed>YES</changed>
     <temporary score="20">YES</temporary>
     <children>
-      <child nodeId="node-0x1175d0" />
+      <child nodeId="node-0x3cca10" />
     </children>
   </item>
-  <item nodeId="node-0x1175d0">
+  <item nodeId="node-0x3cca10">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -214,10 +215,10 @@ You disintrestedly drum out a tatto on the posters wooden frame waiting for the 
     <changed>YES</changed>
     <temporary score="20">YES</temporary>
     <children>
-      <child nodeId="node-0x7a5d3a0" />
+      <child nodeId="node-0x3cca80" />
     </children>
   </item>
-  <item nodeId="node-0x7a5d3a0">
+  <item nodeId="node-0x3cca80">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -226,10 +227,10 @@ You disintrestedly drum out a tatto on the posters wooden frame waiting for the 
     <changed>YES</changed>
     <temporary score="20">YES</temporary>
     <children>
-      <child nodeId="node-0x8351980" />
+      <child nodeId="node-0x3ccaf0" />
     </children>
   </item>
-  <item nodeId="node-0x8351980">
+  <item nodeId="node-0x3ccaf0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -238,7 +239,7 @@ You disintrestedly drum out a tatto on the posters wooden frame waiting for the 
     <changed>YES</changed>
     <temporary score="19">YES</temporary>
   </item>
-  <item nodeId="node-0x1cb980">
+  <item nodeId="node-0x3ccb60">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Jonah&apos;s Cubical
@@ -248,11 +249,11 @@ Jonah&apos;s Cubical
     <changed>NO</changed>
     <temporary score="30">YES</temporary>
     <children>
-      <child nodeId="node-0x8337b20" />
-      <child nodeId="node-0x7a55f90" />
+      <child nodeId="node-0x3ccff0" />
+      <child nodeId="node-0x3ccbd0" />
     </children>
   </item>
-  <item nodeId="node-0x7a55f90">
+  <item nodeId="node-0x3ccbd0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Floor One Hallway
@@ -262,10 +263,10 @@ Floor One Hallway
     <changed>YES</changed>
     <temporary score="30">YES</temporary>
     <children>
-      <child nodeId="node-0x7a6b560" />
+      <child nodeId="node-0x3cc870" />
     </children>
   </item>
-  <item nodeId="node-0x7a6b560">
+  <item nodeId="node-0x3cc870">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Floor One Elevator
@@ -275,10 +276,10 @@ Floor One Elevator
     <changed>YES</changed>
     <temporary score="30">YES</temporary>
     <children>
-      <child nodeId="node-0x7a9ceb0" />
+      <child nodeId="node-0x3cc8c0" />
     </children>
   </item>
-  <item nodeId="node-0x7a9ceb0">
+  <item nodeId="node-0x3cc8c0">
     <command xml:space="preserve">push ground floor button</command>
     <result xml:space="preserve">Lobby
 You disintrestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a bustling lobby.
@@ -288,10 +289,10 @@ You disintrestedly drum out a tatto on the posters wooden frame waiting for the 
     <changed>YES</changed>
     <temporary score="30">YES</temporary>
     <children>
-      <child nodeId="node-0x7aa5860" />
+      <child nodeId="node-0x3ccdc0" />
     </children>
   </item>
-  <item nodeId="node-0x7aa5860">
+  <item nodeId="node-0x3ccdc0">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Lobby Elevator
@@ -301,10 +302,10 @@ Lobby Elevator
     <changed>YES</changed>
     <temporary score="30">YES</temporary>
     <children>
-      <child nodeId="node-0x5027e0" />
+      <child nodeId="node-0x3cce30" />
     </children>
   </item>
-  <item nodeId="node-0x5027e0">
+  <item nodeId="node-0x3cce30">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Lobby
@@ -314,10 +315,10 @@ Lobby
     <changed>YES</changed>
     <temporary score="30">YES</temporary>
     <children>
-      <child nodeId="node-0x515e30" />
+      <child nodeId="node-0x3ccea0" />
     </children>
   </item>
-  <item nodeId="node-0x515e30">
+  <item nodeId="node-0x3ccea0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Car
@@ -327,10 +328,10 @@ Car
     <changed>YES</changed>
     <temporary score="30">YES</temporary>
     <children>
-      <child nodeId="node-0x7a727e0" />
+      <child nodeId="node-0x3ccf10" />
     </children>
   </item>
-  <item nodeId="node-0x7a727e0">
+  <item nodeId="node-0x3ccf10">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Lobby
@@ -340,10 +341,10 @@ Lobby
     <changed>YES</changed>
     <temporary score="30">YES</temporary>
     <children>
-      <child nodeId="node-0x8395fa0" />
+      <child nodeId="node-0x3ccf80" />
     </children>
   </item>
-  <item nodeId="node-0x8395fa0">
+  <item nodeId="node-0x3ccf80">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Car
@@ -353,7 +354,7 @@ Car
     <changed>YES</changed>
     <temporary score="29">YES</temporary>
   </item>
-  <item nodeId="node-0x8337b20">
+  <item nodeId="node-0x3ccff0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -362,10 +363,10 @@ Car
     <changed>YES</changed>
     <temporary score="11">YES</temporary>
     <children>
-      <child nodeId="node-0x834e080" />
+      <child nodeId="node-0x3cd060" />
     </children>
   </item>
-  <item nodeId="node-0x834e080">
+  <item nodeId="node-0x3cd060">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -374,10 +375,10 @@ Car
     <changed>YES</changed>
     <temporary score="11">YES</temporary>
     <children>
-      <child nodeId="node-0x835c610" />
+      <child nodeId="node-0x3cd0d0" />
     </children>
   </item>
-  <item nodeId="node-0x835c610">
+  <item nodeId="node-0x3cd0d0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -386,10 +387,10 @@ Car
     <changed>YES</changed>
     <temporary score="11">YES</temporary>
     <children>
-      <child nodeId="node-0x1b7710" />
+      <child nodeId="node-0x3cd140" />
     </children>
   </item>
-  <item nodeId="node-0x1b7710">
+  <item nodeId="node-0x3cd140">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Floor One Hallway
@@ -399,10 +400,10 @@ Floor One Hallway
     <changed>YES</changed>
     <temporary score="11">YES</temporary>
     <children>
-      <child nodeId="node-0x8367c40" />
+      <child nodeId="node-0x3cd1b0" />
     </children>
   </item>
-  <item nodeId="node-0x8367c40">
+  <item nodeId="node-0x3cd1b0">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">
 Floor One Elevator
@@ -412,10 +413,10 @@ Floor One Elevator
     <changed>YES</changed>
     <temporary score="11">YES</temporary>
     <children>
-      <child nodeId="node-0x5bf410" />
+      <child nodeId="node-0x3cd220" />
     </children>
   </item>
-  <item nodeId="node-0x5bf410">
+  <item nodeId="node-0x3cd220">
     <command xml:space="preserve">push ground floor button</command>
     <result xml:space="preserve">Lobby
 
@@ -424,10 +425,10 @@ Floor One Elevator
     <changed>YES</changed>
     <temporary score="11">YES</temporary>
     <children>
-      <child nodeId="node-0x7a5e4e0" />
+      <child nodeId="node-0x3ccc40" />
     </children>
   </item>
-  <item nodeId="node-0x7a5e4e0">
+  <item nodeId="node-0x3ccc40">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Lobby Elevator
@@ -437,10 +438,10 @@ Lobby Elevator
     <changed>YES</changed>
     <temporary score="11">YES</temporary>
     <children>
-      <child nodeId="node-0x8366f10" />
+      <child nodeId="node-0x3cccb0" />
     </children>
   </item>
-  <item nodeId="node-0x8366f10">
+  <item nodeId="node-0x3cccb0">
     <command xml:space="preserve">l</command>
     <result xml:space="preserve">Lobby Elevator
 
