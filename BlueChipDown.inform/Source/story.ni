@@ -20,11 +20,23 @@ Understand "talk to [someone]" or “converse with
 Check talking to: say "[The noun] doesn't reply."
 [taken from http://www.musicwords.net/if/InformHandbook.pdf chapter 5]
 
-Boss's Cubical is a room. 
+[Global:] GameState is a number that varies. GameState is 0.
 
-Boss is a man in Boss's Cubical.  
+[taken from http://www.musicwords.net/if/InformHandbook.pdf chapter 9]
+
+The description of player is "[if GameState is 0] After getting out of college strapped to cripling debt you couldn't afford much more than a couple second hand dress shirts and an imitation watch."
+
+Boss's Cubical is a room. "Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone."
+
+Boss is a man in Boss's Cubical.  "From day to day your Boss never seem change his appearence. He must own at least a dozen of the same set of plain clothes. Whenever he sees you his face turns a deep beetroot red and he seems to inflate."
 
 Old Computer is scenery. It is in Boss's Cubical.
+
+[Global:] OldComputerState is a number that varies. GameState is 0.
+
+Corded Phone is scenery. It is in Boss's Cubical.
+
+Filling Cabinet is a container. It is in Boss's Cubical.
 
 Jonah's Cubical is a room. It is east of Floor One Hallway.
 
