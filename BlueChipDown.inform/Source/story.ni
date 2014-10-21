@@ -22,8 +22,16 @@ Check talking to: say "[The noun] doesn't reply."
 
 [Global:] GameState is a number that varies. GameState is 0.
 
+[Global:] Converser is a number that varies. Converser is 0.
+
+[Global:] Failure is a number that varies. Failure is 0.
+
 [taken from http://www.musicwords.net/if/InformHandbook.pdf chapter 9]
 
+Every turn:
+	if failure is 1:
+		end the story finally saying "You are fired.";
+	
 The description of player is "[if GameState is 0] After getting out of college strapped to cripling debt you couldn't afford much more than a couple second hand dress shirts and an imitation watch."
 
 Boss's Cubical is a room. "Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone."
@@ -36,23 +44,21 @@ Old Computer is scenery. It is in Boss's Cubical.
 
 Corded Phone is scenery. It is in Boss's Cubical.
 
-Filling Cabinet is a container. It is in Boss's Cubical.
+Filling Cabinet is in Boss's Cubical. Filling Cabinet is an openable container. Filling Cabinet is lockable and locked. Cabinet Key unlocks the Filling Cabinet.
+
+Notes is a thing. It is in Filling Cabinet. "You knew your Boss would be to lazy to cover his tracks. Scattered throughout the various files are notes from conversations with the employes of numerous companies talking about products before they had been publicly announced. These are most definately illegal and more than enough to get your Boss arrested but mabey there won't be a need for that perhaps you should talk to him."
+
+Player carries cabinet key.
 
 Jonah's Cubical is a room. It is east of Floor One Hallway.
 
 Jonah's Computer is scenery. It is in Jonah's Cubical.
-
-Brittney's Cubical is a room. It is south of Floor One Hallway.
-
-Brittney's Computer is scenery. It is in Brittney's Cubical.
 
 Floor One Hallway is a room. It is south of Boss's Cubical.
 
 Floor One Elevator is a room. It is west of Floor One Hallway.
 
 Avery's Office is a room. It is northeast of Floor Two Hallway.
-
-Erik's Office is a room. It is east of Floor Two Hallway.
 
 Jonathan's Office is a room. It is north of Floor Two Hallway.
 
@@ -146,7 +152,7 @@ A subject is a kind of thing. Some subjects are defined by the Table of Conversa
 
 Table of Conversation Subjects
 subject	conversation
-Evidence 	Table of evidence Queries
+Black Mail 	Table of Black Mail Queries
 employment	Table of Job Queries
 
 Instead of talking to Boss:
@@ -156,18 +162,21 @@ Understand "job" as employment.
 
 Table of Job Queries
 quip	discussion	label	subtopics
-"whether there is a job available here"	"'Say, are you hiring?' you ask, as casually as you can manage. [The interlocutor] looks you over dubiously. 'I might be hiring someone, but I can't say it would necessarily be you.'"	0	--
-"what happened to that boy that worked here"	"'Tell me, didn't you used to have a young assistant working here?' She shrugs. 'Young men these days are so unstable. He left-- who knows where he's gone? I haven't seen hair or fingernail of him for weeks.'"	0	--
+"Whatever"	"'Say, are you hiring?' you ask, as casually as you can manage. [The interlocutor] looks you over dubiously. 'I might be hiring someone, but I can't say it would necessarily be you.'"	5	--
+"what happened to that boy that worked here"	"'Tell me, didn't you used to have a young assistant working here?' She shrugs. 'Young men these days are so unstable. He left-- who knows where he's gone? I haven't seen hair or fingernail of him for weeks.'"	6	--
 with 3 blank rows.
 
-Table of Evidence Queries
+Table of Black Mail Queries
 quip	discussion	label	subtopics
-"what pie fillings are available"	"'What pies do you have in today, Mrs Lovett?' you ask. She starts, then smiles. 'Meat pies, of course.'"	0	Table of Evidence Flavor Queries
-with 3 blank rows.
+"Could I have the key for the filling cabinet?"	"'Why in the world would you need that? And why should I trust you with it?'"	1	Table of Black Mail Reason Queries
+--	--	2	Table of Black Mail Reason Queries
+with 2 blank rows.
 
-Table of Evidence Flavor Queries
+Table of Black Mail Reason Queries
 quip	discussion	label	subtopics
-"what kind of meat"	"'What kind of meat goes into these pies, Mrs Lovett?' you ask pressingly. She looks shifty. 'Whatever the butcher brings this week,' she says. 'With the price of meat what it is, when you get it, you have to be glad of what you can get. If you get it.'"	0	--
+"Because I want it and that's the only reason you should need!"	"'Because I want it and that's the only reason you should need!'"	1	--
+"I recieved a letter from Jonathan, he's the senior trader here isn't he, he wanted to commend you for your fast action saving your clients and needed some information to make his report complete."	"'I recieved a letter from Jonathan, he's the senior trader here isn't he, he wanted to commend you for your fast action saving your clients and needed some information to make his report complete.' 'Oh well in that case here you are. Send Jonathan my regards.'"	2	--
+with 3 blank rows.
 
 To copy (first table - a table name) to (second table - a table name):
 	repeat through first table:
@@ -182,7 +191,7 @@ To copy (first table - a table name) to (second table - a table name):
 		if copied discussion is not "blank", now discussion entry is copied discussion;
 		if copied subtopics is not second table, now subtopics entry is copied subtopics.
 
-Current conversation table is a table name that varies. Current conversation table is Table of Job Queries.
+Current conversation table is a table name that varies. Current conversation table is Table of Black Mail Queries.
 
 Interlocutor is a person that varies.
 
@@ -229,4 +238,4 @@ Instead of selecting a label listed in the current conversation table:
 		copy subtopics entry to current conversation table;
 	choose row with label of number understood in the current conversation table;
 	blank out the whole row.
-
+[Taken from the Inform documentation 7.8 Example Sweeney]
