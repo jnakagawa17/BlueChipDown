@@ -28,9 +28,18 @@ Check talking to: say "[The noun] doesn't reply."
 
 [taken from http://www.musicwords.net/if/InformHandbook.pdf chapter 9]
 
+
+instead of going south from Boss's Cubical:
+	if gamestate is 0:
+		say "You can't leave yet you need to first see what's up with the computer.";
+	otherwise:
+		move the player to Floor One Hallway;
+		
 Every turn:
-	if GameState is 1:
-		say "The computer stops its insistant bleeping. Thank hevans that you managed to sell everything before they tanked any more.";
+	if Gamestate is 0:
+		if Money is 37000:
+			increase Gamestate by 1;
+			say "The computer stops its insistant bleeping. Thank hevans that you managed to sell everything before they tanked any more.";
 	
 
 Every turn:
@@ -39,7 +48,7 @@ Every turn:
 	
 The description of player is "[if GameState is 0] After getting out of college strapped to cripling debt you couldn't afford much more than a couple second hand dress shirts and an imitation watch."
 
-Boss's Cubical is a room. "Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone."
+Boss's Cubical is a room. "[if GameState is 0] Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone. The computer is insistantly beeping. [otherwise] Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone."
 
 Boss is a man in Boss's Cubical.  "From day to day your Boss never seem change his appearence. He must own at least a dozen of the same set of plain clothes. Whenever he sees you his face turns a deep beetroot red and he seems to inflate."
 
@@ -58,38 +67,38 @@ redwood stock is a thing carried by the player.The printed name is "Redwood stoc
 Instead of selling:
 	if the noun is orange stock:
 		decrease the orangeshare-count of the Orange stock by the number understood;
-		let C be the orange-price of the orange stock;
-		let A be the number understood;
-		let B be C * A;
-		increase Money by B;
 		if the orangeshare-count of the orange stock is less than zero:
 			increase the orangeshare-count by the number understood;
 			say "You don't have that many stock to sell. You have [orangeshare-count] Orange stock.";
 		otherwise:
+			let C be the orange-price of the orange stock;
+			let A be the number understood;
+			let B be C * A;
+			increase Money by B;
 			say "Now you have [Orangeshare-count] Orange stock and [Money] dollars.";
 	Otherwise:
 		if the noun is backward stock:
 			decrease the backwardshare-count of the backward stock by the number understood;
-			let C be the backward-price of the backward stock;
-			let A be the number understood;
-			let B be C * A;
-			increase Money by B;
 			if the backwardshare-count of the backward stock is less than zero:
 				increase the backwardshare-count by the number understood;
 				say "You don't have that many stock to sell. You have [backwardshare-count] backward stock.";
 			otherwise:
+				let C be the backward-price of the backward stock;
+				let A be the number understood;
+				let B be C * A;
+				increase Money by B;
 				say "Now you have [backwardshare-count] backward stock and [Money] dollars.";
 		Otherwise:
 			if the noun is redwood stock:
 				decrease the redwoodshare-count of the redwood stock by the number understood;
-				let C be the redwood-price of the redwood stock;
-				let A be the number understood;
-				let B be C * A;
-				increase Money by B;
 				if the redwoodshare-count of the redwood stock is less than zero:
 					increase the redwoodshare-count by the number understood;
 					say "You don't have that many stock to sell. You have [redwoodshare-count] redwood stock.";
 				otherwise:
+					let C be the redwood-price of the redwood stock;
+					let A be the number understood;
+					let B be C * A;
+					increase Money by B;
 					say "Now you have [redwoodshare-count] redwood stock and [Money] dollars.";
 [code for selling stocks created with a great deal of help from Mrs. Kiang]
 
@@ -146,7 +155,7 @@ Instead of Purchasing:
 
 Instead of examining Old Computer:
 	if OldComputerState is 0:
-		say "The computer is currently displaying your Boss's stock portofolio. It mainly consists of three stocks Orange, RedWood, and Backward. To your shock and dismay you realize that over the course of the last 10 minutes your Boss's portofolio has lost 10 percent equating to almost 13 million dollars. And the stocks' value are still plumiting. You'll have to act fast to save your clients. You try to remember how you Boss sold stocks. You think that he just typed sell or buy then the stocks name.";
+		say "The computer is currently displaying your Boss's stock portofolio. It mainly consists of three stocks Orange, RedWood, and Backward. To your shock and dismay you realize that over the course of the last 10 minutes your Boss's portofolio has lost 10 percent equating to almost 13 million dollars. And the stocks' value are still plumiting. You'll have to act fast to save your clients. You try to remember how you Boss sold stocks. You think that he just typed sell or purchase, the stocks name, and the number of shares to buy or sell.";
 	otherwise:
 		say "A giant monitor rests upon your Boss's desk humming away.";
 	
