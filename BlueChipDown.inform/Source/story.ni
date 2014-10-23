@@ -29,6 +29,11 @@ Check talking to: say "[The noun] doesn't reply."
 [taken from http://www.musicwords.net/if/InformHandbook.pdf chapter 9]
 
 Every turn:
+	if GameState is 1:
+		say "The computer stops its insistant bleeping. Thank hevans that you managed to sell everything before they tanked any more.";
+	
+
+Every turn:
 	if failure is 1:
 		end the story finally saying "You are fired.";
 	
@@ -40,13 +45,88 @@ Boss is a man in Boss's Cubical.  "From day to day your Boss never seem change h
 
 Old Computer is scenery. It is in Boss's Cubical.
 
-[Global:] OldComputerState is a number that varies. GameState is 0.
+[Global:] Money is a number that varies. Money is 0.
+
+[Global:] OldComputerState is a number that varies. OldComputerState is 0.
+
+[Global:] OrangeStock is a number that varies. OrangeStock is 1000.
+
+[Global:] RedWoodStock is a number that varies. RedWoodStock is 1000.
+
+[Global:] BackwardStock is a number that varies. BackwardStock is 1000.
+
+Instead of examining Old Computer:
+	if OldComputerState is 0:
+		say "The computer is currently displaying your Boss's stock portofolio. It mainly consists of three stocks Orange, RedWood, and Backward. To your shock and dismay you realize that over the course of the last 10 minutes your Boss's portofolio has lost 10 percent equating to almost 13 million dollars. And the stocks' value are still plumiting. You'll have to act fast to save your clients. You try to remember how you Boss sold stocks. You think that he just typed sell or buy then the stocks name.";
+	otherwise:
+		say "A giant monitor rests upon your Boss's desk humming away.";
+		
+Orange Stock is scenery. It is in Boss's cubical.
+
+RedWood Stock is scenery. It is in Boss's cubical.
+
+Backward Stock is scenery. It is in Boss's cubical.
+
+[Global:] Amount is a number that varies.
+
+[Instead of selling Orange Stock amount:
+	decrease Orangestock by amount;
+
+Selling is an action applying to two variables.
+
+Instead of examining RedWood Stock:
+	say "You own [RedWoodStock] shares";
+	
+Instead of examining Backward Stock:
+	say "You own [BackwardStock] shares";]
+	
+Instead of examining Orange Stock:
+	say "You own [OrangeStock] shares";
+
+Casting Sell Orange is an action applying to nothing.
+Understand "Sell Orange" as casting Sell Orange.
+Instead of casting Sell Orange:
+	If player is in Boss's Cubical:
+		decrease OrangeStock by 1000;
+		increase Money by 10000;
+		say "You now have [OrangeStock] shares in Orange.";
+		if GameState is 0:
+			if BackwardStock is 0:
+				if RedwoodStock is 0:
+					Increase Gamestate by 1;
+		
+Casting Sell Backward is an action applying to nothing.
+Understand "Sell Backward" as casting Sell Backward.
+Instead of casting Sell Backward:
+	If player is in Boss's Cubical:
+		decrease BackwardStock by 1000;
+		increase Money by 500;
+		say "You now have [BackwardStock] shares in Orange.";
+		if GameState is 0:
+			if OrangeStock is 0:
+				if RedwoodStock is 0:
+					Increase Gamestate by 1;
+
+Casting Sell RedWood is an action applying to nothing.
+Understand "Sell RedWood" as casting Sell RedWood.
+Instead of casting Sell RedWood:
+	If player is in Boss's Cubical:
+		decrease RedWoodStock by 1000;
+		increase Money by 2000;
+		say "You now have [RedWoodStock] shares in Orange.";
+		if GameState is 0:
+			if BackwardStock is 0:
+				if OrangeStock is 0:
+					Increase Gamestate by 1;
+		
+
+[Taken from Mrs. Kiang's Wiki]
 
 Corded Phone is scenery. It is in Boss's Cubical.
 
 Filling Cabinet is in Boss's Cubical. Filling Cabinet is an openable container. Filling Cabinet is lockable and locked. Cabinet Key unlocks the Filling Cabinet.
 
-Notes is a thing. It is in Filling Cabinet. "You knew your Boss would be to lazy to cover his tracks. Scattered throughout the various files are notes from conversations with the employes of numerous companies talking about products before they had been publicly announced. These are most definately illegal and more than enough to get your Boss arrested but mabey there won't be a need for that perhaps you should talk to him."
+Notes is a thing. It is in Filling Cabinet. "You knew your Boss would be to lazy to cover his tracks. Scattered throughout the various files are notes from conversations with the employes of numerous companies talking about products before they had been publicly announced. These are most definitely illegal and more than enough to get your Boss arrested but maybe there won't be a need for that perhaps you should talk to him."
 
 Player carries cabinet key.
 
@@ -60,8 +140,6 @@ Floor One Elevator is a room. It is west of Floor One Hallway.
 
 Avery's Office is a room. It is northeast of Floor Two Hallway.
 
-Jonathan's Office is a room. It is north of Floor Two Hallway.
-
 Andrew's Office is a room.  
 
 Meeting Room is a room.
@@ -70,13 +148,13 @@ Floor Two Hallway is a room. It is east of Floor Two Elevator.
 
 Floor Two Elevator is a room. 
 
-Ground Floor Button is scenery. It is in Floor One Elevator. "The button has a large embrodered G on it."
+Ground Floor Button is scenery. It is in Floor One Elevator. "The button has a large embroidered G on it."
 
-Floor One Button is scenery. It is in Floor One Elevator. "The button has a large embrodered 1 on it."
+Floor One Button is scenery. It is in Floor One Elevator. "The button has a large embroidered 1 on it."
 
-Floor Two Button is scenery. It is in Floor One Elevator. "The button has a large embrodered 2 on it."
+Floor Two Button is scenery. It is in Floor One Elevator. "The button has a large embroidered 2 on it."
 
-Floor Three Button is scenery. It is in Floor One Elevator. "The button has a large embrodered 3 on it."
+Floor Three Button is scenery. It is in Floor One Elevator. "The button has a large embroidered 3 on it."
 
 [Code for Elevator]
 
@@ -86,7 +164,7 @@ Instead of pushing Ground Floor Button:
 	move Floor One Button to Lobby Elevator;
 	move Floor Two  Button to Lobby Elevator;
 	move Floor Three Button to Lobby Elevator;
-	say "You disintrestedly drum out a tatto on the posters wooden frame waiting for the elevator's door to ding open. Finally you step out into a bustling lobby.";
+	say "You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator's door to ding open. Finally you step out into a bustling lobby.";
 	
 Instead of pushing Floor One Button:
 	move player to Floor One Hallway;
@@ -94,7 +172,7 @@ Instead of pushing Floor One Button:
 	move Floor One Button to Floor One Elevator;
 	move Floor Two  Button to Floor One Elevator;
 	move Floor Three Button to Floor One Elevator;
-	say "You disintrestedly drum out a tatto on the posters wooden frame waiting for the elevator's door to ding open. Finally you step out into a endless sea of cubicals.";
+	say "You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator's door to ding open. Finally you step out into a endless sea of cubicals.";
 	
 Instead of pushing Floor Two Button:
 	move player to Floor Two Hallway;
@@ -102,7 +180,7 @@ Instead of pushing Floor Two Button:
 	move Floor One Button to Floor Two Elevator;
 	move Floor Two  Button to Floor Two Elevator;
 	move Floor Three Button to Floor Two Elevator;
-	say "You disintrestedly drum out a tatto on the posters wooden frame waiting for the elevator's door to ding open. Finally you step out into a quiet hallway flanked by offices.";
+	say "You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator's door to ding open. Finally you step out into a quiet hallway flanked by offices.";
 	
 Instead of pushing Floor Three Button:
 	move player to Reception;
@@ -110,7 +188,7 @@ Instead of pushing Floor Three Button:
 	move Floor One Button to Floor Three Elevator;
 	move Floor Two  Button to Floor Three Elevator;
 	move Floor Three Button to Floor Three Elevator;
-	say "You disintrestedly drum out a tatto on the posters wooden frame waiting for the elevator's door to ding open. Finally you step out into a expansive reception room.";
+	say "You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator's door to ding open. Finally you step out into a expansive reception room.";
 
 Lobby is a room. It is west of Lobby Elevator.
 
@@ -147,7 +225,7 @@ CEO Office is a room. It is west of Reception.
 Floor Three Elevator is a room.
 
 
-
+[
 A subject is a kind of thing. Some subjects are defined by the Table of Conversation Subjects.
 
 Table of Conversation Subjects
@@ -238,4 +316,4 @@ Instead of selecting a label listed in the current conversation table:
 		copy subtopics entry to current conversation table;
 	choose row with label of number understood in the current conversation table;
 	blank out the whole row.
-[Taken from the Inform documentation 7.8 Example Sweeney]
+[Taken from the Inform documentation 7.8 Example Sweeney]]
