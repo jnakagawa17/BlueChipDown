@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<Skein rootNode="node-0x2129c0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+<Skein rootNode="node-0xd5fb3e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x2129c0" />
-  <item nodeId="node-0x2129c0">
+  <activeNode nodeId="node-0xd53c6f0" />
+  <item nodeId="node-0xd5fb3e0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
@@ -11,7 +11,7 @@
 
 BlueChipDown
 An Interactive Fiction by Jonathan Nakagawa
-Release 1 / Serial number 141022 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 141023 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
 
 Boss&apos;s Cubical
 Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone.
@@ -22,26 +22,26 @@ You can also see Filling Cabinet (closed) here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="180">NO</temporary>
+    <changed>YES</changed>
+    <temporary score="26">NO</temporary>
     <children>
-      <child nodeId="node-0x7a71520" />
-      <child nodeId="node-0x7a714b0" />
-      <child nodeId="node-0x7a71130" />
-      <child nodeId="node-0x7a710c0" />
-      <child nodeId="node-0x7a70fe0" />
-      <child nodeId="node-0x7a706e0" />
-      <child nodeId="node-0x7a70670" />
-      <child nodeId="node-0x7a708d0" />
-      <child nodeId="node-0x7a70590" />
-      <child nodeId="node-0x7a70860" />
-      <child nodeId="node-0x7a70600" />
-      <child nodeId="node-0x7a707f0" />
-      <child nodeId="node-0x212630" />
-      <child nodeId="node-0x2125e0" />
+      <child nodeId="node-0xd53c290" />
+      <child nodeId="node-0xd53c300" />
+      <child nodeId="node-0xd53c680" />
+      <child nodeId="node-0xd53c6f0" />
+      <child nodeId="node-0xd53cf50" />
+      <child nodeId="node-0xd53ca80" />
+      <child nodeId="node-0xd53caf0" />
+      <child nodeId="node-0xd53cd90" />
+      <child nodeId="node-0xd53ce00" />
+      <child nodeId="node-0xd53ce70" />
+      <child nodeId="node-0xd53d080" />
+      <child nodeId="node-0xd53d0f0" />
+      <child nodeId="node-0xd5fb430" />
+      <child nodeId="node-0xd5fb1e0" />
     </children>
   </item>
-  <item nodeId="node-0x2125e0">
+  <item nodeId="node-0xd5fb1e0">
     <command xml:space="preserve">x orange stock</command>
     <result xml:space="preserve">1000
 &gt;</result>
@@ -49,7 +49,7 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="178">YES</temporary>
   </item>
-  <item nodeId="node-0x212630">
+  <item nodeId="node-0xd5fb430">
     <command xml:space="preserve">1</command>
     <result xml:space="preserve">&quot;Why in the world would you need that? And why should I trust you with it?&quot;
 
@@ -58,14 +58,14 @@ You can also see Filling Cabinet (closed) here.
     <changed>NO</changed>
     <temporary score="119">YES</temporary>
     <children>
-      <child nodeId="node-0x7a70520" />
-      <child nodeId="node-0x7a70440" />
-      <child nodeId="node-0x7a701c0" />
-      <child nodeId="node-0x7a6ffb0" />
-      <child nodeId="node-0x2127e0" />
+      <child nodeId="node-0xd53d160" />
+      <child nodeId="node-0xd53d220" />
+      <child nodeId="node-0xd53d4b0" />
+      <child nodeId="node-0xd5fb560" />
+      <child nodeId="node-0xd5fb480" />
     </children>
   </item>
-  <item nodeId="node-0x2127e0">
+  <item nodeId="node-0xd5fb480">
     <command xml:space="preserve">ask boss about 1</command>
     <result xml:space="preserve">There is no reply.
 
@@ -74,10 +74,10 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="76">YES</temporary>
     <children>
-      <child nodeId="node-0x212850" />
+      <child nodeId="node-0xd5fb4f0" />
     </children>
   </item>
-  <item nodeId="node-0x212850">
+  <item nodeId="node-0xd5fb4f0">
     <command xml:space="preserve">2</command>
     <result xml:space="preserve">&quot;Tell me, didn&apos;t you used to have a young assistant working here?&quot; She shrugs. &quot;Young men these days are so unstable. He left-- who knows where he&apos;s gone? I haven&apos;t seen hair or fingernail of him for weeks.&quot;
 
@@ -86,7 +86,7 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="75">YES</temporary>
   </item>
-  <item nodeId="node-0x7a6ffb0">
+  <item nodeId="node-0xd5fb560">
     <command xml:space="preserve">2</command>
     <result xml:space="preserve">No such option is available.
 
@@ -95,10 +95,10 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="107">YES</temporary>
     <children>
-      <child nodeId="node-0x7a70000" />
+      <child nodeId="node-0xd53d6b0" />
     </children>
   </item>
-  <item nodeId="node-0x7a70000">
+  <item nodeId="node-0xd53d6b0">
     <command xml:space="preserve">1</command>
     <result xml:space="preserve">No such option is available.
 
@@ -107,10 +107,10 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="96">YES</temporary>
     <children>
-      <child nodeId="node-0x7a700d0" />
+      <child nodeId="node-0xd53d5c0" />
     </children>
   </item>
-  <item nodeId="node-0x7a700d0">
+  <item nodeId="node-0xd53d5c0">
     <command xml:space="preserve">2</command>
     <result xml:space="preserve">No such option is available.
 
@@ -119,10 +119,10 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="96">YES</temporary>
     <children>
-      <child nodeId="node-0x7a70120" />
+      <child nodeId="node-0xd53d570" />
     </children>
   </item>
-  <item nodeId="node-0x7a70120">
+  <item nodeId="node-0xd53d570">
     <command xml:space="preserve">3</command>
     <result xml:space="preserve">No such option is available.
 
@@ -131,10 +131,10 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="96">YES</temporary>
     <children>
-      <child nodeId="node-0x7a70170" />
+      <child nodeId="node-0xd53d520" />
     </children>
   </item>
-  <item nodeId="node-0x7a70170">
+  <item nodeId="node-0xd53d520">
     <command xml:space="preserve">0</command>
     <result xml:space="preserve">No such option is available.
 
@@ -143,7 +143,7 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="95">YES</temporary>
   </item>
-  <item nodeId="node-0x7a701c0">
+  <item nodeId="node-0xd53d4b0">
     <command xml:space="preserve">4</command>
     <result xml:space="preserve">No such option is available.
 
@@ -152,11 +152,11 @@ You can also see Filling Cabinet (closed) here.
     <changed>NO</changed>
     <temporary score="106">YES</temporary>
     <children>
-      <child nodeId="node-0x7a70070" />
-      <child nodeId="node-0x7a70230" />
+      <child nodeId="node-0xd53d2c0" />
+      <child nodeId="node-0xd53d440" />
     </children>
   </item>
-  <item nodeId="node-0x7a70230">
+  <item nodeId="node-0xd53d440">
     <command xml:space="preserve">5</command>
     <result xml:space="preserve">No such option is available.
 
@@ -165,10 +165,10 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="106">YES</temporary>
     <children>
-      <child nodeId="node-0x7a70360" />
+      <child nodeId="node-0xd53d310" />
     </children>
   </item>
-  <item nodeId="node-0x7a70360">
+  <item nodeId="node-0xd53d310">
     <command xml:space="preserve">1</command>
     <result xml:space="preserve">No such option is available.
 
@@ -177,7 +177,7 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="105">YES</temporary>
   </item>
-  <item nodeId="node-0x7a70070">
+  <item nodeId="node-0xd53d2c0">
     <command xml:space="preserve">talk to boss</command>
     <result xml:space="preserve">You could say: 
 [1]: hello how are you?
@@ -187,10 +187,10 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="100">YES</temporary>
     <children>
-      <child nodeId="node-0x7a703d0" />
+      <child nodeId="node-0xd53d270" />
     </children>
   </item>
-  <item nodeId="node-0x7a703d0">
+  <item nodeId="node-0xd53d270">
     <command xml:space="preserve">1</command>
     <result xml:space="preserve">No such option is available.
 
@@ -199,7 +199,7 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="99">YES</temporary>
   </item>
-  <item nodeId="node-0x7a70440">
+  <item nodeId="node-0xd53d220">
     <command xml:space="preserve">1</command>
     <result xml:space="preserve">No such option is available.
 
@@ -208,10 +208,10 @@ You can also see Filling Cabinet (closed) here.
     <changed>NO</changed>
     <temporary score="119">YES</temporary>
     <children>
-      <child nodeId="node-0x7a704b0" />
+      <child nodeId="node-0xd53d1d0" />
     </children>
   </item>
-  <item nodeId="node-0x7a704b0">
+  <item nodeId="node-0xd53d1d0">
     <command xml:space="preserve">2</command>
     <result xml:space="preserve">
 *** Run-time problem P23: Attempt to look up a non-existent entry at column 2, row 2 of the table &apos;Table of Black Mail Queries&apos;.
@@ -223,7 +223,7 @@ You can also see Filling Cabinet (closed) here.
     <changed>NO</changed>
     <temporary score="118">YES</temporary>
   </item>
-  <item nodeId="node-0x7a70520">
+  <item nodeId="node-0xd53d160">
     <command xml:space="preserve">3</command>
     <result xml:space="preserve">No such option is available.
 
@@ -232,7 +232,7 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="77">YES</temporary>
   </item>
-  <item nodeId="node-0x7a707f0">
+  <item nodeId="node-0xd53d0f0">
     <command xml:space="preserve">0</command>
     <result xml:space="preserve">&quot;Say, are you hiring?&quot; you ask, as casually as you can manage. You looks you over dubiously. &quot;I might be hiring someone, but I can&apos;t say it would necessarily be you.&quot;
 
@@ -241,7 +241,7 @@ You can also see Filling Cabinet (closed) here.
     <changed>YES</changed>
     <temporary score="60">YES</temporary>
   </item>
-  <item nodeId="node-0x7a70600">
+  <item nodeId="node-0xd53d080">
     <command xml:space="preserve">unlock filling cabinet</command>
     <result xml:space="preserve">(with Cabinet Key)
 You unlock Filling Cabinet.
@@ -251,10 +251,10 @@ You unlock Filling Cabinet.
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0x7a702a0" />
+      <child nodeId="node-0xd53d3c0" />
     </children>
   </item>
-  <item nodeId="node-0x7a702a0">
+  <item nodeId="node-0xd53d3c0">
     <command xml:space="preserve">open cabinet</command>
     <result xml:space="preserve">(Cabinet Key)
 It isn&apos;t something you can open.
@@ -264,10 +264,10 @@ It isn&apos;t something you can open.
     <changed>YES</changed>
     <temporary score="90">YES</temporary>
     <children>
-      <child nodeId="node-0x7a702f0" />
+      <child nodeId="node-0xd53d360" />
     </children>
   </item>
-  <item nodeId="node-0x7a702f0">
+  <item nodeId="node-0xd53d360">
     <command xml:space="preserve">open filling cabinet</command>
     <result xml:space="preserve">You open Filling Cabinet.
 
@@ -276,7 +276,7 @@ It isn&apos;t something you can open.
     <changed>YES</changed>
     <temporary score="89">YES</temporary>
   </item>
-  <item nodeId="node-0x7a70860">
+  <item nodeId="node-0xd53ce70">
     <command xml:space="preserve">talk to boss</command>
     <result xml:space="preserve">You could say: 
 [1]: hello how are you?
@@ -286,7 +286,7 @@ It isn&apos;t something you can open.
     <changed>YES</changed>
     <temporary score="59">YES</temporary>
   </item>
-  <item nodeId="node-0x7a70590">
+  <item nodeId="node-0xd53ce00">
     <command xml:space="preserve">Sell orange</command>
     <result xml:space="preserve">You need to sit down first.
 
@@ -295,7 +295,7 @@ It isn&apos;t something you can open.
     <changed>YES</changed>
     <temporary score="177">YES</temporary>
   </item>
-  <item nodeId="node-0x7a708d0">
+  <item nodeId="node-0xd53cd90">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Floor One Hallway
@@ -303,122 +303,74 @@ Floor One Hallway
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="46">YES</temporary>
+    <temporary score="13">YES</temporary>
     <children>
-      <child nodeId="node-0x7a70940" />
+      <child nodeId="node-0xd53cd20" />
     </children>
   </item>
-  <item nodeId="node-0x7a70940">
-    <command xml:space="preserve">w</command>
+  <item nodeId="node-0xd53cd20">
+    <command xml:space="preserve">e</command>
     <result xml:space="preserve">
-Floor One Elevator
+Philip&apos;s Cubical
+You can see Stapler here.
 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="46">YES</temporary>
+    <temporary score="13">YES</temporary>
     <children>
-      <child nodeId="node-0x7a709b0" />
-      <child nodeId="node-0x7a70be0" />
+      <child nodeId="node-0xd53ccb0" />
     </children>
   </item>
-  <item nodeId="node-0x7a70be0">
-    <command xml:space="preserve">push ground floor button</command>
-    <result xml:space="preserve">Lobby
-You disintrestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a bustling lobby.
-
+  <item nodeId="node-0xd53ccb0">
+    <command xml:space="preserve">look under stapler</command>
+    <result xml:space="preserve">You find a yellow sticky note a fixed to the bottom of the stapler. It reads, &quot;Pasword:
+ abcd1234&quot;
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="39">YES</temporary>
+    <temporary score="13">YES</temporary>
     <children>
-      <child nodeId="node-0x7a70c50" />
+      <child nodeId="node-0xd53cc40" />
     </children>
   </item>
-  <item nodeId="node-0x7a70c50">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Car
-You can see Driver here.
+  <item nodeId="node-0xd53cc40">
+    <command xml:space="preserve">type abcd1234</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="39">YES</temporary>
+    <temporary score="13">YES</temporary>
+    <children>
+      <child nodeId="node-0xd53cbd0" />
+    </children>
   </item>
-  <item nodeId="node-0x7a709b0">
-    <command xml:space="preserve">push ground button</command>
-    <result xml:space="preserve">Lobby
-You disintrestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a bustling lobby.
+  <item nodeId="node-0xd53cbd0">
+    <command xml:space="preserve">abcd1234</command>
+    <result xml:space="preserve">The computer gives a satisfying ding and you are logged in and able to see Philip&apos;s Stocks.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="46">YES</temporary>
+    <temporary score="13">YES</temporary>
     <children>
-      <child nodeId="node-0x7a70a20" />
+      <child nodeId="node-0xd53cb60" />
     </children>
   </item>
-  <item nodeId="node-0x7a70a20">
-    <command xml:space="preserve">w</command>
-    <result xml:space="preserve">
-Car
-You can see Driver here.
-
-&gt;</result>
+  <item nodeId="node-0xd53cb60">
+    <command xml:space="preserve">x philip&apos;s stocks</command>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="46">YES</temporary>
-    <children>
-      <child nodeId="node-0x7a70a90" />
-    </children>
+    <temporary score="12">YES</temporary>
   </item>
-  <item nodeId="node-0x7a70a90">
-    <command xml:space="preserve">talk to driver</command>
-    <result xml:space="preserve">Driver doesn&apos;t reply.
-
-SEC
-&quot;Where do you want to go sir?&quot; 
-
- &quot;Take me to SEC&quot; 
-
- &quot;Right away sir.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="46">YES</temporary>
-    <children>
-      <child nodeId="node-0x7a70b00" />
-    </children>
-  </item>
-  <item nodeId="node-0x7a70b00">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Taxi
-You can see Taxi Driver here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="46">YES</temporary>
-    <children>
-      <child nodeId="node-0x7a70b70" />
-    </children>
-  </item>
-  <item nodeId="node-0x7a70b70">
-    <command xml:space="preserve">talk to taxi driver</command>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="45">YES</temporary>
-  </item>
-  <item nodeId="node-0x7a70670">
+  <item nodeId="node-0xd53caf0">
     <command xml:space="preserve">sell orange</command>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="179">YES</temporary>
   </item>
-  <item nodeId="node-0x7a706e0">
+  <item nodeId="node-0xd53ca80">
     <command xml:space="preserve">unlock cabinet</command>
     <result xml:space="preserve">(with Cabinet Key)
 That doesn&apos;t seem to be something you can unlock.
@@ -428,10 +380,10 @@ That doesn&apos;t seem to be something you can unlock.
     <changed>YES</changed>
     <temporary score="87">YES</temporary>
     <children>
-      <child nodeId="node-0x7a70750" />
+      <child nodeId="node-0xd53ca10" />
     </children>
   </item>
-  <item nodeId="node-0x7a70750">
+  <item nodeId="node-0xd53ca10">
     <command xml:space="preserve">open cabinet</command>
     <result xml:space="preserve">It isn&apos;t something you can open.
 
@@ -440,10 +392,10 @@ That doesn&apos;t seem to be something you can unlock.
     <changed>YES</changed>
     <temporary score="86">YES</temporary>
     <children>
-      <child nodeId="node-0x7a70f00" />
+      <child nodeId="node-0xd53cfb0" />
     </children>
   </item>
-  <item nodeId="node-0x7a70f00">
+  <item nodeId="node-0xd53cfb0">
     <command xml:space="preserve">unlock cabinet</command>
     <result xml:space="preserve">(cabinet key with cabinet key)
 That doesn&apos;t seem to be something you can unlock.
@@ -453,10 +405,10 @@ That doesn&apos;t seem to be something you can unlock.
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
     <children>
-      <child nodeId="node-0x7a70f70" />
+      <child nodeId="node-0xd53cf00" />
     </children>
   </item>
-  <item nodeId="node-0x7a70f70">
+  <item nodeId="node-0xd53cf00">
     <command xml:space="preserve">ulock cabinet with cabinet key</command>
     <result xml:space="preserve">I didn&apos;t understand that number.
 
@@ -465,7 +417,7 @@ That doesn&apos;t seem to be something you can unlock.
     <changed>YES</changed>
     <temporary score="81">YES</temporary>
   </item>
-  <item nodeId="node-0x7a70fe0">
+  <item nodeId="node-0xd53cf50">
     <command xml:space="preserve">open cabinet</command>
     <result xml:space="preserve">(cabinet key)
 It isn&apos;t something you can open.
@@ -475,10 +427,10 @@ It isn&apos;t something you can open.
     <changed>YES</changed>
     <temporary score="85">YES</temporary>
     <children>
-      <child nodeId="node-0x7a71050" />
+      <child nodeId="node-0xd53c760" />
     </children>
   </item>
-  <item nodeId="node-0x7a71050">
+  <item nodeId="node-0xd53c760">
     <command xml:space="preserve">unlock cabinet</command>
     <result xml:space="preserve">(cabinet key with cabinet key)
 That doesn&apos;t seem to be something you can unlock.
@@ -488,7 +440,7 @@ That doesn&apos;t seem to be something you can unlock.
     <changed>YES</changed>
     <temporary score="84">YES</temporary>
   </item>
-  <item nodeId="node-0x7a710c0">
+  <item nodeId="node-0xd53c6f0">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
   cabinet key
@@ -496,9 +448,9 @@ That doesn&apos;t seem to be something you can unlock.
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="82">YES</temporary>
+    <temporary score="25">YES</temporary>
   </item>
-  <item nodeId="node-0x7a71130">
+  <item nodeId="node-0xd53c680">
     <command xml:space="preserve">x</command>
     <result xml:space="preserve">What do you want to examine?
 
@@ -507,10 +459,10 @@ That doesn&apos;t seem to be something you can unlock.
     <changed>YES</changed>
     <temporary score="72">YES</temporary>
     <children>
-      <child nodeId="node-0x7a711a0" />
+      <child nodeId="node-0xd53c610" />
     </children>
   </item>
-  <item nodeId="node-0x7a711a0">
+  <item nodeId="node-0xd53c610">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">You see nothing unexpected in that direction.
 
@@ -519,10 +471,10 @@ That doesn&apos;t seem to be something you can unlock.
     <changed>YES</changed>
     <temporary score="72">YES</temporary>
     <children>
-      <child nodeId="node-0x7a71210" />
+      <child nodeId="node-0xd53c5a0" />
     </children>
   </item>
-  <item nodeId="node-0x7a71210">
+  <item nodeId="node-0xd53c5a0">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -531,10 +483,10 @@ That doesn&apos;t seem to be something you can unlock.
     <changed>YES</changed>
     <temporary score="72">YES</temporary>
     <children>
-      <child nodeId="node-0x7a71280" />
+      <child nodeId="node-0xd53c530" />
     </children>
   </item>
-  <item nodeId="node-0x7a71280">
+  <item nodeId="node-0xd53c530">
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -543,10 +495,10 @@ That doesn&apos;t seem to be something you can unlock.
     <changed>YES</changed>
     <temporary score="72">YES</temporary>
     <children>
-      <child nodeId="node-0x7a712f0" />
+      <child nodeId="node-0xd53c4c0" />
     </children>
   </item>
-  <item nodeId="node-0x7a712f0">
+  <item nodeId="node-0xd53c4c0">
     <command xml:space="preserve"></command>
     <result xml:space="preserve">I beg your pardon?
 
@@ -555,10 +507,10 @@ That doesn&apos;t seem to be something you can unlock.
     <changed>YES</changed>
     <temporary score="72">YES</temporary>
     <children>
-      <child nodeId="node-0x7a71360" />
+      <child nodeId="node-0xd53c450" />
     </children>
   </item>
-  <item nodeId="node-0x7a71360">
+  <item nodeId="node-0xd53c450">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You can&apos;t go that way.
 
@@ -567,10 +519,10 @@ That doesn&apos;t seem to be something you can unlock.
     <changed>YES</changed>
     <temporary score="72">YES</temporary>
     <children>
-      <child nodeId="node-0x7a713d0" />
+      <child nodeId="node-0xd53c3e0" />
     </children>
   </item>
-  <item nodeId="node-0x7a713d0">
+  <item nodeId="node-0xd53c3e0">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">
 Floor One Hallway
@@ -580,10 +532,10 @@ Floor One Hallway
     <changed>YES</changed>
     <temporary score="72">YES</temporary>
     <children>
-      <child nodeId="node-0x7a71440" />
+      <child nodeId="node-0xd53c370" />
     </children>
   </item>
-  <item nodeId="node-0x7a71440">
+  <item nodeId="node-0xd53c370">
     <command xml:space="preserve">1</command>
     <result xml:space="preserve">&quot;Say, are you hiring?&quot; you ask, as casually as you can manage. You looks you over dubiously. &quot;I might be hiring someone, but I can&apos;t say it would necessarily be you.&quot;
 
@@ -592,7 +544,7 @@ Floor One Hallway
     <changed>YES</changed>
     <temporary score="71">YES</temporary>
   </item>
-  <item nodeId="node-0x7a714b0">
+  <item nodeId="node-0xd53c300">
     <command xml:space="preserve">2</command>
     <result xml:space="preserve">&quot;Tell me, didn&apos;t you used to have a young assistant working here?&quot; She shrugs. &quot;Young men these days are so unstable. He left-- who knows where he&apos;s gone? I haven&apos;t seen hair or fingernail of him for weeks.&quot;
 
@@ -601,7 +553,7 @@ Floor One Hallway
     <changed>YES</changed>
     <temporary score="63">YES</temporary>
   </item>
-  <item nodeId="node-0x7a71520">
+  <item nodeId="node-0xd53c290">
     <command xml:space="preserve">ask boss about 1</command>
     <result xml:space="preserve">There is no reply.
 

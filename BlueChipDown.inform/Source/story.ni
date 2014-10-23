@@ -47,6 +47,95 @@ Old Computer is scenery. It is in Boss's Cubical.
 
 [Global:] Money is a number that varies. Money is 0.
 
+Understand "sell [something] [number]" as selling. Selling is an action applying to one thing and one number.
+
+orange stock is a thing carried by the player.The printed name is "Orange stock x [orangeshare-count]". orange stock has a number called orangeshare-count. orange stock has a number called orange-price. The orange-price of the orange stock is usually 200. The orangeshare-count of the orange stock is usually 100. The description of Orange stock is "Stock that you own that you can sell any number of. Type 'sell orange stock' followed by the number you want to sell or 'puchase orange stock' followed by the number you want to buy. You currently have [orangeshare-count] Orange stock."
+
+backward stock is a thing carried by the player.The printed name is "backward stock x [backwardshare-count]". backward stock has a number called backwardshare-count. backward stock has a number called backward-price. The backward-price of the backward stock is usually 150. The backwardshare-count of the backward stock is usually 100. The description of backward stock is "Stock that you own that you can sell any number of. Type 'sell backward stock' followed by the number you want to sell or 'puchase backward stock' followed by the number you want to buy. You currently have [backwardshare-count] backward stock."
+
+redwood stock is a thing carried by the player.The printed name is "Redwood stock x [redwoodshare-count]". redwood stock has a number called redwoodshare-count. redwood stock has a number called redwood-price. The redwood-price of the redwood stock is usually 100. The redwoodshare-count of the redwood stock is usually 20. The description of redwood stock is "Stock that you own that you can sell any number of. Type 'sell redwood stock' followed by the number you want to sell or 'puchase redwood stock' followed by the number you want to buy. You currently have [redwoodshare-count] redwood stock."
+
+Instead of selling:
+	if the noun is orange stock:
+		decrease the orangeshare-count of the Orange stock by the number understood;
+		let C be the orange-price of the orange stock;
+		let A be the number understood;
+		let B be C * A;
+		increase Money by B;
+		if the orangeshare-count of the orange stock is less than zero:
+			increase the orangeshare-count by the number understood;
+			say "You don't have that many stock to sell. You have [orangeshare-count] Orange stock.";
+		otherwise:
+			say "Now you have [Orangeshare-count] Orange stock and [Money] dollars.";
+	Otherwise:
+		if the noun is backward stock:
+			decrease the backwardshare-count of the backward stock by the number understood;
+			let C be the backward-price of the backward stock;
+			let A be the number understood;
+			let B be C * A;
+			increase Money by B;
+			if the backwardshare-count of the backward stock is less than zero:
+				increase the backwardshare-count by the number understood;
+				say "You don't have that many stock to sell. You have [backwardshare-count] backward stock.";
+			otherwise:
+				say "Now you have [backwardshare-count] backward stock and [Money] dollars.";
+		Otherwise:
+			if the noun is redwood stock:
+				decrease the redwoodshare-count of the redwood stock by the number understood;
+				let C be the redwood-price of the redwood stock;
+				let A be the number understood;
+				let B be C * A;
+				increase Money by B;
+				if the redwoodshare-count of the redwood stock is less than zero:
+					increase the redwoodshare-count by the number understood;
+					say "You don't have that many stock to sell. You have [redwoodshare-count] redwood stock.";
+				otherwise:
+					say "Now you have [redwoodshare-count] redwood stock and [Money] dollars.";
+[code for selling stocks created with a great deal of help from Mrs. Kiang]
+
+Understand "purchase [something] [number]" as purchasing. Purchasing is an action applying to one thing and one number.
+
+Instead of Purchasing:
+	if the noun is orange stock:
+		increase the orangeshare-count of the Orange stock by the number understood;
+		let C be the orange-price of the orange stock;
+		let A be the number understood;
+		let B be C * A;
+		decrease Money by B;
+		if Money is less than zero:
+			increase the orangeshare-count by the number understood;
+			say "You don't have enought money.";
+		otherwise:
+			say "Now you have [orangeshare-count] Orange stock and [Money] dollars.";
+	Otherwise:
+		if the noun is backward stock:
+			increase the backwardshare-count of the backward stock by the number understood;
+			let C be the backward-price of the backward stock;
+			let A be the number understood;
+			let B be C * A;
+			decrease Money by B;
+			if Money is less than zero:
+				increase the backwardshare-count by the number understood;
+				say "You don't have enought money.";
+			otherwise:
+				say "Now you have [backwardshare-count] backward stock and [Money] dollars.";
+		Otherwise:
+			if the noun is redwood stock:
+				increase the redwoodshare-count of the redwood stock by the number understood;
+				let C be the redwood-price of the redwood stock;
+				let A be the number understood;
+				let B be C * A;
+				decrease Money by B;
+				if Money is less than zero:
+					increase the redwoodshare-count by the number understood;
+					say "You don't have enought money.";
+				otherwise:
+					say "Now you have [redwoodshare-count] redwood stock and [Money] dollars.";
+
+[code for buying stocks created with a great deal of help from Mrs. Kiang]
+
+[Global:] Philip'sComputer is a number that varies. Philip'sComputer is 0.
+
 [Global:] OldComputerState is a number that varies. OldComputerState is 0.
 
 [Global:] OrangeStock is a number that varies. OrangeStock is 1000.
@@ -60,67 +149,9 @@ Instead of examining Old Computer:
 		say "The computer is currently displaying your Boss's stock portofolio. It mainly consists of three stocks Orange, RedWood, and Backward. To your shock and dismay you realize that over the course of the last 10 minutes your Boss's portofolio has lost 10 percent equating to almost 13 million dollars. And the stocks' value are still plumiting. You'll have to act fast to save your clients. You try to remember how you Boss sold stocks. You think that he just typed sell or buy then the stocks name.";
 	otherwise:
 		say "A giant monitor rests upon your Boss's desk humming away.";
-		
-Orange Stock is scenery. It is in Boss's cubical.
-
-RedWood Stock is scenery. It is in Boss's cubical.
-
-Backward Stock is scenery. It is in Boss's cubical.
-
-[Global:] Amount is a number that varies.
-
-[Instead of selling Orange Stock amount:
-	decrease Orangestock by amount;
-
-Selling is an action applying to two variables.
-
-Instead of examining RedWood Stock:
-	say "You own [RedWoodStock] shares";
-	
-Instead of examining Backward Stock:
-	say "You own [BackwardStock] shares";]
 	
 Instead of examining Orange Stock:
-	say "You own [OrangeStock] shares";
-
-Casting Sell Orange is an action applying to nothing.
-Understand "Sell Orange" as casting Sell Orange.
-Instead of casting Sell Orange:
-	If player is in Boss's Cubical:
-		decrease OrangeStock by 1000;
-		increase Money by 10000;
-		say "You now have [OrangeStock] shares in Orange.";
-		if GameState is 0:
-			if BackwardStock is 0:
-				if RedwoodStock is 0:
-					Increase Gamestate by 1;
-		
-Casting Sell Backward is an action applying to nothing.
-Understand "Sell Backward" as casting Sell Backward.
-Instead of casting Sell Backward:
-	If player is in Boss's Cubical:
-		decrease BackwardStock by 1000;
-		increase Money by 500;
-		say "You now have [BackwardStock] shares in Orange.";
-		if GameState is 0:
-			if OrangeStock is 0:
-				if RedwoodStock is 0:
-					Increase Gamestate by 1;
-
-Casting Sell RedWood is an action applying to nothing.
-Understand "Sell RedWood" as casting Sell RedWood.
-Instead of casting Sell RedWood:
-	If player is in Boss's Cubical:
-		decrease RedWoodStock by 1000;
-		increase Money by 2000;
-		say "You now have [RedWoodStock] shares in Orange.";
-		if GameState is 0:
-			if BackwardStock is 0:
-				if OrangeStock is 0:
-					Increase Gamestate by 1;
-		
-
-[Taken from Mrs. Kiang's Wiki]
+	say "You own [OrangeStock] shares";		
 
 Corded Phone is scenery. It is in Boss's Cubical.
 
@@ -130,9 +161,38 @@ Notes is a thing. It is in Filling Cabinet. "You knew your Boss would be to lazy
 
 Player carries cabinet key.
 
-Jonah's Cubical is a room. It is east of Floor One Hallway.
+Philip's Cubical is a room. It is east of Floor One Hallway.
 
-Jonah's Computer is scenery. It is in Jonah's Cubical.
+Philip's Computer is scenery. It is in Philip's Cubical.
+
+Philip's Stocks is scenery. It is in Philip's Cubical. "[if Philip'sComputer is 0] You can't see them because Philip's Computer is currently locked. [otherwise if Philip'sComputer is 1] Philip is currently owns [Philip'sOrangeStock] orange stocks, [Philip'sRedWoodStock] Redwood Stocks, and [Philip'sBackwardStock] Backward."
+
+[Global:] Philip'sOrangeStock is a number that varies. Philip'sOrangeStock is 20000.
+
+[Global:] Philip'sRedWoodStock is a number that varies. Philip'sRedWoodStock is 0.
+
+[Global:] Philip'sBackwardStock is a number that varies. Philip'sBackwardStock is 0.
+
+Stapler is a thing. It is in Philip's Cubical.
+
+Casting Password is an action applying to nothing.
+Understand "abcd1234" as casting Password.
+Instead of casting Password:
+	if player is in Philip's Cubical:
+		if Philip'sComputer is 0:
+			say "The computer gives a satisfying ding and you are logged in and able to see Philip's Stocks.";
+			increase Philip'sComputer by 1;
+		Otherwise:
+			say "You already logged in."
+
+Yellow Sticky Note is a thing. It is in Philip's Cubical. It is undescribed. The description is "[Line Break]'Pasword:[Line Break] abcd1234'"
+
+Instead of looking under Stapler:
+	if player is not carrying Sticky Note:
+		say "You find a yellow sticky note a fixed to the bottom of the stapler. It reads, 'Pasword:[Line Break] abcd1234'";
+	Otherwise:
+		if player is carrying Sticky Note:
+			say "You already took the sticky note."
 
 Floor One Hallway is a room. It is south of Boss's Cubical.
 
@@ -224,96 +284,3 @@ CEO Office is a room. It is west of Reception.
 
 Floor Three Elevator is a room.
 
-
-[
-A subject is a kind of thing. Some subjects are defined by the Table of Conversation Subjects.
-
-Table of Conversation Subjects
-subject	conversation
-Black Mail 	Table of Black Mail Queries
-employment	Table of Job Queries
-
-Instead of talking to Boss:
-	say "You could say: [line break][bracket]1[close bracket]: hello how are you?";
-
-Understand "job" as employment.
-
-Table of Job Queries
-quip	discussion	label	subtopics
-"Whatever"	"'Say, are you hiring?' you ask, as casually as you can manage. [The interlocutor] looks you over dubiously. 'I might be hiring someone, but I can't say it would necessarily be you.'"	5	--
-"what happened to that boy that worked here"	"'Tell me, didn't you used to have a young assistant working here?' She shrugs. 'Young men these days are so unstable. He left-- who knows where he's gone? I haven't seen hair or fingernail of him for weeks.'"	6	--
-with 3 blank rows.
-
-Table of Black Mail Queries
-quip	discussion	label	subtopics
-"Could I have the key for the filling cabinet?"	"'Why in the world would you need that? And why should I trust you with it?'"	1	Table of Black Mail Reason Queries
---	--	2	Table of Black Mail Reason Queries
-with 2 blank rows.
-
-Table of Black Mail Reason Queries
-quip	discussion	label	subtopics
-"Because I want it and that's the only reason you should need!"	"'Because I want it and that's the only reason you should need!'"	1	--
-"I recieved a letter from Jonathan, he's the senior trader here isn't he, he wanted to commend you for your fast action saving your clients and needed some information to make his report complete."	"'I recieved a letter from Jonathan, he's the senior trader here isn't he, he wanted to commend you for your fast action saving your clients and needed some information to make his report complete.' 'Oh well in that case here you are. Send Jonathan my regards.'"	2	--
-with 3 blank rows.
-
-To copy (first table - a table name) to (second table - a table name):
-	repeat through first table:
-		let copied quip be "blank";
-		if there is a quip entry, now the copied quip is the quip entry;
-		let copied discussion be "blank";
-		if there is a discussion entry, now the copied discussion is the discussion entry;
-		let copied subtopics be second table;
-		if there is a subtopics entry, now the copied subtopics are the subtopics entry;
-		choose a blank row in the second table;
-		if copied quip is not "blank", now quip entry is copied quip;
-		if copied discussion is not "blank", now discussion entry is copied discussion;
-		if copied subtopics is not second table, now subtopics entry is copied subtopics.
-
-Current conversation table is a table name that varies. Current conversation table is Table of Black Mail Queries.
-
-Interlocutor is a person that varies.
-
-Understand "ask [someone] about [any subject]" as asking it about the subject.
-
-Asking it about the subject is an action applying to two visible things.
-
-Carry out asking it about the subject:
-	say "You can't think of anything to say."
-
-Instead of asking someone about the subject a subject listed in the Table of Conversation Subjects:
-	now interlocutor is noun;
-	now current conversation table is the conversation of the second noun;
-	if the number of filled rows in the current conversation table is 1:
-		repeat through current conversation table:
-			now label entry is 1;
-		now number understood is 1;
-		try selecting 1 instead;
-	if the number of filled rows in the current conversation table is 0:
-		say "You can think of nothing further to say on that topic.";
-		stop the action;
-	otherwise:
-		let index be 0;
-		let total be the number of filled rows in the current conversation table;
-		say "Do you mean ";
-		repeat through current conversation table:
-			now index is index + 1;
-			now label entry is index;
-			say "([index]) [quip entry]";
-			if index is total, say "?";
-			if index is total - 1, say ", or ";
-			if index is less than total - 1, say ", ".
-
-Understand "[number]" as selecting.
-
-Selecting is an action applying to one number.
-
-Carry out selecting:
-	say "No such option is available."
-
-Instead of selecting a label listed in the current conversation table:
-	say "[discussion entry][paragraph break]";
-	if there is a subtopics entry:
-		copy subtopics entry to current conversation table;
-	choose row with label of number understood in the current conversation table;
-	blank out the whole row.
-[Taken from the Inform documentation 7.8 Example Sweeney]]
