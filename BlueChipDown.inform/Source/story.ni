@@ -28,7 +28,6 @@ Check talking to: say "[The noun] doesn't reply."
 
 [taken from http://www.musicwords.net/if/InformHandbook.pdf chapter 9]
 
-
 instead of going south from Boss's Cubical:
 	if gamestate is 0:
 		say "You can't leave yet you need to first see what's up with the computer.";
@@ -65,81 +64,83 @@ backward stock is a thing carried by the player.The printed name is "backward st
 redwood stock is a thing carried by the player.The printed name is "Redwood stock x [redwoodshare-count]". redwood stock has a number called redwoodshare-count. redwood stock has a number called redwood-price. The redwood-price of the redwood stock is usually 100. The redwoodshare-count of the redwood stock is usually 20. The description of redwood stock is "Stock that you own that you can sell any number of. Type 'sell redwood stock' followed by the number you want to sell or 'puchase redwood stock' followed by the number you want to buy. You currently have [redwoodshare-count] redwood stock."
 
 Instead of selling:
-	if the noun is orange stock:
-		decrease the orangeshare-count of the Orange stock by the number understood;
-		if the orangeshare-count of the orange stock is less than zero:
-			increase the orangeshare-count by the number understood;
-			say "You don't have that many stock to sell. You have [orangeshare-count] Orange stock.";
-		otherwise:
-			let C be the orange-price of the orange stock;
-			let A be the number understood;
-			let B be C * A;
-			increase Money by B;
-			say "Now you have [Orangeshare-count] Orange stock and [Money] dollars.";
-	Otherwise:
-		if the noun is backward stock:
-			decrease the backwardshare-count of the backward stock by the number understood;
-			if the backwardshare-count of the backward stock is less than zero:
-				increase the backwardshare-count by the number understood;
-				say "You don't have that many stock to sell. You have [backwardshare-count] backward stock.";
+	if player is in Boss's Cubical:
+		if the noun is orange stock:
+			decrease the orangeshare-count of the Orange stock by the number understood;
+			if the orangeshare-count of the orange stock is less than zero:
+				increase the orangeshare-count by the number understood;
+				say "You don't have that many stock to sell. You have [orangeshare-count] Orange stock.";
 			otherwise:
-				let C be the backward-price of the backward stock;
+				let C be the orange-price of the orange stock;
 				let A be the number understood;
 				let B be C * A;
 				increase Money by B;
-				say "Now you have [backwardshare-count] backward stock and [Money] dollars.";
+				say "Now you have [Orangeshare-count] Orange stock and [Money] dollars.";
 		Otherwise:
-			if the noun is redwood stock:
-				decrease the redwoodshare-count of the redwood stock by the number understood;
-				if the redwoodshare-count of the redwood stock is less than zero:
-					increase the redwoodshare-count by the number understood;
-					say "You don't have that many stock to sell. You have [redwoodshare-count] redwood stock.";
+			if the noun is backward stock:
+				decrease the backwardshare-count of the backward stock by the number understood;
+				if the backwardshare-count of the backward stock is less than zero:
+					increase the backwardshare-count by the number understood;
+					say "You don't have that many stock to sell. You have [backwardshare-count] backward stock.";
 				otherwise:
-					let C be the redwood-price of the redwood stock;
+					let C be the backward-price of the backward stock;
 					let A be the number understood;
 					let B be C * A;
 					increase Money by B;
-					say "Now you have [redwoodshare-count] redwood stock and [Money] dollars.";
+					say "Now you have [backwardshare-count] backward stock and [Money] dollars.";
+			Otherwise:
+				if the noun is redwood stock:
+					decrease the redwoodshare-count of the redwood stock by the number understood;
+					if the redwoodshare-count of the redwood stock is less than zero:
+						increase the redwoodshare-count by the number understood;
+						say "You don't have that many stock to sell. You have [redwoodshare-count] redwood stock.";
+					otherwise:
+						let C be the redwood-price of the redwood stock;
+						let A be the number understood;
+						let B be C * A;
+						increase Money by B;
+						say "Now you have [redwoodshare-count] redwood stock and [Money] dollars.";
 [code for selling stocks created with a great deal of help from Mrs. Kiang]
 
 Understand "purchase [something] [number]" as purchasing. Purchasing is an action applying to one thing and one number.
 
 Instead of Purchasing:
-	if the noun is orange stock:
-		increase the orangeshare-count of the Orange stock by the number understood;
-		let C be the orange-price of the orange stock;
-		let A be the number understood;
-		let B be C * A;
-		decrease Money by B;
-		if Money is less than zero:
-			increase the orangeshare-count by the number understood;
-			say "You don't have enought money.";
-		otherwise:
-			say "Now you have [orangeshare-count] Orange stock and [Money] dollars.";
-	Otherwise:
-		if the noun is backward stock:
-			increase the backwardshare-count of the backward stock by the number understood;
-			let C be the backward-price of the backward stock;
+	if player is in Boss's Cubical:
+		if the noun is orange stock:
+			increase the orangeshare-count of the Orange stock by the number understood;
+			let C be the orange-price of the orange stock;
 			let A be the number understood;
 			let B be C * A;
 			decrease Money by B;
 			if Money is less than zero:
-				increase the backwardshare-count by the number understood;
+				increase the orangeshare-count by the number understood;
 				say "You don't have enought money.";
 			otherwise:
-				say "Now you have [backwardshare-count] backward stock and [Money] dollars.";
+				say "Now you have [orangeshare-count] Orange stock and [Money] dollars.";
 		Otherwise:
-			if the noun is redwood stock:
-				increase the redwoodshare-count of the redwood stock by the number understood;
-				let C be the redwood-price of the redwood stock;
+			if the noun is backward stock:
+				increase the backwardshare-count of the backward stock by the number understood;
+				let C be the backward-price of the backward stock;
 				let A be the number understood;
 				let B be C * A;
 				decrease Money by B;
 				if Money is less than zero:
-					increase the redwoodshare-count by the number understood;
+					increase the backwardshare-count by the number understood;
 					say "You don't have enought money.";
 				otherwise:
-					say "Now you have [redwoodshare-count] redwood stock and [Money] dollars.";
+					say "Now you have [backwardshare-count] backward stock and [Money] dollars.";
+			Otherwise:
+				if the noun is redwood stock:
+					increase the redwoodshare-count of the redwood stock by the number understood;
+					let C be the redwood-price of the redwood stock;
+					let A be the number understood;
+					let B be C * A;
+					decrease Money by B;
+					if Money is less than zero:
+						increase the redwoodshare-count by the number understood;
+						say "You don't have enought money.";
+					otherwise:
+						say "Now you have [redwoodshare-count] redwood stock and [Money] dollars.";
 
 [code for buying stocks created with a great deal of help from Mrs. Kiang]
 
@@ -207,23 +208,15 @@ Floor One Hallway is a room. It is south of Boss's Cubical.
 
 Floor One Elevator is a room. It is west of Floor One Hallway.
 
-Avery's Office is a room. It is northeast of Floor Two Hallway.
-
-Andrew's Office is a room.  
+Andrew's Office is a room. It is south of Floor One Hallway.
 
 Meeting Room is a room.
-
-Floor Two Hallway is a room. It is east of Floor Two Elevator.
-
-Floor Two Elevator is a room. 
 
 Ground Floor Button is scenery. It is in Floor One Elevator. "The button has a large embroidered G on it."
 
 Floor One Button is scenery. It is in Floor One Elevator. "The button has a large embroidered 1 on it."
 
 Floor Two Button is scenery. It is in Floor One Elevator. "The button has a large embroidered 2 on it."
-
-Floor Three Button is scenery. It is in Floor One Elevator. "The button has a large embroidered 3 on it."
 
 [Code for Elevator]
 
@@ -232,7 +225,6 @@ Instead of pushing Ground Floor Button:
 	move Ground Floor Button to Lobby Elevator;
 	move Floor One Button to Lobby Elevator;
 	move Floor Two  Button to Lobby Elevator;
-	move Floor Three Button to Lobby Elevator;
 	say "You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator's door to ding open. Finally you step out into a bustling lobby.";
 	
 Instead of pushing Floor One Button:
@@ -240,23 +232,13 @@ Instead of pushing Floor One Button:
 	move Ground Floor Button to Floor One Elevator;
 	move Floor One Button to Floor One Elevator;
 	move Floor Two  Button to Floor One Elevator;
-	move Floor Three Button to Floor One Elevator;
 	say "You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator's door to ding open. Finally you step out into a endless sea of cubicals.";
 	
 Instead of pushing Floor Two Button:
-	move player to Floor Two Hallway;
+	move player to Reception;
 	move Ground Floor Button to Floor Two Elevator;
 	move Floor One Button to Floor Two Elevator;
 	move Floor Two  Button to Floor Two Elevator;
-	move Floor Three Button to Floor Two Elevator;
-	say "You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator's door to ding open. Finally you step out into a quiet hallway flanked by offices.";
-	
-Instead of pushing Floor Three Button:
-	move player to Reception;
-	move Ground Floor Button to Floor Three Elevator;
-	move Floor One Button to Floor Three Elevator;
-	move Floor Two  Button to Floor Three Elevator;
-	move Floor Three Button to Floor Three Elevator;
 	say "You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator's door to ding open. Finally you step out into a expansive reception room.";
 
 Lobby is a room. It is west of Lobby Elevator.
@@ -285,7 +267,9 @@ After talking to Taxi Driver:
 
 SEC is a room. 
 
-Reception is a room. It is south of Floor Three Elevator.
+Floor Two Elevator is a room.
+
+Reception is a room. It is south of Floor Two Elevator.
 
 Board Room is a room. It is east of Reception.
 

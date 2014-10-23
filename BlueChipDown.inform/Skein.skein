@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0xd5fb3e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1150d7f0" />
+  <activeNode nodeId="node-0xd5fb3e0" />
   <item nodeId="node-0xd5fb3e0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -23,19 +23,19 @@ You can also see Filling Cabinet (closed) here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="78">NO</temporary>
+    <temporary score="107">NO</temporary>
     <children>
       <child nodeId="node-0xd53c290" />
       <child nodeId="node-0xd53c300" />
       <child nodeId="node-0xd53c680" />
       <child nodeId="node-0x11567980" />
+      <child nodeId="node-0xdc20670" />
       <child nodeId="node-0x11513b20" />
       <child nodeId="node-0xd53cf50" />
       <child nodeId="node-0xd53ca80" />
       <child nodeId="node-0xd53caf0" />
       <child nodeId="node-0xd53ce00" />
       <child nodeId="node-0xd53d080" />
-      <child nodeId="node-0xd53d0f0" />
       <child nodeId="node-0xd5fb430" />
       <child nodeId="node-0xd5fb1e0" />
     </children>
@@ -230,15 +230,6 @@ You can also see Filling Cabinet (closed) here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="77">YES</temporary>
-  </item>
-  <item nodeId="node-0xd53d0f0">
-    <command xml:space="preserve">0</command>
-    <result xml:space="preserve">&quot;Say, are you hiring?&quot; you ask, as casually as you can manage. You looks you over dubiously. &quot;I might be hiring someone, but I can&apos;t say it would necessarily be you.&quot;
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="60">YES</temporary>
   </item>
   <item nodeId="node-0xd53d080">
     <command xml:space="preserve">unlock filling cabinet</command>
@@ -444,18 +435,189 @@ That doesn&apos;t seem to be something you can unlock.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="61">YES</temporary>
+  </item>
+  <item nodeId="node-0xdc20670">
+    <command xml:space="preserve">sell orange stock 100</command>
+    <result xml:space="preserve">Now you have 0 Orange stock and 20000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="107">YES</temporary>
     <children>
-      <child nodeId="node-0x1737ef00" />
+      <child nodeId="node-0x1739d210" />
     </children>
   </item>
-  <item nodeId="node-0x1737ef00">
-    <command xml:space="preserve">sell orange stock 1</command>
-    <result xml:space="preserve">Now you have 0 Orange stock and 237400 dollars.
+  <item nodeId="node-0x1739d210">
+    <command xml:space="preserve">sell redwood stock 20</command>
+    <result xml:space="preserve">Now you have 0 redwood stock and 22000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="107">YES</temporary>
+    <children>
+      <child nodeId="node-0x12c9ee80" />
+    </children>
+  </item>
+  <item nodeId="node-0x12c9ee80">
+    <command xml:space="preserve">sell backward stock 100</command>
+    <result xml:space="preserve">Now you have 0 backward stock and 37000 dollars.
+
+The computer stops its insistant bleeping. Thank hevans that you managed to sell everything before they tanked any more.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="107">YES</temporary>
+    <children>
+      <child nodeId="node-0x12c9a960" />
+    </children>
+  </item>
+  <item nodeId="node-0x12c9a960">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Floor One Hallway
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="107">YES</temporary>
+    <children>
+      <child nodeId="node-0x10e6ad50" />
+    </children>
+  </item>
+  <item nodeId="node-0x10e6ad50">
+    <command xml:space="preserve">buy orange stock 370</command>
+    <result xml:space="preserve">You don&apos;t have enought money.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="107">YES</temporary>
+    <children>
+      <child nodeId="node-0x1153e530" />
+    </children>
+  </item>
+  <item nodeId="node-0x1153e530">
+    <command xml:space="preserve">buy orange stock 100</command>
+    <result xml:space="preserve">You don&apos;t have enought money.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="107">YES</temporary>
+    <children>
+      <child nodeId="node-0x115b3aa0" />
+    </children>
+  </item>
+  <item nodeId="node-0x115b3aa0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Boss&apos;s Cubical
+ Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone.
+
+From day to day your Boss never seem change his appearence. He must own at least a dozen of the same set of plain clothes. Whenever he sees you his face turns a deep beetroot red and he seems to inflate.
+
+You can also see Filling Cabinet (closed) here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="107">YES</temporary>
+    <children>
+      <child nodeId="node-0x1151a540" />
+    </children>
+  </item>
+  <item nodeId="node-0x1151a540">
+    <command xml:space="preserve">buy orange stock 1</command>
+    <result xml:space="preserve">You don&apos;t have enought money.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="107">YES</temporary>
+    <children>
+      <child nodeId="node-0x1738a120" />
+    </children>
+  </item>
+  <item nodeId="node-0x1738a120">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Orange stock x 942
+  backward stock x 0
+  Redwood stock x 0
+  Cabinet Key
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="107">YES</temporary>
+    <children>
+      <child nodeId="node-0x12cb7d20" />
+    </children>
+  </item>
+  <item nodeId="node-0x12cb7d20">
+    <command xml:space="preserve">buy orange stock 10</command>
+    <result xml:space="preserve">You don&apos;t have enought money.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="107">YES</temporary>
+    <children>
+      <child nodeId="node-0x12c98680" />
+    </children>
+  </item>
+  <item nodeId="node-0x12c98680">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Orange stock x 962
+  backward stock x 0
+  Redwood stock x 0
+  Cabinet Key
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="107">YES</temporary>
+    <children>
+      <child nodeId="node-0x12ccce90" />
+    </children>
+  </item>
+  <item nodeId="node-0x12ccce90">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Floor One Hallway
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="60">YES</temporary>
+    <temporary score="107">YES</temporary>
+    <children>
+      <child nodeId="node-0x12cc3b40" />
+    </children>
+  </item>
+  <item nodeId="node-0x12cc3b40">
+    <command xml:space="preserve">sell orange stock</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="107">YES</temporary>
+    <children>
+      <child nodeId="node-0x12cb6920" />
+    </children>
+  </item>
+  <item nodeId="node-0x12cb6920">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Orange stock x 962
+  backward stock x 0
+  Redwood stock x 0
+  Cabinet Key
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="106">YES</temporary>
   </item>
   <item nodeId="node-0x11567980">
     <command xml:space="preserve">i</command>
@@ -561,6 +723,9 @@ The computer stops its insistant bleeping. Thank hevans that you managed to sell
   </item>
   <item nodeId="node-0x1150d7f0">
     <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t leave yet you need to first see what&apos;s up with the computer.
+
+&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="77">YES</temporary>
