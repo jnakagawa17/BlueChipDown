@@ -54,6 +54,7 @@ Boss is a man in Boss's Cubical.  "From day to day your Boss never seem change h
 Old Computer is scenery. It is in Boss's Cubical.
 
 [Global:] Money is a number that varies. Money is 0.
+[Global:] Philip'sMoney is a number that varies. Philip'sMoney is 0.
 
 Understand "sell [something] [number]" as selling. Selling is an action applying to one thing and one number.
 
@@ -62,6 +63,13 @@ orange stock is a thing carried by the player.The printed name is "Orange stock 
 backward stock is a thing carried by the player.The printed name is "backward stock x [backwardshare-count]". backward stock has a number called backwardshare-count. backward stock has a number called backward-price. The backward-price of the backward stock is usually 150. The backwardshare-count of the backward stock is usually 100. The description of backward stock is "Stock that you own that you can sell any number of. Type 'sell backward stock' followed by the number you want to sell or 'puchase backward stock' followed by the number you want to buy. You currently have [backwardshare-count] backward stock."
 
 redwood stock is a thing carried by the player.The printed name is "Redwood stock x [redwoodshare-count]". redwood stock has a number called redwoodshare-count. redwood stock has a number called redwood-price. The redwood-price of the redwood stock is usually 100. The redwoodshare-count of the redwood stock is usually 20. The description of redwood stock is "Stock that you own that you can sell any number of. Type 'sell redwood stock' followed by the number you want to sell or 'puchase redwood stock' followed by the number you want to buy. You currently have [redwoodshare-count] redwood stock."
+
+Philip'sorange stock is a thing carried by the player.The printed name is "Philip's Orange stock x [Philip'sorangeshare-count]". Philip'sorange stock has a number called Philip'sorangeshare-count. Philip'sorange stock has a number called Philip'sorange-price. The Philip'sorange-price of the Philip'sorange stock is usually 200. The Philip'sorangeshare-count of the Philip'sorange stock is usually 100. The description of Philip'sOrange stock is "Stock that you own that you can sell any number of. Type 'sell orange stock' followed by the number you want to sell or 'puchase orange stock' followed by the number you want to buy. You currently have [Philip'sorangeshare-count] Orange stock."
+
+Philip'sbackward stock is a thing carried by the player.The printed name is "Philip's backward stock x [Philip'sbackwardshare-count]". Philip'sbackward stock has a number called Philip'sbackwardshare-count. Philip'sbackward stock has a number called Philip'sbackward-price. The Philip'sbackward-price of the Philip'sbackward stock is usually 150. The Philip'sbackwardshare-count of the Philip'sbackward stock is usually 100. The description of Philip'sbackward stock is "Stock that you own that you can sell any number of. Type 'sell backward stock' followed by the number you want to sell or 'puchase backward stock' followed by the number you want to buy. You currently have [Philip'sbackwardshare-count] backward stock."
+
+Philip'sredwood stock is a thing carried by the player.The printed name is "Philip's Redwood stock x [Philip'sredwoodshare-count]". Philip'sredwood stock has a number called Philip'sredwoodshare-count. Philip'sredwood stock has a number called Philip'sredwood-price. The Philip'sredwood-price of the Philip'sredwood stock is usually 100. The Philip'sredwoodshare-count of the Philip'sredwood stock is usually 20. The description of Philip'sredwood stock is "Stock that you own that you can sell any number of. Type 'sell Philip'sredwood stock' followed by the number you want to sell or 'puchase redwood stock' followed by the number you want to buy. You currently have [Philip'sredwoodshare-count] redwood stock."
+
 
 Instead of selling:
 	if player is in Boss's Cubical:
@@ -100,6 +108,45 @@ Instead of selling:
 						let B be C * A;
 						increase Money by B;
 						say "Now you have [redwoodshare-count] redwood stock and [Money] dollars.";
+	Otherwise:		
+		if player is in Philip's Cubical:
+			if Philip'sComputer is 1:
+				if the noun is Philip'sorange stock:
+					decrease the Philip'sorangeshare-count of the Philip'sOrange stock by the number understood;
+					if the Philip'sorangeshare-count of the Philip'sorange stock is less than zero:
+						increase the Philip'sorangeshare-count by the number understood;
+						say "You don't have that many stock to sell. You have [Philip'sorangeshare-count] Orange stock.";
+					otherwise:
+						let C be the Philip'sorange-price of the Philip'sorange stock;
+						let A be the number understood;
+						let B be C * A;
+						increase Philip'sMoney by B;
+						say "Now you have [Philip'sOrangeshare-count] Orange stock and [Philip'sMoney] dollars.";
+				Otherwise:
+					if the noun is Philip'sbackward stock:
+						decrease the Philip'sbackwardshare-count of the Philip'sbackward stock by the number understood;
+						if the Philip'sbackwardshare-count of the Philip'sbackward stock is less than zero:
+							increase the Philip'sbackwardshare-count by the number understood;
+							say "You don't have that many stock to sell. You have [Philip'sbackwardshare-count] backward stock.";
+						otherwise:
+							let C be the Philip'sbackward-price of the Philip'sbackward stock;
+							let A be the number understood;
+							let B be C * A;
+							increase Philip'sMoney by B;
+							say "Now you have [Philip'sbackwardshare-count] backward stock and [Philip'sMoney] dollars.";
+					Otherwise:
+						if the noun is Philip'sredwood stock:
+							decrease the Philip'sredwoodshare-count of the Philip'sredwood stock by the number understood;
+							if the Philip'sredwoodshare-count of the philip'sredwood stock is less than zero:
+								increase the Philip'sredwoodshare-count by the number understood;
+								say "You don't have that many stock to sell. You have [Philip'sredwoodshare-count] redwood stock.";
+							otherwise:
+								let C be the Philip'sredwood-price of the Philip'sredwood stock;
+								let A be the number understood;
+								let B be C * A;
+								increase Philip'sMoney by B;
+								say "Now you have [Philip'sredwoodshare-count] redwood stock and [Philip'sMoney] dollars.";
+
 [code for selling stocks created with a great deal of help from Mrs. Kiang]
 
 Understand "purchase [something] [number]" as purchasing. Purchasing is an action applying to one thing and one number.
@@ -141,6 +188,44 @@ Instead of Purchasing:
 						say "You don't have enought money.";
 					otherwise:
 						say "Now you have [redwoodshare-count] redwood stock and [Money] dollars.";
+	Otherwise:
+		if player is in Philip's Cubical:
+			if Philip'sComputer is 1:
+				if the noun is Philip'sorange stock:
+					increase the Philip'sorangeshare-count of the Philip'sOrange stock by the number understood;
+					let C be the Philip'sorange-price of the Philip'sorange stock;
+					let A be the number understood;
+					let B be C * A;
+					decrease Philip'sMoney by B;
+					if Money is less than zero:
+						increase the Philip'sorangeshare-count by the number understood;
+						say "You don't have enought money.";
+					otherwise:
+						say "Now you have [Philip'sorangeshare-count] Orange stock and [Philip'sMoney] dollars.";
+				Otherwise:
+					if the noun is backward stock:
+						increase the Philip'sbackwardshare-count of the Philip'sbackward stock by the number understood;
+						let C be the Philip'sbackward-price of the Philip'sbackward stock;
+						let A be the number understood;
+						let B be C * A;
+						decrease Money by B;
+						if Philip'sMoney is less than zero:
+							increase the Philip'sbackwardshare-count by the number understood;
+							say "You don't have enought money.";
+						otherwise:
+							say "Now you have [Philip'sbackwardshare-count] backward stock and [Philip'sMoney] dollars.";
+					Otherwise:
+						if the noun is Philip'sredwood stock:
+							increase the Philip'sredwoodshare-count of the Philip'sredwood stock by the number understood;
+							let C be the Philip'sredwood-price of the Philip'sredwood stock;
+							let A be the number understood;
+							let B be C * A;
+							decrease Philip'sMoney by B;
+							if Money is less than zero:
+								increase the Philip'sredwoodshare-count by the number understood;
+								say "You don't have enought money.";
+							otherwise:
+								say "Now you have [Philip'sredwoodshare-count] redwood stock and [Philip'sMoney] dollars.";
 
 [code for buying stocks created with a great deal of help from Mrs. Kiang]
 

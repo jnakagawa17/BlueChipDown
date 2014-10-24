@@ -23,7 +23,7 @@ You can also see Filling Cabinet (closed) here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="107">NO</temporary>
+    <temporary score="117">NO</temporary>
     <children>
       <child nodeId="node-0xd53c290" />
       <child nodeId="node-0xd53c300" />
@@ -625,13 +625,17 @@ You can also see Filling Cabinet (closed) here.
   Orange stock x 100
   backward stock x 100
   Redwood stock x 20
+  Philip&apos;s Orange stock x 100
+  Philip&apos;s backward stock x 100
+  Philip&apos;s Redwood stock x 20
   Cabinet Key
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="78">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
     <children>
+      <child nodeId="node-0x10e5fbf0" />
       <child nodeId="node-0x10fb5c40" />
     </children>
   </item>
@@ -729,6 +733,105 @@ The computer stops its insistant bleeping. Thank hevans that you managed to sell
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="77">YES</temporary>
+  </item>
+  <item nodeId="node-0x10e5fbf0">
+    <command xml:space="preserve">sell orange stock 50</command>
+    <result xml:space="preserve">Now you have 50 Orange stock and 10000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0x115133b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x115133b0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  Orange stock x 50
+  backward stock x 100
+  Redwood stock x 20
+  Cabinet Key
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0x12cf05d0" />
+    </children>
+  </item>
+  <item nodeId="node-0x12cf05d0">
+    <command xml:space="preserve">buy redwood 40</command>
+    <result xml:space="preserve">Now you have 60 redwood stock and 6000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0x12cc59e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x12cc59e0">
+    <command xml:space="preserve">sell 50 orange stock</command>
+    <result xml:space="preserve">You can&apos;t use multiple objects with that verb.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0x12cf1760" />
+    </children>
+  </item>
+  <item nodeId="node-0x12cf1760">
+    <command xml:space="preserve">sell orange stock 50</command>
+    <result xml:space="preserve">Now you have 0 Orange stock and 16000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0x12ce4920" />
+    </children>
+  </item>
+  <item nodeId="node-0x12ce4920">
+    <command xml:space="preserve">sell backward stock 100</command>
+    <result xml:space="preserve">Now you have 0 backward stock and 31000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0x1731fd00" />
+    </children>
+  </item>
+  <item nodeId="node-0x1731fd00">
+    <command xml:space="preserve">sell redwood stock 50</command>
+    <result xml:space="preserve">Now you have 10 redwood stock and 36000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="116">YES</temporary>
+    <children>
+      <child nodeId="node-0x1731f200" />
+    </children>
+  </item>
+  <item nodeId="node-0x1731f200">
+    <command xml:space="preserve">sell redwood stock 10</command>
+    <result xml:space="preserve">Now you have 0 redwood stock and 37000 dollars.
+
+The computer stops its insistant bleeping. Thank hevans that you managed to sell everything before they tanked any more.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="115">YES</temporary>
   </item>
   <item nodeId="node-0xd53c680">
     <command xml:space="preserve">x</command>
