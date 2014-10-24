@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0xd5fb3e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x1be2b550" />
+  <activeNode nodeId="node-0xd5fb3e0" />
   <item nodeId="node-0xd5fb3e0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -266,6 +266,7 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
   </item>
   <item nodeId="node-0x1be2b550">
     <command xml:space="preserve">1</command>
+    <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="185">YES</temporary>
@@ -390,18 +391,6 @@ That doesn&apos;t seem to be something you can unlock.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="82">YES</temporary>
-    <children>
-      <child nodeId="node-0xd53cf00" />
-    </children>
-  </item>
-  <item nodeId="node-0xd53cf00">
-    <command xml:space="preserve">ulock cabinet with cabinet key</command>
-    <result xml:space="preserve">I didn&apos;t understand that number.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="81">YES</temporary>
   </item>
   <item nodeId="node-0xd53cf50">
     <command xml:space="preserve">open cabinet</command>
@@ -649,7 +638,6 @@ You can also see Filling Cabinet (closed) here.
     <changed>NO</changed>
     <temporary score="179">YES</temporary>
     <children>
-      <child nodeId="node-0x12cb5090" />
       <child nodeId="node-0x12c1ef50" />
       <child nodeId="node-0x1c2ae0c0" />
     </children>
@@ -893,65 +881,6 @@ Meeting Room
     <played>YES</played>
     <changed>NO</changed>
     <temporary score="137">YES</temporary>
-  </item>
-  <item nodeId="node-0x12cb5090">
-    <command xml:space="preserve">buy orange stock 100</command>
-    <result xml:space="preserve">Now you have 100 Orange stock and 15000 dollars.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="78">YES</temporary>
-    <children>
-      <child nodeId="node-0x173c37a0" />
-    </children>
-  </item>
-  <item nodeId="node-0x173c37a0">
-    <command xml:space="preserve">sell orange stock 1000</command>
-    <result xml:space="preserve">You don&apos;t have that many stock to sell. You have 100 Orange stock.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="78">YES</temporary>
-    <children>
-      <child nodeId="node-0x12c8a8d0" />
-    </children>
-  </item>
-  <item nodeId="node-0x12c8a8d0">
-    <command xml:space="preserve">sell orange stock 100</command>
-    <result xml:space="preserve">Now you have 0 Orange stock and 35000 dollars.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="78">YES</temporary>
-    <children>
-      <child nodeId="node-0xdc39880" />
-    </children>
-  </item>
-  <item nodeId="node-0xdc39880">
-    <command xml:space="preserve">sell redwood stock 20</command>
-    <result xml:space="preserve">Now you have 0 redwood stock and 37000 dollars.
-
-The computer stops its insistant bleeping. Thank hevans that you managed to sell everything before they tanked any more.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="78">YES</temporary>
-    <children>
-      <child nodeId="node-0x173b4db0" />
-    </children>
-  </item>
-  <item nodeId="node-0x173b4db0">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">You can&apos;t leave yet you need to first see what&apos;s up with the computer.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="78">YES</temporary>
   </item>
   <item nodeId="node-0x10e5fbf0">
     <command xml:space="preserve">sell orange stock 50</command>

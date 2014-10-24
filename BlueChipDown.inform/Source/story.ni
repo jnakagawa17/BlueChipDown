@@ -59,7 +59,7 @@ Boss's Cubical is a room. "[if GameState is 0] Perhaps this room, if it can even
 Boss is a man in Boss's Cubical.  "From day to day your Boss never seem change his appearence. He must own at least a dozen of the same set of plain clothes. Whenever he sees you his face turns a deep beetroot red and he seems to inflate." 
 
 Instead of talking to Boss:
-	say "You could say: [if Boss'sConversation is 1][Line break][bracket]1[close bracket]'Could I have the key for the cabinet?'[Line break][otherwise if Boss'sConversation is 2][bracket]2[close bracket]'Because I said so and thats the only reason you should need!'[Line break][bracket]3[close bracket]'I'm going to write one final report on how you saved your client's funds.'";
+	say "You could say: [if Boss'sConversation is 1][Line break][bracket]1[close bracket]'Could I have the key for the cabinet?'[Line break][otherwise if Boss'sConversation is 2][bracket]2[close bracket]'Because I said so and thats the only reason you should need!'[Line break][bracket]3[close bracket]'I'm going to write one final report on how you saved your client's funds.'[Line break][otherwise if player carries Notes][Bracket]4[Close Bracket]'Hey, Boss look at this!'";
 	
 Casting Ask For Key is an action applying to nothing.
 Understand "1" as casting Ask For Key.
@@ -83,8 +83,17 @@ Instead of casting Be Polite:
 	If player is in Boss's Cubical:
 		if Boss'sConversation is 1:
 			say "'I'm going to write one final report on how you saved your client's funds.' you say. 'Well... Alright.' he responds handing you the key.";
-			Increase Boss'sConversation by 2;
+			Increase Boss'sConversation by 1;
 			Move Cabinet Key to player;
+			
+Casting Take Over is an action applying to nothing.
+Understand "4" as casting Take Over.
+Instead of casting Take Over:
+	If player is in Boss's Cubical:
+		if Boss'sConversation is 2:
+			if player carries Note:
+				say "'Hey, Boss look at this!' you say gesturing with the notes. 'Give those to me!' he shouts. 'No. I'm not taking any more orders from you. Things go my way now. So this is what's going to happen. You are going to go to Jonathan and say that for personal reasons you have to resign and suggest me as a replacement.' 'Never.' he spits. 'I could always go to the cops' you respond. 'Fine.'";
+				Increase Boss'sConversation by 1;
 
 Old Computer is scenery. It is in Boss's Cubical.
 
@@ -269,7 +278,7 @@ Instead of examining Old Computer:
 
 Corded Phone is scenery. It is in Boss's Cubical.
 
-Filling Cabinet is in Boss's Cubical. Filling Cabinet is an openable container. Filling Cabinet is lockable and locked. Cabinet Key unlocks the Filling Cabinet. "This is where your Boss keeps all his records. Perhaps there may be something incriminating inside but you Boss has the key."
+Filling Cabinet is in Boss's Cubical. Filling Cabinet is an openable container. Filling Cabinet is lockable and locked. It is undescribed. Cabinet Key unlocks the Filling Cabinet. The description is "This is where your Boss keeps all his records. Perhaps there may be something incriminating inside but you Boss has the key."
 
 Notes is a thing. It is in Filling Cabinet. "You knew your Boss would be to lazy to cover his tracks. Scattered throughout the various files are notes from conversations with the employes of numerous companies talking about products before they had been publicly announced. These are most definitely illegal and more than enough to get your Boss arrested but maybe there won't be a need for that perhaps you should talk to him."
 
