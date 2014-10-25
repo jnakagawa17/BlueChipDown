@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0xd5fb3e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0xd5fb3e0" />
+  <activeNode nodeId="node-0x11567980" />
   <item nodeId="node-0xd5fb3e0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -18,12 +18,10 @@ Boss&apos;s Cubical
 
 From day to day your Boss never seem change his appearence. He must own at least a dozen of the same set of plain clothes. Whenever he sees you his face turns a deep beetroot red and he seems to inflate.
 
-You can also see Filling Cabinet (closed) here.
-
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="186">NO</temporary>
+    <temporary score="187">NO</temporary>
     <children>
       <child nodeId="node-0x11567980" />
       <child nodeId="node-0xdc20670" />
@@ -610,8 +608,8 @@ You can also see Filling Cabinet (closed) here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="179">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="186">YES</temporary>
     <children>
       <child nodeId="node-0x10e5fbf0" />
       <child nodeId="node-0x10fb5c40" />

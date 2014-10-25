@@ -92,8 +92,9 @@ Instead of casting Take Over:
 	If player is in Boss's Cubical:
 		if Boss'sConversation is 2:
 			if player carries Note:
-				say "'Hey, Boss look at this!' you say gesturing with the notes. 'Give those to me!' he shouts. 'No. I'm not taking any more orders from you. Things go my way now. So this is what's going to happen. You are going to go to Jonathan and say that for personal reasons you have to resign and suggest me as a replacement.' 'Never.' he spits. 'I could always go to the cops' you respond. 'Fine.'";
+				say "'Hey, Boss look at this!' you say gesturing with the notes. 'Give those to me!' he shouts. 'No. I'm not taking any more orders from you. Things go my way now. So this is what's going to happen. You are going to go to Jonathan and say that for personal reasons you have to resign and suggest me as a replacement.' 'Never.' he spits. 'I could always go to the cops' you respond. 'Fine.' And with that you are promoted an actual financial adsivor. But why stop here Philip is the next most sucsessful remaining trader. Perhaps if you could sabatoge him you could rise even further.";
 				Increase Boss'sConversation by 1;
+				Move Boss to The Void;
 
 Old Computer is scenery. It is in Boss's Cubical.
 
@@ -105,11 +106,11 @@ backward stock is a thing carried by the player.The printed name is "backward st
 
 redwood stock is a thing carried by the player.The printed name is "Redwood stock x [redwoodshare-count]". redwood stock has a number called redwoodshare-count. redwood stock has a number called redwood-price. The redwood-price of the redwood stock is usually 100. The redwoodshare-count of the redwood stock is usually 20. The description of redwood stock is "Stock that you own that you can sell any number of. Type 'sell redwood stock' followed by the number you want to sell or 'puchase redwood stock' followed by the number you want to buy. You currently have [redwoodshare-count] redwood stock."
 
-Philip'sorange stock is a thing carried by the player.The printed name is "Philip's Orange stock x [Philip'sorangeshare-count]". Philip'sorange stock has a number called Philip'sorangeshare-count. Philip'sorange stock has a number called Philip'sorange-price. The Philip'sorange-price of the Philip'sorange stock is usually 200. The Philip'sorangeshare-count of the Philip'sorange stock is usually 100. The description of Philip'sOrange stock is "Stock that you own that you can sell any number of. Type 'sell orange stock' followed by the number you want to sell or 'puchase orange stock' followed by the number you want to buy. You currently have [Philip'sorangeshare-count] Orange stock."
+Philip'sorange stock is a thing. It is in The Void. The printed name is "Philip's Orange stock x [Philip'sorangeshare-count]". Philip'sorange stock has a number called Philip'sorangeshare-count. Philip'sorange stock has a number called Philip'sorange-price. The Philip'sorange-price of the Philip'sorange stock is usually 200. The Philip'sorangeshare-count of the Philip'sorange stock is usually 100. The description of Philip'sOrange stock is "Stock that you own that you can sell any number of. Type 'sell orange stock' followed by the number you want to sell or 'puchase orange stock' followed by the number you want to buy. You currently have [Philip'sorangeshare-count] Orange stock."
 
-Philip'sbackward stock is a thing carried by the player.The printed name is "Philip's backward stock x [Philip'sbackwardshare-count]". Philip'sbackward stock has a number called Philip'sbackwardshare-count. Philip'sbackward stock has a number called Philip'sbackward-price. The Philip'sbackward-price of the Philip'sbackward stock is usually 150. The Philip'sbackwardshare-count of the Philip'sbackward stock is usually 100. The description of Philip'sbackward stock is "Stock that you own that you can sell any number of. Type 'sell backward stock' followed by the number you want to sell or 'puchase backward stock' followed by the number you want to buy. You currently have [Philip'sbackwardshare-count] backward stock."
+Philip'sbackward stock is a thing. It is in The Void. The printed name is "Philip's backward stock x [Philip'sbackwardshare-count]". Philip'sbackward stock has a number called Philip'sbackwardshare-count. Philip'sbackward stock has a number called Philip'sbackward-price. The Philip'sbackward-price of the Philip'sbackward stock is usually 150. The Philip'sbackwardshare-count of the Philip'sbackward stock is usually 100. The description of Philip'sbackward stock is "Stock that you own that you can sell any number of. Type 'sell backward stock' followed by the number you want to sell or 'puchase backward stock' followed by the number you want to buy. You currently have [Philip'sbackwardshare-count] backward stock."
 
-Philip'sredwood stock is a thing carried by the player.The printed name is "Philip's Redwood stock x [Philip'sredwoodshare-count]". Philip'sredwood stock has a number called Philip'sredwoodshare-count. Philip'sredwood stock has a number called Philip'sredwood-price. The Philip'sredwood-price of the Philip'sredwood stock is usually 100. The Philip'sredwoodshare-count of the Philip'sredwood stock is usually 20. The description of Philip'sredwood stock is "Stock that you own that you can sell any number of. Type 'sell Philip'sredwood stock' followed by the number you want to sell or 'puchase redwood stock' followed by the number you want to buy. You currently have [Philip'sredwoodshare-count] redwood stock."
+Philip'sredwood stock is a thing. It is in The Void. The printed name is "Philip's Redwood stock x [Philip'sredwoodshare-count]". Philip'sredwood stock has a number called Philip'sredwoodshare-count. Philip'sredwood stock has a number called Philip'sredwood-price. The Philip'sredwood-price of the Philip'sredwood stock is usually 100. The Philip'sredwoodshare-count of the Philip'sredwood stock is usually 20. The description of Philip'sredwood stock is "Stock that you own that you can sell any number of. Type 'sell Philip'sredwood stock' followed by the number you want to sell or 'puchase redwood stock' followed by the number you want to buy. You currently have [Philip'sredwoodshare-count] redwood stock."
 
 
 Instead of selling:
@@ -284,9 +285,9 @@ Notes is a thing. It is in Filling Cabinet. "You knew your Boss would be to lazy
 
 Boss carries cabinet key.
 
-Philip's Cubical is a room. It is east of Floor One Hallway.
+Philip's Cubical is a room. It is east of Floor One Hallway. "Philip's cubical while still small is significantly larger than yours. His computer is slightly less clunky than yours and has a stapler sitting next to it. Otherwise his office is mostly empty."
 
-Philip's Computer is scenery. It is in Philip's Cubical.
+Philip's Computer is scenery. It is in Philip's Cubical. "[if Philip'sComputer is 0] Philip's Computer is currently locked with a password if you could find out what it is you could acsess his stocks. [otherwise if Philip'sComputer is 1] Philip is currently owns [Philip'sOrange Stock] orange stocks, [Philip'sRedWood Stock] Redwood Stocks, and [Philip'sBackward Stock] Backward. He has [Philip'sMoney] dollars."
 
 Philip's Stocks is scenery. It is in Philip's Cubical. "[if Philip'sComputer is 0] You can't see them because Philip's Computer is currently locked. [otherwise if Philip'sComputer is 1] Philip is currently owns [Philip'sOrange Stock] orange stocks, [Philip'sRedWood Stock] Redwood Stocks, and [Philip'sBackward Stock] Backward. He has [Philip'sMoney] dollars."
 
@@ -311,7 +312,7 @@ Instead of looking under Stapler:
 		if player is carrying Sticky Note:
 			say "You already took the sticky note."
 
-Floor One Hallway is a room. It is south of Boss's Cubical.
+Floor One Hallway is a room. It is south of Boss's Cubical. ""
 
 Floor One Elevator is a room. It is west of Floor One Hallway.
 
@@ -350,12 +351,16 @@ Lobby is a room. It is west of Lobby Elevator. "The lobby is bustling with activ
 
 Cafe is a room. It is north of Lobby.
 
-Meeting Room is a room. It is south of Lobby.
+Meeting Room is a room. It is south of Lobby. "The room is dominated by a by a large glass table placed squarely in the center of the room. In the front of the room is a projector screen and back to the north is the lobby."
 
 After going south from Lobby for the first time:
 	say "You are one of the last employees to file into the Meeting room. It's jampacked containing more than 30 employees. Jonathan the senior offical in this branch of Merrill Lynch laboriously clambors on top of the table to adress everyone assembled. 'I think most of you know why we are here but in case you've been asleep for the past five hours I'll recap. The DOW just droped 250 points in one day and our analyists predict it isn't going to get better for a very long time. Therefore, merrill Lynch will not be able to keep all of you. In fact we can only keep three. It shouldn't surrpise anyone that we are keeping Andrew who has been our most sucsessful trader for 2 years straight now. The other two are a bit more surrprising Philip and employee number 27?' Your Boss perks up and says, 'That would be me sir.' 'Ah of course well you can stay. Everyone else has 3 hours to pack and leave.' You can't afford to lose this job. It's the only thing paying your rent there must be some way to take your Boss's place after all it was you who saved his stocks. Perhapse there might be something in his office.";
 	increase gamestate by 1;
 	increase boss'sconversation by 1;
+
+Large Glass Table is scenery. It is in Meeting Room. "On top of the table is today's newspaper."
+
+Today's Newspaper is a thing. It is in Meeting Room. "The newspaper is almost entirely devoted to the stock market dropping. The second page reads, 'This is a not a minor event that's going to go away in a night. I expect orange's stock to keep dropping for the forseeable future.'"
 
 Lobby Elevator is a room.
 
@@ -386,4 +391,6 @@ Board Room is a room. It is east of Reception.
 CEO Office is a room. It is west of Reception. 
 
 Floor Three Elevator is a room.
+
+The Void is a room.
 
