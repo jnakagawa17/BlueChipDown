@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0xd5fb3e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x27129d30" />
+  <activeNode nodeId="node-0x2a506350" />
   <item nodeId="node-0xd5fb3e0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
@@ -19,7 +19,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">NO</temporary>
+    <temporary score="1568">NO</temporary>
     <children>
       <child nodeId="node-0x1c0e32c0" />
       <child nodeId="node-0x11ca2940" />
@@ -323,7 +323,7 @@ You can see Stapler here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1ee251e0" />
     </children>
@@ -335,7 +335,7 @@ You can see Stapler here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x22557f40" />
     </children>
@@ -349,7 +349,7 @@ The computer stops its insistant bleeping just as a voice booms out from a hidde
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x225ef990" />
       <child nodeId="node-0x174f1600" />
@@ -411,7 +411,7 @@ The computer stops its insistant bleeping just as a voice booms out from a hidde
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2716ff40" />
     </children>
@@ -419,11 +419,12 @@ The computer stops its insistant bleeping just as a voice booms out from a hidde
   <item nodeId="node-0x2716ff40">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Floor One Hallway
+To the north is your Boss&apos;s cubical, to the east is Philip&apos;s Cubical, and to the east if the elevator.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174b1c80" />
     </children>
@@ -437,7 +438,7 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2250fc30" />
     </children>
@@ -452,7 +453,7 @@ The lobby is bustling with activity. Dozens of former employees are being escort
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1963f150" />
     </children>
@@ -467,7 +468,7 @@ The room is dominated by a by a large glass table placed squarely in the center 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1ee63430" />
     </children>
@@ -479,7 +480,7 @@ The room is dominated by a by a large glass table placed squarely in the center 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174964d0" />
     </children>
@@ -491,7 +492,7 @@ The room is dominated by a by a large glass table placed squarely in the center 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174d3d30" />
     </children>
@@ -503,7 +504,7 @@ The room is dominated by a by a large glass table placed squarely in the center 
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x22550140" />
     </children>
@@ -517,7 +518,7 @@ The lobby is bustling with activity. Dozens of former employees are being escort
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x22536540" />
     </children>
@@ -529,7 +530,7 @@ The lobby is bustling with activity. Dozens of former employees are being escort
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174bbd90" />
     </children>
@@ -543,7 +544,7 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x196be5e0" />
     </children>
@@ -553,25 +554,22 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
     <result xml:space="preserve">You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a endless sea of cubicals.
 
 Floor One Hallway
+To the north is your Boss&apos;s cubical, to the east is Philip&apos;s Cubical, and to the east if the elevator.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174355b0" />
     </children>
   </item>
   <item nodeId="node-0x174355b0">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Boss&apos;s Cubical
- Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone.
-
-&gt;</result>
+    <result xml:space="preserve">&gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2719b050" />
     </children>
@@ -584,7 +582,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x225069c0" />
     </children>
@@ -596,7 +594,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174c11f0" />
     </children>
@@ -609,7 +607,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x29dacee0" />
     </children>
@@ -621,7 +619,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1bfab110" />
     </children>
@@ -633,7 +631,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x225098b0" />
     </children>
@@ -645,7 +643,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x22886e80" />
     </children>
@@ -662,7 +660,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1bf12140" />
     </children>
@@ -674,7 +672,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x22a10570" />
     </children>
@@ -686,7 +684,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174dd960" />
     </children>
@@ -698,7 +696,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1748c910" />
     </children>
@@ -710,7 +708,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174b5890" />
     </children>
@@ -722,7 +720,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1c5bfa90" />
     </children>
@@ -734,7 +732,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x22a5c280" />
     </children>
@@ -746,7 +744,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1741fc50" />
     </children>
@@ -758,7 +756,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2287bd70" />
     </children>
@@ -776,7 +774,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1ee09890" />
     </children>
@@ -788,7 +786,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x17455da0" />
     </children>
@@ -800,7 +798,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x225422b0" />
     </children>
@@ -812,7 +810,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x17415510" />
     </children>
@@ -824,7 +822,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x29da1840" />
     </children>
@@ -836,7 +834,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a576af0" />
     </children>
@@ -848,7 +846,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x17442ea0" />
     </children>
@@ -860,7 +858,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1749b630" />
     </children>
@@ -872,7 +870,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x271e28c0" />
     </children>
@@ -884,7 +882,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174325e0" />
     </children>
@@ -896,7 +894,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1740a640" />
     </children>
@@ -908,7 +906,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174e5080" />
     </children>
@@ -926,7 +924,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1745d930" />
     </children>
@@ -941,7 +939,7 @@ The lobby is bustling with activity. Dozens of former employees are being escort
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x27171350" />
     </children>
@@ -955,7 +953,7 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174847e0" />
     </children>
@@ -965,25 +963,22 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
     <result xml:space="preserve">You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a endless sea of cubicals.
 
 Floor One Hallway
+To the north is your Boss&apos;s cubical, to the east is Philip&apos;s Cubical, and to the east if the elevator.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x271ec060" />
     </children>
   </item>
   <item nodeId="node-0x271ec060">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Boss&apos;s Cubical
- Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone.
-
-&gt;</result>
+    <result xml:space="preserve">&gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x27199600" />
     </children>
@@ -1000,7 +995,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x22522a20" />
     </children>
@@ -1012,7 +1007,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174f7ca0" />
     </children>
@@ -1024,7 +1019,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2254b970" />
     </children>
@@ -1032,11 +1027,12 @@ Boss&apos;s Cubical
   <item nodeId="node-0x2254b970">
     <command xml:space="preserve">s</command>
     <result xml:space="preserve">Floor One Hallway
+To the north is your Boss&apos;s cubical, to the east is Philip&apos;s Cubical, and to the east if the elevator.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x271b36d0" />
     </children>
@@ -1050,7 +1046,7 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x271f8540" />
     </children>
@@ -1065,7 +1061,7 @@ The lobby is bustling with activity. Dozens of former employees are being escort
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1ee035e0" />
     </children>
@@ -1081,7 +1077,7 @@ You can see Client here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x271f07f0" />
     </children>
@@ -1095,7 +1091,7 @@ You can see Client here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x22550fa0" />
     </children>
@@ -1107,7 +1103,7 @@ You can see Client here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a57a140" />
     </children>
@@ -1121,7 +1117,7 @@ You can see Client here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174658e0" />
     </children>
@@ -1133,7 +1129,7 @@ You can see Client here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174db170" />
     </children>
@@ -1147,7 +1143,7 @@ The lobby is bustling with activity. Dozens of former employees are being escort
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1c27db80" />
     </children>
@@ -1161,7 +1157,7 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x228ca550" />
     </children>
@@ -1171,25 +1167,22 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
     <result xml:space="preserve">You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a endless sea of cubicals.
 
 Floor One Hallway
+To the north is your Boss&apos;s cubical, to the east is Philip&apos;s Cubical, and to the east if the elevator.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x228ae970" />
     </children>
   </item>
   <item nodeId="node-0x228ae970">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Boss&apos;s Cubical
- Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone.
-
-&gt;</result>
+    <result xml:space="preserve">&gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2719e3f0" />
     </children>
@@ -1201,7 +1194,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174e4560" />
     </children>
@@ -1213,7 +1206,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1747ee30" />
     </children>
@@ -1225,7 +1218,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2287f710" />
     </children>
@@ -1237,7 +1230,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2716a7d0" />
     </children>
@@ -1249,7 +1242,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x22894c60" />
     </children>
@@ -1261,7 +1254,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x27146b10" />
     </children>
@@ -1273,7 +1266,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174690d0" />
     </children>
@@ -1285,7 +1278,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x225b5370" />
     </children>
@@ -1297,7 +1290,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x17473a90" />
     </children>
@@ -1309,7 +1302,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x29d81f80" />
     </children>
@@ -1321,7 +1314,7 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2717d200" />
     </children>
@@ -1336,7 +1329,7 @@ The lobby is bustling with activity. Dozens of former employees are being escort
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a588770" />
     </children>
@@ -1350,7 +1343,7 @@ This is where the less succsessful financial investors tend to meet their client
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2714b740" />
     </children>
@@ -1362,7 +1355,7 @@ This is where the less succsessful financial investors tend to meet their client
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1746fb80" />
     </children>
@@ -1376,7 +1369,7 @@ The lobby is bustling with activity. Dozens of former employees are being escort
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a5b6770" />
     </children>
@@ -1390,7 +1383,7 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a596f60" />
     </children>
@@ -1400,27 +1393,22 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
     <result xml:space="preserve">You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a endless sea of cubicals.
 
 Floor One Hallway
+To the north is your Boss&apos;s cubical, to the east is Philip&apos;s Cubical, and to the east if the elevator.
 
 &gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x271d7700" />
     </children>
   </item>
   <item nodeId="node-0x271d7700">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Boss&apos;s Cubical
- Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone.
-
-You can see Call Card here.
-
-&gt;</result>
+    <result xml:space="preserve">&gt;</result>
     <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x271f8cf0" />
     </children>
@@ -1437,7 +1425,7 @@ You can see Call Card here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x27135e50" />
     </children>
@@ -1449,7 +1437,7 @@ You can see Call Card here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x17420a40" />
     </children>
@@ -1461,7 +1449,7 @@ You can see Call Card here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x17422e10" />
     </children>
@@ -1474,7 +1462,7 @@ You can see Call Card here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x17441630" />
     </children>
@@ -1487,7 +1475,7 @@ You can see Call Card here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a5a52a0" />
     </children>
@@ -1500,7 +1488,7 @@ You can see Call Card here.
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174e7ad0" />
     </children>
@@ -1511,8 +1499,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a57ba90" />
     </children>
@@ -1524,8 +1512,8 @@ You can see Call Card here.
 [2]&quot;No thanks&quot;
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1c0505d0" />
     </children>
@@ -1536,8 +1524,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x27132880" />
     </children>
@@ -1553,8 +1541,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x29ebf490" />
     </children>
@@ -1565,8 +1553,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x1ee3bc80" />
     </children>
@@ -1577,8 +1565,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x29e78b40" />
     </children>
@@ -1589,8 +1577,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x17458900" />
     </children>
@@ -1601,8 +1589,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x29e86fe0" />
     </children>
@@ -1613,8 +1601,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x29d811e0" />
     </children>
@@ -1625,8 +1613,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a5702a0" />
     </children>
@@ -1637,8 +1625,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a58e360" />
     </children>
@@ -1649,8 +1637,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174a5880" />
     </children>
@@ -1661,8 +1649,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x17413c60" />
     </children>
@@ -1673,8 +1661,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a57c080" />
     </children>
@@ -1685,8 +1673,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x271339b0" />
     </children>
@@ -1697,8 +1685,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x27145c80" />
     </children>
@@ -1709,8 +1697,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x29eb2970" />
     </children>
@@ -1724,8 +1712,8 @@ The lobby is bustling with activity. Dozens of former employees are being escort
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a539b30" />
     </children>
@@ -1738,8 +1726,8 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a593260" />
     </children>
@@ -1749,11 +1737,12 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
     <result xml:space="preserve">You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a endless sea of cubicals.
 
 Floor One Hallway
+To the north is your Boss&apos;s cubical, to the east is Philip&apos;s Cubical, and to the east if the elevator.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x225be630" />
     </children>
@@ -1766,8 +1755,8 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x174910e0" />
     </children>
@@ -1778,8 +1767,8 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a59d810" />
     </children>
@@ -1788,27 +1777,22 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">
 Floor One Hallway
+To the north is your Boss&apos;s cubical, to the east is Philip&apos;s Cubical, and to the east if the elevator.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x29eceb20" />
     </children>
   </item>
   <item nodeId="node-0x29eceb20">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Boss&apos;s Cubical
- Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone.
-
-You can see Call Card here.
-
-&gt;</result>
+    <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a5839a0" />
     </children>
@@ -1817,8 +1801,8 @@ You can see Call Card here.
     <command xml:space="preserve">call 123-4567</command>
     <result xml:space="preserve">&gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a55da70" />
     </children>
@@ -1834,8 +1818,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a5e0060" />
     </children>
@@ -1846,8 +1830,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x17456110" />
     </children>
@@ -1858,8 +1842,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a53fea0" />
     </children>
@@ -1870,8 +1854,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x27164d70" />
     </children>
@@ -1882,8 +1866,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x29e91680" />
     </children>
@@ -1894,8 +1878,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x22522900" />
     </children>
@@ -1906,8 +1890,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a539480" />
     </children>
@@ -1918,8 +1902,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x271f48b0" />
     </children>
@@ -1930,8 +1914,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x29e84e70" />
     </children>
@@ -1942,8 +1926,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2714c530" />
     </children>
@@ -1954,8 +1938,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x17471ff0" />
     </children>
@@ -1966,8 +1950,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a566970" />
     </children>
@@ -1978,8 +1962,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a5c2370" />
     </children>
@@ -1990,8 +1974,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x228f3740" />
     </children>
@@ -2002,8 +1986,8 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a54fb10" />
     </children>
@@ -2017,8 +2001,8 @@ The lobby is bustling with activity. Dozens of former employees are being escort
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a5064c0" />
     </children>
@@ -2031,8 +2015,8 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a52f9b0" />
     </children>
@@ -2042,27 +2026,24 @@ The company elevator is lined by decorative wodden panneling. A poster is a fixe
     <result xml:space="preserve">You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a endless sea of cubicals.
 
 Floor One Hallway
+To the north is your Boss&apos;s cubical, to the east is Philip&apos;s Cubical, and to the east if the elevator.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a52a5a0" />
     </children>
   </item>
   <item nodeId="node-0x2a52a5a0">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Boss&apos;s Cubical
- Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone.
-
-You can see Call Card here.
+    <result xml:space="preserve">As you enter your cubical your phone begins to ring.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x2a5ddb50" />
     </children>
@@ -2078,17 +2059,106 @@ You can see Call Card here.
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="1428">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
     <children>
       <child nodeId="node-0x27129d30" />
     </children>
   </item>
   <item nodeId="node-0x27129d30">
     <command xml:space="preserve">sell orange stock 733</command>
+    <result xml:space="preserve">Now you have 0 Orange stock and 249240 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="1568">YES</temporary>
+    <children>
+      <child nodeId="node-0x2a5b2e50" />
+    </children>
+  </item>
+  <item nodeId="node-0x2a5b2e50">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Floor One Hallway
+To the north is your Boss&apos;s cubical, to the east is Philip&apos;s Cubical, and to the east if the elevator.
+
+&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="1427">YES</temporary>
+    <temporary score="1568">YES</temporary>
+    <children>
+      <child nodeId="node-0x17490d60" />
+    </children>
+  </item>
+  <item nodeId="node-0x17490d60">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Philip&apos;s Cubical
+Philip&apos;s cubical while still small is significantly larger than yours. His computer is slightly less clunky than yours and has a stapler sitting next to it. Otherwise his office is mostly empty.
+
+You can see Stapler here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
+    <children>
+      <child nodeId="node-0x271bfb40" />
+    </children>
+  </item>
+  <item nodeId="node-0x271bfb40">
+    <command xml:space="preserve">look under stapler</command>
+    <result xml:space="preserve">You find a yellow sticky note a fixed to the bottom of the stapler. It reads, &quot;Pasword:
+ abcd1234&quot;
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
+    <children>
+      <child nodeId="node-0x17397150" />
+    </children>
+  </item>
+  <item nodeId="node-0x17397150">
+    <command xml:space="preserve">x compuer</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
+    <children>
+      <child nodeId="node-0x29eb1d20" />
+    </children>
+  </item>
+  <item nodeId="node-0x29eb1d20">
+    <command xml:space="preserve">x philip&apos;s computer</command>
+    <result xml:space="preserve"> Philip&apos;s Computer is currently locked with a password if you could find out what it is you could acsess his stocks. 
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
+    <children>
+      <child nodeId="node-0x1740f2a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1740f2a0">
+    <command xml:space="preserve">abcd1234</command>
+    <result xml:space="preserve">The computer gives a satisfying ding and you are logged in and able to see Philip&apos;s Stocks.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1568">YES</temporary>
+    <children>
+      <child nodeId="node-0x2a506350" />
+    </children>
+  </item>
+  <item nodeId="node-0x2a506350">
+    <command xml:space="preserve">x philip&apos;s stocks</command>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="1567">YES</temporary>
   </item>
   <item nodeId="node-0x225ef990">
     <command xml:space="preserve">s</command>

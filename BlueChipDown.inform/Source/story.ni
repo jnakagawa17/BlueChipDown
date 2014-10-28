@@ -24,6 +24,8 @@ Check talking to: say "[The noun] doesn't reply."
 
 [Global:] Failure is a number that varies. Failure is 0.
 
+[Global:] TheEnd is a number that varies. TheEnd is 0.
+
 [Global:] Philip'sComputer is a number that varies. Philip'sComputer is 0.
 
 [Global:] OldComputerState is a number that varies. OldComputerState is 0.
@@ -40,6 +42,10 @@ Check talking to: say "[The noun] doesn't reply."
 
 [Global:] Consultant'sConversation is a number that varies. Consultant'sConversation is 0.
 
+[Global:] TempLoop is a number that varies. TempLoop is 0.
+
+[Global:] FinalCheck is a number that varies. FinalCheck is 0.
+
 [taken from http://www.musicwords.net/if/InformHandbook.pdf chapter 9]
 
 instead of going south from Boss's Cubical:
@@ -53,6 +59,14 @@ Every turn:
 		if Money is 37000:
 			increase Gamestate by 1;
 			say "The computer stops its insistant bleeping just as a voice booms out from a hidden speaker, 'All employees come directly to the meeting room.' You recall the meeting room is south out of your office, west through the hallway into the elevator, down to the ground floor, and finally south from the lobby.";
+	Otherwise:
+		if Gamestate is 6:
+			if TempLoop is 0:
+				if orangeshare-count is 0:
+					if backwardshare-count is 0:
+						if redwoodshare-count is 0:
+							say "You phone begins to ring again."
+							increase TempLoop by 1;
 	
 Every turn:
 	if failure is 1:
@@ -168,6 +182,27 @@ Instead of casting Answer Phone:
 			say "'Hello this is Jonathan. I understand that you are an intern at our company. Your former Boss just resigned and you are the one who best knows his clients and investments. So we are going to keep you on for five days in order to find a more sutiable replacement. Just try to keep your client's satisfied.' Five days. You have five days to prove your worth to the company and stay on the payroll. After you have made the stock trades you want to for the day write 'Go home' to advance to the next day. Some of the stock prices will change over the night.";
 			Increase Boss'sConversation by 1;
 			Move Cabinet Key to player;
+		Otherwise:
+			if gamestate is 6:
+				if finalCheck is 0:
+					if TempLoop is 0:
+						say "'Who is this?' you ask. 'It's Jonathan again. It has been four days. I would like you to try sell all the stocks you own so that I can asses your proformance.' he responds";
+						increase finalcheck by 1;
+					otherwise:
+						if TempLoop is 1:
+							if Money is 249240:
+								say "'Who is this?' you ask. 'It's Jonathan again. I would like to speak to you. Come to my office on the second floor.' he says."
+								increase TheEnd by 1;
+							otherwise:
+								if money is greater than 150000:
+									say "'Who is this?' you ask. 'It's Jonathan again. I would like to speak to you. Come to my office on the second floor.' he says."
+									increase TheEnd by 2;
+								otherwise:
+									if money is greater than 50000:
+										end the story finally saying "'Who is this?' you ask. 'It's Jonathan again. You have had your four days. All things considered you have done ok. But I decided you need to be replaced with someone more qualified.' he says."
+									otherwise:
+										end the story finally saying "'Who is this?' you ask. 'It's Jonathan again. You have had your four days. Your proformance has been unsatisfactory. We are going to replace you with another.' he says."
+										
 			
 Casting Consult is an action applying to nothing.
 Understand "123-4567" or "call 123-4567" as casting Consult.
@@ -258,7 +293,6 @@ Philip'sorange stock is a thing. It is in The Void. The printed name is "Philip'
 Philip'sbackward stock is a thing. It is in The Void. The printed name is "Philip's backward stock x [Philip'sbackwardshare-count]". Philip'sbackward stock has a number called Philip'sbackwardshare-count. Philip'sbackward stock has a number called Philip'sbackward-price. The Philip'sbackward-price of the Philip'sbackward stock is usually 150. The Philip'sbackwardshare-count of the Philip'sbackward stock is usually 100. The description of Philip'sbackward stock is "Stock that you own that you can sell any number of. Type 'sell backward stock' followed by the number you want to sell or 'puchase backward stock' followed by the number you want to buy. You currently have [Philip'sbackwardshare-count] backward stock. They cost [Philip'sbackward-price] dollars a share."
 
 Philip'sredwood stock is a thing. It is in The Void. The printed name is "Philip's Redwood stock x [Philip'sredwoodshare-count]". Philip'sredwood stock has a number called Philip'sredwoodshare-count. Philip'sredwood stock has a number called Philip'sredwood-price. The Philip'sredwood-price of the Philip'sredwood stock is usually 100. The Philip'sredwoodshare-count of the Philip'sredwood stock is usually 20. The description of Philip'sredwood stock is "Stock that you own that you can sell any number of. Type 'sell Philip'sredwood stock' followed by the number you want to sell or 'puchase redwood stock' followed by the number you want to buy. You currently have [Philip'sredwoodshare-count] redwood stock. They cost [Philip'sredwood-price] dollars a share."
-
 
 Instead of selling:
 	if player is in Boss's Cubical:
@@ -436,7 +470,7 @@ Filling Cabinet is in Boss's Cubical. Filling Cabinet is an openable container. 
 
 Notes is a thing. It is in Filling Cabinet. The description is "You knew your Boss would be to lazy to cover his tracks. Scattered throughout the various files are notes from conversations with the employes of numerous companies talking about products before they had been publicly announced. These are most definitely illegal and more than enough to get your Boss arrested but maybe there won't be a need for that perhaps you should talk to him."
 
-Desk is scenery. It is in Boss's Cubical. "Made of plastic the desk is rather sparsely deccorated only having a computer and phone sitting on top of it."
+Desk is scenery. It is in Boss's Cubical. The description is "Made of plastic the desk is rather sparsely deccorated only having a computer and phone sitting on top of it."
 
 Boss carries cabinet key.
 
@@ -467,7 +501,11 @@ Instead of looking under Stapler:
 		if player is carrying Sticky Note:
 			say "You already took the sticky note."
 
-Floor One Hallway is a room. It is south of Boss's Cubical.
+Floor One Hallway is a room. It is south of Boss's Cubical. "To the north is your Boss's cubical, to the east is Philip's Cubical, and to the east if the elevator."
+
+After going north from Floor One Hallway:
+	If gamestate is 6:
+		say "As you enter your cubical your phone begins to ring." 
 
 Floor One Elevator is a room. It is west of Floor One Hallway. "The company elevator is lined by decorative wodden panneling. A poster is a fixed to the wall directly across from the door and three buttons are just to the right of the door. They read Ground Floor, Floor One, and Floor Two. The exit is to the west."
 
