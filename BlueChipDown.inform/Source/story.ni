@@ -62,7 +62,7 @@ The description of player is "[if GameState is 0] After getting out of college s
 
 Boss's Cubical is a room. "[if GameState is 0] Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone. The computer is insistantly beeping. [otherwise] Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone."
 
-Boss is a man. It is in Meeting Room.  "From day to day your Boss never seem change his appearence. He must own at least a dozen of the same set of plain clothes. Whenever he sees you his face turns a deep beetroot red and he seems to inflate." 
+Boss is a man. It is in Boss's Cubical. It is undescribed. The description is "From day to day your Boss never seem change his appearence. He must own at least a dozen of the same set of plain clothes. Whenever he sees you his face turns a deep beetroot red and he seems to inflate." 
 
 Instead of talking to Boss:
 	say "You could say: [if Boss'sConversation is 1][Line break][bracket]1[close bracket]'Could I have the key for the cabinet?'[Line break][otherwise if Boss'sConversation is 2][bracket]2[close bracket]'Because I said so and thats the only reason you should need!'[Line break][bracket]3[close bracket]'I'm going to write one final report on how you saved your client's funds.'[Line break][otherwise if player carries Notes][Bracket]4[Close Bracket]'Hey, Boss look at this!'";
@@ -76,7 +76,7 @@ Instead of casting Ask For Key:
 			increase Boss'sConversation by 1;
 		Otherwise:
 			if Consultant'sConversation is 1:
-				decrease Money by 50000;
+				decrease Money by 5000;
 				if Money is less than zero:
 					say "You don't have enough money.";
 				otherwise:
@@ -106,7 +106,7 @@ Casting Be Polite is an action applying to nothing.
 Understand "3" as casting Be Polite.
 Instead of casting Be Polite:
 	If player is in Boss's Cubical:
-		if Boss'sConversation is 1:
+		if Boss'sConversation is 2:
 			say "'I'm going to write one final report on how you saved your client's funds.' you say. 'Well... Alright.' he responds handing you the key.";
 			Increase Boss'sConversation by 1;
 			Move Cabinet Key to player;
@@ -121,8 +121,8 @@ Casting Take Over is an action applying to nothing.
 Understand "4" as casting Take Over.
 Instead of casting Take Over:
 	If player is in Boss's Cubical:
-		if Boss'sConversation is 2:
-			if player carries Note:
+		if Boss'sConversation is 3:
+			if player carries Notes:
 				say "'Hey, Boss look at this!' you say gesturing with the notes. 'Give those to me!' he shouts. 'No. I'm not taking any more orders from you. Things go my way now. So this is what's going to happen. You are going to go to Jonathan and say that for personal reasons you have to resign.' 'Never.' he spits. 'Or would you prefer I go to the cops with this' you respond. 'Fine.' he said turning to leave. A few minutes later your phone begins to ring.";
 				Increase Boss'sConversation by 1;
 				Move Boss to The Void;
@@ -164,7 +164,7 @@ Casting Answer Phone is an action applying to nothing.
 Understand "answer phone" as casting Answer Phone.
 Instead of casting Answer Phone:
 	If player is in Boss's Cubical:
-		if Boss'sConversation is 3:
+		if Boss'sConversation is 4:
 			say "'Hello this is Jonathan. I understand that you are an intern at our company. Your former Boss just resigned and you are the one who best knows his clients and investments. So we are going to keep you on for five days in order to find a more sutiable replacement. Just try to keep your client's satisfied.' Five days. You have five days to prove your worth to the company and stay on the payroll. After you have made the stock trades you want to for the day write 'Go home' to advance to the next day. Some of the stock prices will change over the night.";
 			Increase Boss'sConversation by 1;
 			Move Cabinet Key to player;
@@ -175,7 +175,7 @@ Instead of casting Consult:
 	If player is in Boss's Cubical:
 		if Gamestate is 4:
 			if Consultant'sConversation is 0:
-				say "'Hello are you a financial analyst?' you ask. ''That is correct. For the small fee of 50,000 dollars I can give you my prediction. [line break][bracket]1[close bracket]'Ok'[line break][bracket]2[close bracket]'No thanks'";
+				say "'Hello are you a financial analyst?' you ask. ''That is correct. For the small fee of 5,000 dollars I can give you my prediction. [line break][bracket]1[close bracket]'Ok'[line break][bracket]2[close bracket]'No thanks'";
 				increase Consultant'sConversation by 1;
 
 Old Computer is scenery. It is in Boss's Cubical.
@@ -197,6 +197,7 @@ Instead of casting sleep:
 		increase Philip'sbackward-price by 50;
 		move Today's Newspaper to the void;
 		move Client to Cafe;
+		Move Player to Lobby;
 	Otherwise:
 		if gamestate is 3:
 			decrease orange-price by 20;
@@ -206,6 +207,7 @@ Instead of casting sleep:
 			decrease backward-price by 40;
 			decrease Philip'sbackward-price by 40;
 			move Client to the Void;
+			Move Player to Lobby;
 		Otherwise:
 			if gamestate is 4:
 				decrease orange-price by 30;
@@ -215,6 +217,7 @@ Instead of casting sleep:
 				increase backward-price by 5;
 				increase Philip'sbackward-price by 5;
 				Increase Consultant'sConversation by 5;
+				Move Player to Lobby;
 			Otherwise:
 				if gamestate is 5:
 					increase orange-price by 250;
@@ -223,6 +226,7 @@ Instead of casting sleep:
 					increase Philip'sredwood-price by 35;
 					increase backward-price by 20;
 					increase Philip'sbackward-price by 20;
+					Move Player to Lobby;
 
 backward stock is a thing carried by the player.The printed name is "backward stock x [backwardshare-count]". backward stock has a number called backwardshare-count. backward stock has a number called backward-price. The backward-price of the backward stock is usually 150. The backwardshare-count of the backward stock is usually 100. The description of backward stock is "Stock that you own that you can sell any number of. Type 'sell backward stock' followed by the number you want to sell or 'puchase backward stock' followed by the number you want to buy. You currently have [backwardshare-count] backward stock. They cost [backward-price] dollars a share."
 
@@ -324,7 +328,8 @@ Instead of Purchasing:
 			let B be C * A;
 			decrease Money by B;
 			if Money is less than zero:
-				increase the orangeshare-count by the number understood;
+				decrease the orangeshare-count by the number understood;
+				increase Money by B;
 				say "You don't have enought money.";
 			otherwise:
 				say "Now you have [orangeshare-count] Orange stock and [Money] dollars.";
@@ -336,7 +341,8 @@ Instead of Purchasing:
 				let B be C * A;
 				decrease Money by B;
 				if Money is less than zero:
-					increase the backwardshare-count by the number understood;
+					decrease the backwardshare-count by the number understood;
+					increase money by B;
 					say "You don't have enought money.";
 				otherwise:
 					say "Now you have [backwardshare-count] backward stock and [Money] dollars.";
@@ -348,7 +354,8 @@ Instead of Purchasing:
 					let B be C * A;
 					decrease Money by B;
 					if Money is less than zero:
-						increase the redwoodshare-count by the number understood;
+						decrease the redwoodshare-count by the number understood;
+						increase Money by B;
 						say "You don't have enought money.";
 					otherwise:
 						say "Now you have [redwoodshare-count] redwood stock and [Money] dollars.";
@@ -362,7 +369,8 @@ Instead of Purchasing:
 					let B be C * A;
 					decrease Philip'sMoney by B;
 					if Money is less than zero:
-						increase the Philip'sorangeshare-count by the number understood;
+						decrease the Philip'sorangeshare-count by the number understood;
+						increase Philip'sMoney by B;
 						say "You don't have enought money.";
 					otherwise:
 						say "Now you have [Philip'sorangeshare-count] Orange stock and [Philip'sMoney] dollars.";
@@ -374,7 +382,8 @@ Instead of Purchasing:
 						let B be C * A;
 						decrease Money by B;
 						if Philip'sMoney is less than zero:
-							increase the Philip'sbackwardshare-count by the number understood;
+							decrease the Philip'sbackwardshare-count by the number understood;
+							increase Philip'sMoney by B;
 							say "You don't have enought money.";
 						otherwise:
 							say "Now you have [Philip'sbackwardshare-count] backward stock and [Philip'sMoney] dollars.";
@@ -386,7 +395,8 @@ Instead of Purchasing:
 							let B be C * A;
 							decrease Philip'sMoney by B;
 							if Money is less than zero:
-								increase the Philip'sredwoodshare-count by the number understood;
+								decrease the Philip'sredwoodshare-count by the number understood;
+								increase Philip'sMoney by B;
 								say "You don't have enought money.";
 							otherwise:
 								say "Now you have [Philip'sredwoodshare-count] redwood stock and [Philip'sMoney] dollars.";
@@ -403,7 +413,7 @@ Corded Phone is scenery. It is in Boss's Cubical. The description is "The phone 
 
 Filling Cabinet is in Boss's Cubical. Filling Cabinet is an openable container. Filling Cabinet is lockable and locked. It is undescribed. The description is "This is where your Boss keeps all his records. Perhaps there may be something incriminating inside but you Boss has the key." Cabinet Key unlocks the Filling Cabinet.
 
-Notes is a thing. It is in Filling Cabinet. "You knew your Boss would be to lazy to cover his tracks. Scattered throughout the various files are notes from conversations with the employes of numerous companies talking about products before they had been publicly announced. These are most definitely illegal and more than enough to get your Boss arrested but maybe there won't be a need for that perhaps you should talk to him."
+Notes is a thing. It is in Filling Cabinet. It is undescribed. The description is "You knew your Boss would be to lazy to cover his tracks. Scattered throughout the various files are notes from conversations with the employes of numerous companies talking about products before they had been publicly announced. These are most definitely illegal and more than enough to get your Boss arrested but maybe there won't be a need for that perhaps you should talk to him."
 
 Desk is scenery. It is in Boss's Cubical. "Made of plastic the desk is rather sparsely deccorated only having a computer and phone sitting on top of it."
 
@@ -493,7 +503,7 @@ After going south from Lobby for the first time:
 
 Large Glass Table is scenery. It is in Meeting Room. "On top of the table is today's newspaper."
 
-Today's Newspaper is a thing. It is in Meeting Room. The description is "The newspaper is almost entirely devoted to the stock market dropping. The second page reads, 'This is a not a minor event that's going to go away in a night. I expect orange's stock to keep dropping for the forseeable future.'"
+Today's Newspaper is a thing. It is in Meeting Room. It is undescribed. The description is "The newspaper is almost entirely devoted to the stock market dropping. The second page reads, 'This is a not a minor event that's going to go away in a night. I expect orange's stock to keep dropping for the forseeable future.'"
 
 Lobby Elevator is a room. "The company elevator is lined by decorative wodden panneling. A poster is a fixed to the wall directly across from the door and three buttons are just to the right of the door. They read Ground Floor, Floor One, and Floor Two. The exit is to the west."
 
