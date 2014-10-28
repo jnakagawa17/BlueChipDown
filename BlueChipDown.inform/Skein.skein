@@ -1,37 +1,41 @@
 <?xml version="1.0"?>
 <Skein rootNode="node-0xd5fb3e0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
   <generator>Zoom</generator>
-  <activeNode nodeId="node-0x11567980" />
+  <activeNode nodeId="node-0xd5fb3e0" />
   <item nodeId="node-0xd5fb3e0">
     <command xml:space="preserve">- start -</command>
     <result xml:space="preserve">
 
 
-&quot;Hurry up! I thought I asked you for those copies five minutes ago and this coffee is cold get me another.&quot; You have had this job for less than two days and already contimplated &quot;acidently&quot; pushing your Boss out a window 12 times. &quot;Hell, Michael was a better assitant than you are and he couldn&apos;t tell the differance between a pen and pencil.&quot; Your jaw begins to ache from holding tightly clenched shut to contain the fowl stream of profanity that you would otherwise end up hurrling at your boss. Standing up from the file you&apos;ve been sorting you turn to your boss and manage to say, &quot;Alright I&apos;m going to make copies and get your coffee i&apos;ll be back soon.&quot; His face turns and even darker shade of red as he shouts, &quot;No! You stay here I don&apos;t want to have to wait another hour for my coffee.&quot;
+&quot;Hurry up! I thought I asked you for those copies five minutes ago.&quot; You have had this internship a Merrill Lynch, one of the largest investment companies in the world, for less than two days and already contimplated &quot;acidently&quot; pushing your Boss out a window 12 times. Standing up from the file you&apos;ve been sorting you turn to your boss and manage to say, &quot;Alright I&apos;m going to make copies just give me ten seconds.&quot; His face turns and even darker shade of red as he shouts, &quot;No! You stay here I don&apos;t want to have to wait another hour.&quot; and leaves the room.
 
 BlueChipDown
 An Interactive Fiction by Jonathan Nakagawa
-Release 1 / Serial number 141024 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
+Release 1 / Serial number 141027 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD
 
 Boss&apos;s Cubical
  Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone. The computer is insistantly beeping. 
 
-From day to day your Boss never seem change his appearence. He must own at least a dozen of the same set of plain clothes. Whenever he sees you his face turns a deep beetroot red and he seems to inflate.
-
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="187">NO</temporary>
+    <temporary score="299">NO</temporary>
     <children>
+      <child nodeId="node-0x1c0e32c0" />
+      <child nodeId="node-0x11ca2940" />
+      <child nodeId="node-0x22a6adf0" />
+      <child nodeId="node-0x22acd140" />
       <child nodeId="node-0x11567980" />
-      <child nodeId="node-0xdc20670" />
-      <child nodeId="node-0xd53cf50" />
-      <child nodeId="node-0xd53ca80" />
+      <child nodeId="node-0x1969afd0" />
       <child nodeId="node-0x10e0a7e0" />
       <child nodeId="node-0xd53caf0" />
+      <child nodeId="node-0x1be1eb80" />
+      <child nodeId="node-0x1af0c8c0" />
+      <child nodeId="node-0x1a1243a0" />
+      <child nodeId="node-0x196cd580" />
       <child nodeId="node-0xd53ce00" />
       <child nodeId="node-0x1c2be4e0" />
-      <child nodeId="node-0xd53d080" />
+      <child nodeId="node-0x1af33fd0" />
       <child nodeId="node-0xdcdff40" />
       <child nodeId="node-0xd5fb430" />
       <child nodeId="node-0xd5fb1e0" />
@@ -39,11 +43,12 @@ From day to day your Boss never seem change his appearence. He must own at least
   </item>
   <item nodeId="node-0xd5fb1e0">
     <command xml:space="preserve">x orange stock</command>
-    <result xml:space="preserve">You own 100 shares
+    <result xml:space="preserve">Stock that you own that you can sell any number of. Type &quot;sell orange stock&quot; followed by the number you want to sell or &quot;puchase orange stock&quot; followed by the number you want to buy. You currently have 100 Orange stock. They cost 200 dollars a share.
+
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="117">YES</temporary>
+    <temporary score="297">YES</temporary>
   </item>
   <item nodeId="node-0xd5fb430">
     <command xml:space="preserve">1</command>
@@ -56,122 +61,7 @@ From day to day your Boss never seem change his appearence. He must own at least
     <children>
       <child nodeId="node-0xd53d220" />
       <child nodeId="node-0x1a1a9390" />
-      <child nodeId="node-0xd53d4b0" />
-      <child nodeId="node-0xd5fb560" />
     </children>
-  </item>
-  <item nodeId="node-0xd5fb560">
-    <command xml:space="preserve">2</command>
-    <result xml:space="preserve">No such option is available.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0xd53d6b0" />
-    </children>
-  </item>
-  <item nodeId="node-0xd53d6b0">
-    <command xml:space="preserve">1</command>
-    <result xml:space="preserve">No such option is available.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="96">YES</temporary>
-    <children>
-      <child nodeId="node-0xd53d5c0" />
-    </children>
-  </item>
-  <item nodeId="node-0xd53d5c0">
-    <command xml:space="preserve">2</command>
-    <result xml:space="preserve">No such option is available.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="96">YES</temporary>
-    <children>
-      <child nodeId="node-0xd53d570" />
-    </children>
-  </item>
-  <item nodeId="node-0xd53d570">
-    <command xml:space="preserve">3</command>
-    <result xml:space="preserve">No such option is available.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="96">YES</temporary>
-    <children>
-      <child nodeId="node-0xd53d520" />
-    </children>
-  </item>
-  <item nodeId="node-0xd53d520">
-    <command xml:space="preserve">0</command>
-    <result xml:space="preserve">No such option is available.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="95">YES</temporary>
-  </item>
-  <item nodeId="node-0xd53d4b0">
-    <command xml:space="preserve">4</command>
-    <result xml:space="preserve">No such option is available.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="106">YES</temporary>
-    <children>
-      <child nodeId="node-0xd53d2c0" />
-      <child nodeId="node-0xd53d440" />
-    </children>
-  </item>
-  <item nodeId="node-0xd53d440">
-    <command xml:space="preserve">5</command>
-    <result xml:space="preserve">No such option is available.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="106">YES</temporary>
-    <children>
-      <child nodeId="node-0xd53d310" />
-    </children>
-  </item>
-  <item nodeId="node-0xd53d310">
-    <command xml:space="preserve">1</command>
-    <result xml:space="preserve">No such option is available.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="105">YES</temporary>
-  </item>
-  <item nodeId="node-0xd53d2c0">
-    <command xml:space="preserve">talk to boss</command>
-    <result xml:space="preserve">You could say: 
-[1]: hello how are you?
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="100">YES</temporary>
-    <children>
-      <child nodeId="node-0xd53d270" />
-    </children>
-  </item>
-  <item nodeId="node-0xd53d270">
-    <command xml:space="preserve">1</command>
-    <result xml:space="preserve">No such option is available.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="99">YES</temporary>
   </item>
   <item nodeId="node-0x1a1a9390">
     <command xml:space="preserve">talk to boss</command>
@@ -269,40 +159,35 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="185">YES</temporary>
   </item>
-  <item nodeId="node-0xd53d080">
-    <command xml:space="preserve">unlock filling cabinet</command>
-    <result xml:space="preserve">(with Cabinet Key)
-You unlock Filling Cabinet.
-
+  <item nodeId="node-0x1af33fd0">
+    <command xml:space="preserve">test</command>
+    <result xml:space="preserve">&gt;--&gt; No test scripts exist for this game.
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="90">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="297">YES</temporary>
     <children>
-      <child nodeId="node-0xd53d3c0" />
+      <child nodeId="node-0x22a96ca0" />
     </children>
   </item>
-  <item nodeId="node-0xd53d3c0">
-    <command xml:space="preserve">open cabinet</command>
-    <result xml:space="preserve">(Cabinet Key)
-It isn&apos;t something you can open.
-
-&gt;</result>
+  <item nodeId="node-0x22a96ca0">
+    <command xml:space="preserve">ABCD</command>
+    <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="90">YES</temporary>
+    <temporary score="297">YES</temporary>
     <children>
-      <child nodeId="node-0xd53d360" />
+      <child nodeId="node-0x196942b0" />
     </children>
   </item>
-  <item nodeId="node-0xd53d360">
-    <command xml:space="preserve">open filling cabinet</command>
-    <result xml:space="preserve">You open Filling Cabinet.
+  <item nodeId="node-0x196942b0">
+    <command xml:space="preserve">sell orange stock 1</command>
+    <result xml:space="preserve">Now you have 99 Orange stock and 300 dollars.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="89">YES</temporary>
+    <temporary score="296">YES</temporary>
   </item>
   <item nodeId="node-0x1c2be4e0">
     <command xml:space="preserve">x redwood stock</command>
@@ -321,6 +206,180 @@ It isn&apos;t something you can open.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="177">YES</temporary>
+  </item>
+  <item nodeId="node-0x196cd580">
+    <command xml:space="preserve">x desk</command>
+    <result xml:space="preserve">Made of plastic the desk is rather sparsely deccorated only having a computer and phone sitting on top of it.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="288">YES</temporary>
+    <children>
+      <child nodeId="node-0x1af186a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1af186a0">
+    <command xml:space="preserve">x phone</command>
+    <result xml:space="preserve">The phone is currently dormant with no messages and there isn&apos;t anyone you really want to call right now.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="288">YES</temporary>
+    <children>
+      <child nodeId="node-0x22a9de70" />
+    </children>
+  </item>
+  <item nodeId="node-0x22a9de70">
+    <command xml:space="preserve">x computer</command>
+    <result xml:space="preserve">The computer is currently displaying your Boss&apos;s stock portofolio. It mainly consists of three stocks Orange, RedWood, and Backward. To your shock and dismay you realize that over the course of the last 10 minutes your Boss&apos;s portofolio has lost 10 percent equating to almost 13 million dollars. And the stocks&quot; value are still plumiting. You&apos;ll have to act fast to save your clients. You try to remember how you Boss sold stocks. You think that he just typed sell or purchase, the stocks name, and the number of shares to buy or sell.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="287">YES</temporary>
+  </item>
+  <item nodeId="node-0x1a1243a0">
+    <command xml:space="preserve">x me</command>
+    <result xml:space="preserve"> After getting out of college strapped to cripling debt you couldn&apos;t afford much more than a couple second hand dress shirts and an imitation watch.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="284">YES</temporary>
+  </item>
+  <item nodeId="node-0x1af0c8c0">
+    <command xml:space="preserve">x filling capinet</command>
+    <result xml:space="preserve">I only understood you as far as wanting to examine Filling Cabinet.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="281">YES</temporary>
+    <children>
+      <child nodeId="node-0x1be5ddb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1be5ddb0">
+    <command xml:space="preserve">x filling cabinet</command>
+    <result xml:space="preserve">This is where your Boss keeps all his records. Perhaps there may be something incriminating inside but you Boss has the key.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="280">YES</temporary>
+  </item>
+  <item nodeId="node-0x1be1eb80">
+    <command xml:space="preserve">x player</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="277">YES</temporary>
+    <children>
+      <child nodeId="node-0x11c7ac80" />
+    </children>
+  </item>
+  <item nodeId="node-0x11c7ac80">
+    <command xml:space="preserve">x filling cabinet</command>
+    <result xml:space="preserve">You see nothing special about Filling Cabinet.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="277">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a1acf60" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a1acf60">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t leave yet you need to first see what&apos;s up with the computer.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="277">YES</temporary>
+    <children>
+      <child nodeId="node-0x1737ec20" />
+    </children>
+  </item>
+  <item nodeId="node-0x1737ec20">
+    <command xml:space="preserve">sell orange stock 100</command>
+    <result xml:space="preserve">Now you have 0 Orange stock and 20000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="277">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a1f3f20" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a1f3f20">
+    <command xml:space="preserve">sell backward stock 100</command>
+    <result xml:space="preserve">Now you have 0 backward stock and 35000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="277">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c5265a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c5265a0">
+    <command xml:space="preserve">sell redwood stock 20</command>
+    <result xml:space="preserve">Now you have 0 redwood stock and 37000 dollars.
+
+The computer stops its insistant bleeping. Thank hevans that you managed to sell everything before they tanked any more. A voice booms out from a hidden speaker, &quot;All employees come directly to the meeting room.&quot; You think you get to the meeting room by going south out of your office, west through the hallway into the elevator, down to the ground floor, and finally south from the lobby.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="277">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a12a3c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a12a3c0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Floor One Hallway
+
+&gt;</result>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="277">YES</temporary>
+    <children>
+      <child nodeId="node-0xd5843f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xd5843f0">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Philip&apos;s Cubical
+Philip&apos;s cubical while still small is significantly larger than yours. His computer is slightly less clunky than yours and has a stapler sitting next to it. Otherwise his office is mostly empty.
+
+You can see Stapler here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="277">YES</temporary>
+    <children>
+      <child nodeId="node-0x1beed680" />
+    </children>
+  </item>
+  <item nodeId="node-0x1beed680">
+    <command xml:space="preserve">x stapler</command>
+    <result xml:space="preserve">test
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="276">YES</temporary>
   </item>
   <item nodeId="node-0xd53caf0">
     <command xml:space="preserve">sell orange</command>
@@ -355,246 +414,38 @@ It isn&apos;t something you can open.
     <changed>YES</changed>
     <temporary score="121">YES</temporary>
   </item>
-  <item nodeId="node-0xd53ca80">
-    <command xml:space="preserve">unlock cabinet</command>
-    <result xml:space="preserve">(with Cabinet Key)
-That doesn&apos;t seem to be something you can unlock.
+  <item nodeId="node-0x1969afd0">
+    <command xml:space="preserve">x coded phone</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="87">YES</temporary>
+    <temporary score="284">YES</temporary>
     <children>
-      <child nodeId="node-0xd53ca10" />
+      <child nodeId="node-0x1af94490" />
     </children>
   </item>
-  <item nodeId="node-0xd53ca10">
-    <command xml:space="preserve">open cabinet</command>
-    <result xml:space="preserve">It isn&apos;t something you can open.
+  <item nodeId="node-0x1af94490">
+    <command xml:space="preserve">x corded phon</command>
+    <result xml:space="preserve">I only understood you as far as wanting to examine Corded Phone.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="86">YES</temporary>
+    <temporary score="284">YES</temporary>
     <children>
-      <child nodeId="node-0xd53cfb0" />
+      <child nodeId="node-0x1969cdf0" />
     </children>
   </item>
-  <item nodeId="node-0xd53cfb0">
-    <command xml:space="preserve">unlock cabinet</command>
-    <result xml:space="preserve">(cabinet key with cabinet key)
-That doesn&apos;t seem to be something you can unlock.
+  <item nodeId="node-0x1969cdf0">
+    <command xml:space="preserve">x corded phone</command>
+    <result xml:space="preserve">The phone is currently dormant with no messages and there isn&apos;t anyone you really want to call right now.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="82">YES</temporary>
-  </item>
-  <item nodeId="node-0xd53cf50">
-    <command xml:space="preserve">open cabinet</command>
-    <result xml:space="preserve">(cabinet key)
-It isn&apos;t something you can open.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="85">YES</temporary>
-    <children>
-      <child nodeId="node-0xd53c760" />
-    </children>
-  </item>
-  <item nodeId="node-0xd53c760">
-    <command xml:space="preserve">unlock cabinet</command>
-    <result xml:space="preserve">(cabinet key with cabinet key)
-That doesn&apos;t seem to be something you can unlock.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="84">YES</temporary>
-  </item>
-  <item nodeId="node-0xdc20670">
-    <command xml:space="preserve">sell orange stock 100</command>
-    <result xml:space="preserve">Now you have 0 Orange stock and 20000 dollars.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0x1739d210" />
-    </children>
-  </item>
-  <item nodeId="node-0x1739d210">
-    <command xml:space="preserve">sell redwood stock 20</command>
-    <result xml:space="preserve">Now you have 0 redwood stock and 22000 dollars.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0x12c9ee80" />
-    </children>
-  </item>
-  <item nodeId="node-0x12c9ee80">
-    <command xml:space="preserve">sell backward stock 100</command>
-    <result xml:space="preserve">Now you have 0 backward stock and 37000 dollars.
-
-The computer stops its insistant bleeping. Thank hevans that you managed to sell everything before they tanked any more.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0x12c9a960" />
-    </children>
-  </item>
-  <item nodeId="node-0x12c9a960">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Floor One Hallway
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0x10e6ad50" />
-    </children>
-  </item>
-  <item nodeId="node-0x10e6ad50">
-    <command xml:space="preserve">buy orange stock 370</command>
-    <result xml:space="preserve">You don&apos;t have enought money.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0x1153e530" />
-    </children>
-  </item>
-  <item nodeId="node-0x1153e530">
-    <command xml:space="preserve">buy orange stock 100</command>
-    <result xml:space="preserve">You don&apos;t have enought money.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0x115b3aa0" />
-    </children>
-  </item>
-  <item nodeId="node-0x115b3aa0">
-    <command xml:space="preserve">n</command>
-    <result xml:space="preserve">
-Boss&apos;s Cubical
- Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone.
-
-From day to day your Boss never seem change his appearence. He must own at least a dozen of the same set of plain clothes. Whenever he sees you his face turns a deep beetroot red and he seems to inflate.
-
-You can also see Filling Cabinet (closed) here.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0x1151a540" />
-    </children>
-  </item>
-  <item nodeId="node-0x1151a540">
-    <command xml:space="preserve">buy orange stock 1</command>
-    <result xml:space="preserve">You don&apos;t have enought money.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0x1738a120" />
-    </children>
-  </item>
-  <item nodeId="node-0x1738a120">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  Orange stock x 942
-  backward stock x 0
-  Redwood stock x 0
-  Cabinet Key
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0x12cb7d20" />
-    </children>
-  </item>
-  <item nodeId="node-0x12cb7d20">
-    <command xml:space="preserve">buy orange stock 10</command>
-    <result xml:space="preserve">You don&apos;t have enought money.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0x12c98680" />
-    </children>
-  </item>
-  <item nodeId="node-0x12c98680">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  Orange stock x 962
-  backward stock x 0
-  Redwood stock x 0
-  Cabinet Key
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0x12ccce90" />
-    </children>
-  </item>
-  <item nodeId="node-0x12ccce90">
-    <command xml:space="preserve">s</command>
-    <result xml:space="preserve">Floor One Hallway
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0x12cc3b40" />
-    </children>
-  </item>
-  <item nodeId="node-0x12cc3b40">
-    <command xml:space="preserve">sell orange stock</command>
-    <result xml:space="preserve">&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="107">YES</temporary>
-    <children>
-      <child nodeId="node-0x12cb6920" />
-    </children>
-  </item>
-  <item nodeId="node-0x12cb6920">
-    <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:
-  Orange stock x 962
-  backward stock x 0
-  Redwood stock x 0
-  Cabinet Key
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="106">YES</temporary>
+    <temporary score="283">YES</temporary>
   </item>
   <item nodeId="node-0x11567980">
     <command xml:space="preserve">i</command>
@@ -602,16 +453,12 @@ You can also see Filling Cabinet (closed) here.
   Orange stock x 100
   backward stock x 100
   Redwood stock x 20
-  Philip&apos;s Orange stock x 100
-  Philip&apos;s backward stock x 100
-  Philip&apos;s Redwood stock x 20
 
 &gt;</result>
     <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="186">YES</temporary>
+    <changed>NO</changed>
+    <temporary score="288">YES</temporary>
     <children>
-      <child nodeId="node-0x10e5fbf0" />
       <child nodeId="node-0x10fb5c40" />
     </children>
   </item>
@@ -880,103 +727,843 @@ Meeting Room
     <changed>NO</changed>
     <temporary score="137">YES</temporary>
   </item>
-  <item nodeId="node-0x10e5fbf0">
-    <command xml:space="preserve">sell orange stock 50</command>
-    <result xml:space="preserve">Now you have 50 Orange stock and 10000 dollars.
+  <item nodeId="node-0x22acd140">
+    <command xml:space="preserve">sell orange stock 1</command>
+    <result xml:space="preserve">Now you have 99 Orange stock and 200 dollars.
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="116">YES</temporary>
+    <temporary score="292">YES</temporary>
     <children>
-      <child nodeId="node-0x115133b0" />
+      <child nodeId="node-0x22af2cb0" />
     </children>
   </item>
-  <item nodeId="node-0x115133b0">
+  <item nodeId="node-0x22af2cb0">
+    <command xml:space="preserve">purchase orange stock 1</command>
+    <result xml:space="preserve">Now you have 100 Orange stock and 0 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="292">YES</temporary>
+    <children>
+      <child nodeId="node-0x22ab5a30" />
+    </children>
+  </item>
+  <item nodeId="node-0x22ab5a30">
+    <command xml:space="preserve">ABCD</command>
+    <result xml:space="preserve">
+*** Run-time problem P31: Attempt to use a property of the &apos;nothing&apos; non-object: property orange-price
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="291">YES</temporary>
+  </item>
+  <item nodeId="node-0x22a6adf0">
+    <command xml:space="preserve">go north</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="298">YES</temporary>
+  </item>
+  <item nodeId="node-0x11ca2940">
+    <command xml:space="preserve">x filling cabinet</command>
+    <result xml:space="preserve">You see nothing special about Filling Cabinet.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="279">YES</temporary>
+    <children>
+      <child nodeId="node-0x1bfa2480" />
+    </children>
+  </item>
+  <item nodeId="node-0x1bfa2480">
+    <command xml:space="preserve">x cabinet key</command>
+    <result xml:space="preserve">This is where your Boss keeps all his records. Perhaps there may be something incriminating inside but you Boss has the key.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="278">YES</temporary>
+  </item>
+  <item nodeId="node-0x1c0e32c0">
+    <command xml:space="preserve">x boss</command>
+    <result xml:space="preserve">You see nothing special about Boss.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a12aa00" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a12aa00">
+    <command xml:space="preserve">x desk</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0xdc6a6f0" />
+    </children>
+  </item>
+  <item nodeId="node-0xdc6a6f0">
+    <command xml:space="preserve">x filling cabinet</command>
+    <result xml:space="preserve">You see nothing special about Filling Cabinet.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c5046e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c5046e0">
+    <command xml:space="preserve">x phone</command>
+    <result xml:space="preserve">You see nothing special about Corded Phone.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1be1b610" />
+    </children>
+  </item>
+  <item nodeId="node-0x1be1b610">
+    <command xml:space="preserve">x computer</command>
+    <result xml:space="preserve">The computer is currently displaying your Boss&apos;s stock portofolio. It mainly consists of three stocks Orange, RedWood, and Backward. To your shock and dismay you realize that over the course of the last 10 minutes your Boss&apos;s portofolio has lost 10 percent equating to almost 13 million dollars. And the stocks&quot; value are still plumiting. You&apos;ll have to act fast to save your clients. You try to remember how you Boss sold stocks. You think that he just typed sell or purchase, the stocks name, and the number of shares to buy or sell.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a11fdd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a11fdd0">
+    <command xml:space="preserve">take desk</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c54a070" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c54a070">
+    <command xml:space="preserve">take phone</command>
+    <result xml:space="preserve">That&apos;s hardly portable.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c0da100" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c0da100">
+    <command xml:space="preserve">take computer</command>
+    <result xml:space="preserve">That&apos;s hardly portable.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c2dfb70" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c2dfb70">
+    <command xml:space="preserve">open filling cabinet</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c50e290" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c50e290">
+    <command xml:space="preserve">open desk</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1410d3c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1410d3c0">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Boss&apos;s Cubical
+ Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone. The computer is insistantly beeping. 
+
+From day to day your Boss never seem change his appearence. He must own at least a dozen of the same set of plain clothes. Whenever he sees you his face turns a deep beetroot red and he seems to inflate.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1be25840" />
+    </children>
+  </item>
+  <item nodeId="node-0x1be25840">
+    <command xml:space="preserve">talk to boss</command>
+    <result xml:space="preserve">You could say: 
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c0c2470" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c0c2470">
+    <command xml:space="preserve">the stocks are plummeting</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c0d5a10" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c0d5a10">
+    <command xml:space="preserve">x computer</command>
+    <result xml:space="preserve">The computer is currently displaying your Boss&apos;s stock portofolio. It mainly consists of three stocks Orange, RedWood, and Backward. To your shock and dismay you realize that over the course of the last 10 minutes your Boss&apos;s portofolio has lost 10 percent equating to almost 13 million dollars. And the stocks&quot; value are still plumiting. You&apos;ll have to act fast to save your clients. You try to remember how you Boss sold stocks. You think that he just typed sell or purchase, the stocks name, and the number of shares to buy or sell.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a1018a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a1018a0">
+    <command xml:space="preserve">x orange</command>
+    <result xml:space="preserve">Stock that you own that you can sell any number of. Type &quot;sell orange stock&quot; followed by the number you want to sell or &quot;puchase orange stock&quot; followed by the number you want to buy. You currently have 100 Orange stock.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c5273e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c5273e0">
+    <command xml:space="preserve">x redwood</command>
+    <result xml:space="preserve">Stock that you own that you can sell any number of. Type &quot;sell redwood stock&quot; followed by the number you want to sell or &quot;puchase redwood stock&quot; followed by the number you want to buy. You currently have 20 redwood stock.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a1e82b0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a1e82b0">
+    <command xml:space="preserve">x backward</command>
+    <result xml:space="preserve">Stock that you own that you can sell any number of. Type &quot;sell backward stock&quot; followed by the number you want to sell or &quot;puchase backward stock&quot; followed by the number you want to buy. You currently have 100 backward stock.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a1f34e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a1f34e0">
+    <command xml:space="preserve">sell backward</command>
+    <result xml:space="preserve">I didn&apos;t understand that sentence.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c0d1ef0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c0d1ef0">
+    <command xml:space="preserve">sell backward stock</command>
+    <result xml:space="preserve">I didn&apos;t understand that sentence.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c54de30" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c54de30">
+    <command xml:space="preserve">sell redwood stock</command>
+    <result xml:space="preserve">I didn&apos;t understand that sentence.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c0d9880" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c0d9880">
+    <command xml:space="preserve">sell backward stock 20</command>
+    <result xml:space="preserve">Now you have 80 backward stock and 3000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c538640" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c538640">
+    <command xml:space="preserve">sell orange stock 20</command>
+    <result xml:space="preserve">Now you have 80 Orange stock and 7000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c0de630" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c0de630">
+    <command xml:space="preserve">sell redwood stock 20</command>
+    <result xml:space="preserve">Now you have 0 redwood stock and 9000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c0d3a00" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c0d3a00">
+    <command xml:space="preserve">sell backward stock 80</command>
+    <result xml:space="preserve">Now you have 0 backward stock and 21000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c50af30" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c50af30">
+    <command xml:space="preserve">sell orange stock 80</command>
+    <result xml:space="preserve">Now you have 0 Orange stock and 37000 dollars.
+
+The computer stops its insistant bleeping. Thank hevans that you managed to sell everything before they tanked any more. A voice booms out from a hidden speaker, &quot;All employees come directly to the meeting room.&quot; You think you get to the meeting room by going south out of your office, west through the hallway into the elevator, down to the ground floor, and finally south from the lobby.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a1f4060" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a1f4060">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Floor One Hallway
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c0ef770" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c0ef770">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">What do you want to examine?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a116180" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a116180">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You see nothing unexpected in that direction.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c50f260" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c50f260">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Floor One Elevator
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x12c96f10" />
+    </children>
+  </item>
+  <item nodeId="node-0x12c96f10">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0xa762710" />
+    </children>
+  </item>
+  <item nodeId="node-0xa762710">
+    <command xml:space="preserve">x</command>
+    <result xml:space="preserve">What do you want to examine?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1beef0c0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1beef0c0">
+    <command xml:space="preserve">push ground floor button</command>
+    <result xml:space="preserve">You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a bustling lobby.
+
+Lobby
+The lobby is bustling with activity. Dozens of former employees are being escorted off company ground carring their supplies in little cardboard boxes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a105550" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a105550">
+    <command xml:space="preserve">talk to employees</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a1ea480" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a1ea480">
+    <command xml:space="preserve">x employees</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c0a6140" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c0a6140">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You are one of the last employees to file into the Meeting room. It&apos;s jampacked containing more than 30 employees. Jonathan the senior offical in this branch of Merrill Lynch laboriously clambors on top of the table to adress everyone assembled. &quot;I think most of you know why we are here but in case you&apos;ve been asleep for the past five hours I&apos;ll recap. The DOW just droped 250 points in one day and our analyists predict it isn&apos;t going to get better for a very long time. Therefore, merrill Lynch will not be able to keep all of you. In fact we can only keep three. It shouldn&apos;t surrpise anyone that we are keeping Andrew who has been our most sucsessful trader for 2 years straight now. The other two are a bit more surrprising Philip and employee number 27?&quot; Your Boss perks up and says, &quot;That would be me sir.&quot; &quot;Ah of course well you can stay. Everyone else has 3 hours to pack and leave.&quot; You can&apos;t afford to lose this job. It&apos;s the only thing paying your rent there must be some way to take your Boss&apos;s place after all it was you who saved his stocks. Perhapse there might be something in his office.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a120650" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a120650">
+    <command xml:space="preserve">talk to boss</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1bec2ec0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1bec2ec0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can&apos;t go that way.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c076a20" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c076a20">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Lobby
+The lobby is bustling with activity. Dozens of former employees are being escorted off company ground carring their supplies in little cardboard boxes.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c000a30" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c000a30">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Lobby Elevator
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1afc2fe0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1afc2fe0">
+    <command xml:space="preserve">push floor 1 button</command>
+    <result xml:space="preserve">Which do you mean, Floor Two Button, Floor One Button or Ground Floor Button?
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a13dec0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a13dec0">
+    <command xml:space="preserve">floor one button</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c539f90" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c539f90">
+    <command xml:space="preserve">push floor one button</command>
+    <result xml:space="preserve">You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a endless sea of cubicals.
+
+Floor One Hallway
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c00ec60" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c00ec60">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">
+Philip&apos;s Cubical
+Philip&apos;s cubical while still small is significantly larger than yours. His computer is slightly less clunky than yours and has a stapler sitting next to it. Otherwise his office is mostly empty.
+
+You can see Stapler here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c54c5e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c54c5e0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Floor One Hallway
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a120c60" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a120c60">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Boss&apos;s Cubical
+ Perhaps this room, if it can even be called a room, is the reason your Boss is constantly angry. Barely large enough for you to take a step in any direction everything is within easy arms reach. Not that there is much here an old computer sitting on a desk, a filling cabinet, and corded phone.
+
+From day to day your Boss never seem change his appearence. He must own at least a dozen of the same set of plain clothes. Whenever he sees you his face turns a deep beetroot red and he seems to inflate.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c012910" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c012910">
+    <command xml:space="preserve">x computer</command>
+    <result xml:space="preserve">The computer is currently displaying your Boss&apos;s stock portofolio. It mainly consists of three stocks Orange, RedWood, and Backward. To your shock and dismay you realize that over the course of the last 10 minutes your Boss&apos;s portofolio has lost 10 percent equating to almost 13 million dollars. And the stocks&quot; value are still plumiting. You&apos;ll have to act fast to save your clients. You try to remember how you Boss sold stocks. You think that he just typed sell or purchase, the stocks name, and the number of shares to buy or sell.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x12cabd20" />
+    </children>
+  </item>
+  <item nodeId="node-0x12cabd20">
+    <command xml:space="preserve">x desk</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c01eaa0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c01eaa0">
+    <command xml:space="preserve">open filling cabinet</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c530860" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c530860">
+    <command xml:space="preserve">look under desk</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c017fd0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c017fd0">
+    <command xml:space="preserve">x file cabinet</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0xa768190" />
+    </children>
+  </item>
+  <item nodeId="node-0xa768190">
+    <command xml:space="preserve">x filling cabinet</command>
+    <result xml:space="preserve">You see nothing special about Filling Cabinet.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x12c5fd30" />
+    </children>
+  </item>
+  <item nodeId="node-0x12c5fd30">
+    <command xml:space="preserve">x filing cabinet</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a10c210" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a10c210">
+    <command xml:space="preserve">talk to boss</command>
+    <result xml:space="preserve">You could say: 
+[1]&quot;Could I have the key for the cabinet?&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1a11f2a0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1a11f2a0">
+    <command xml:space="preserve">1</command>
+    <result xml:space="preserve">&quot;Could I have the key for the cabinet?&quot; you ask. &quot;Why should I give that?&quot; your Boss responds.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1bfc4a50" />
+    </children>
+  </item>
+  <item nodeId="node-0x1bfc4a50">
+    <command xml:space="preserve">because</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1968c020" />
+    </children>
+  </item>
+  <item nodeId="node-0x1968c020">
+    <command xml:space="preserve">could i please have the key for the cabinet</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1968c570" />
+    </children>
+  </item>
+  <item nodeId="node-0x1968c570">
+    <command xml:space="preserve">talk to boss</command>
+    <result xml:space="preserve">You could say: [2]&quot;Because I said so and thats the only reason you should need!&quot;
+[3]&quot;I&apos;m going to write one final report on how you saved your client&apos;s funds.&quot;
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x19691bb0" />
+    </children>
+  </item>
+  <item nodeId="node-0x19691bb0">
+    <command xml:space="preserve">3</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x1c056bf0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1c056bf0">
+    <command xml:space="preserve">3</command>
+    <result xml:space="preserve">&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0xd59f3d0" />
+    </children>
+  </item>
+  <item nodeId="node-0xd59f3d0">
+    <command xml:space="preserve">open filling cabinet</command>
+    <result xml:space="preserve">It seems to be locked.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="250">YES</temporary>
+    <children>
+      <child nodeId="node-0x11c74470" />
+    </children>
+  </item>
+  <item nodeId="node-0x11c74470">
     <command xml:space="preserve">i</command>
     <result xml:space="preserve">You are carrying:
-  Orange stock x 50
-  backward stock x 100
-  Redwood stock x 20
-  Cabinet Key
+  Orange stock x 0
+  backward stock x 0
+  Redwood stock x 0
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="116">YES</temporary>
+    <temporary score="250">YES</temporary>
     <children>
-      <child nodeId="node-0x12cf05d0" />
+      <child nodeId="node-0x1c51f400" />
     </children>
   </item>
-  <item nodeId="node-0x12cf05d0">
-    <command xml:space="preserve">buy redwood 40</command>
-    <result xml:space="preserve">Now you have 60 redwood stock and 6000 dollars.
+  <item nodeId="node-0x1c51f400">
+    <command xml:space="preserve">talk to boss</command>
+    <result xml:space="preserve">You could say: [2]&quot;Because I said so and thats the only reason you should need!&quot;
+[3]&quot;I&apos;m going to write one final report on how you saved your client&apos;s funds.&quot;
 
 &gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="116">YES</temporary>
+    <temporary score="250">YES</temporary>
     <children>
-      <child nodeId="node-0x12cc59e0" />
+      <child nodeId="node-0x1a11eb60" />
     </children>
   </item>
-  <item nodeId="node-0x12cc59e0">
-    <command xml:space="preserve">sell 50 orange stock</command>
-    <result xml:space="preserve">You can&apos;t use multiple objects with that verb.
-
-&gt;</result>
+  <item nodeId="node-0x1a11eb60">
+    <command xml:space="preserve">3</command>
+    <result xml:space="preserve">&gt;</result>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="116">YES</temporary>
-    <children>
-      <child nodeId="node-0x12cf1760" />
-    </children>
-  </item>
-  <item nodeId="node-0x12cf1760">
-    <command xml:space="preserve">sell orange stock 50</command>
-    <result xml:space="preserve">Now you have 0 Orange stock and 16000 dollars.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="116">YES</temporary>
-    <children>
-      <child nodeId="node-0x12ce4920" />
-    </children>
-  </item>
-  <item nodeId="node-0x12ce4920">
-    <command xml:space="preserve">sell backward stock 100</command>
-    <result xml:space="preserve">Now you have 0 backward stock and 31000 dollars.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="116">YES</temporary>
-    <children>
-      <child nodeId="node-0x1731fd00" />
-    </children>
-  </item>
-  <item nodeId="node-0x1731fd00">
-    <command xml:space="preserve">sell redwood stock 50</command>
-    <result xml:space="preserve">Now you have 10 redwood stock and 36000 dollars.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="116">YES</temporary>
-    <children>
-      <child nodeId="node-0x1731f200" />
-    </children>
-  </item>
-  <item nodeId="node-0x1731f200">
-    <command xml:space="preserve">sell redwood stock 10</command>
-    <result xml:space="preserve">Now you have 0 redwood stock and 37000 dollars.
-
-The computer stops its insistant bleeping. Thank hevans that you managed to sell everything before they tanked any more.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="115">YES</temporary>
+    <temporary score="249">YES</temporary>
   </item>
 </Skein>
