@@ -38,6 +38,7 @@ Check talking to: say "[The noun] doesn't reply."
 
 [Global:] Client'sConversation is a number that varies. Client'sConversation is 0.
 
+[Global:] Consultant'sConversation is a number that varies. Consultant'sConversation is 0.
 
 [taken from http://www.musicwords.net/if/InformHandbook.pdf chapter 9]
 
@@ -73,6 +74,14 @@ Instead of casting Ask For Key:
 		if Boss'sConversation is 1:
 			say "'Could I have the key for the cabinet?' you ask. 'Why should I give that?' your Boss responds.";
 			increase Boss'sConversation by 1;
+		Otherwise:
+			if Consultant'sConversation is 1:
+				decrease Money by 50000;
+				if Money is less than zero:
+					say "You don't have enough money.";
+				otherwise:
+					say "'Ok, I'll do it.' you say. 'My charts predict a rise in the worth of redwood.' he responds.";
+					increase Consultant'sConversation by 1;
 	Otherwise:
 		If Player is in Cafe:
 			say "'Hello. How are you doing today?' you ask. 'I would be a lot better if you wouldn't waste my time with pleasantries. I want to know what the Hell you are doing with my money!'";
@@ -85,6 +94,9 @@ Instead of casting Be Rude:
 		if Boss'sConversation is 2:
 			say "'Because I said so and thats the only reason you should need!' you say. 'Get out' your Boss screams.";
 			Increase failure by 1;
+		Otherwise:
+			if Consultant'sConversation is 1:
+				say "'No thanks' you say. 'No problem. Call again if you change your mind.' he responds.";
 	Otherwise:
 		If Player is in Cafe:
 			say "'So why did you call me?' you ask. 'Ah, someone who gets straight to the point I like that. I want to know what you are planning to do with my money.'";
@@ -156,6 +168,15 @@ Instead of casting Answer Phone:
 			say "'Hello this is Jonathan. I understand that you are an intern at our company. Your former Boss just resigned and you are the one who best knows his clients and investments. So we are going to keep you on for five days in order to find a more sutiable replacement. Just try to keep your client's satisfied.' Five days. You have five days to prove your worth to the company and stay on the payroll. After you have made the stock trades you want to for the day write 'Go home' to advance to the next day. Some of the stock prices will change over the night.";
 			Increase Boss'sConversation by 1;
 			Move Cabinet Key to player;
+			
+Casting Consult is an action applying to nothing.
+Understand "123-4567" as casting Consult.
+Instead of casting Consult:
+	If player is in Boss's Cubical:
+		if Gamestate is 4:
+			if Consultant'sConversation is 0:
+				say "'Hello are you a financial analyst?' you ask. ''That is correct. For the small fee of 50,000 dollars I can give you my prediction. [line break][bracket]1[close bracket]'Ok'[line break][bracket]2[close bracket]'No thanks'";
+				increase Consultant'sConversation by 1;
 
 Old Computer is scenery. It is in Boss's Cubical.
 
@@ -184,6 +205,7 @@ Instead of casting sleep:
 			increase Philip'sredwood-price by 30;
 			decrease backward-price by 40;
 			decrease Philip'sbackward-price by 40;
+			move Client to the Void;
 		Otherwise:
 			if gamestate is 4:
 				decrease orange-price by 30;
@@ -192,6 +214,7 @@ Instead of casting sleep:
 				increase Philip'sredwood-price by 20;
 				increase backward-price by 5;
 				increase Philip'sbackward-price by 5;
+				Increase Consultant'sConversation by 5;
 			Otherwise:
 				if gamestate is 5:
 					increase orange-price by 250;
@@ -483,11 +506,9 @@ Attendant is a woman. It is in Reception.
 Instead of talking to Attendant:
 	say "You could say: [if Attendant'sConversation is 0]You have nothing to say[otherwise if Attendant'sConversation is 1][Line break][bracket]1[close bracket]'May I speak Jonathan?'[Line break][otherwise if Attendant'sConversation is 2][bracket]2[close bracket]'Because I said so and thats the only reason you should need!'";
 
-Board Room is a room. It is east of Reception.
-
 CEO Office is a room. It is west of Reception. 
 
-Floor Three Elevator is a room.
+Call Card is a thing. It is in the void. "Financial Analyst for Hire [line break] to contact us at '123-4567'"
 
 The Void is a room.
 

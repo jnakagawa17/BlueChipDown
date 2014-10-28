@@ -19,13 +19,14 @@ Boss&apos;s Cubical
 &gt;</result>
     <played>YES</played>
     <changed>NO</changed>
-    <temporary score="299">NO</temporary>
+    <temporary score="305">NO</temporary>
     <children>
       <child nodeId="node-0x1c0e32c0" />
       <child nodeId="node-0x11ca2940" />
       <child nodeId="node-0x22a6adf0" />
       <child nodeId="node-0x22acd140" />
       <child nodeId="node-0x11567980" />
+      <child nodeId="node-0x1ee27e10" />
       <child nodeId="node-0x1969afd0" />
       <child nodeId="node-0x10e0a7e0" />
       <child nodeId="node-0xd53caf0" />
@@ -34,7 +35,6 @@ Boss&apos;s Cubical
       <child nodeId="node-0x1a1243a0" />
       <child nodeId="node-0x196cd580" />
       <child nodeId="node-0xd53ce00" />
-      <child nodeId="node-0x1c2be4e0" />
       <child nodeId="node-0x1af33fd0" />
       <child nodeId="node-0xdcdff40" />
       <child nodeId="node-0xd5fb430" />
@@ -59,7 +59,6 @@ Boss&apos;s Cubical
     <changed>YES</changed>
     <temporary score="184">YES</temporary>
     <children>
-      <child nodeId="node-0xd53d220" />
       <child nodeId="node-0x1a1a9390" />
     </children>
   </item>
@@ -117,30 +116,6 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <changed>YES</changed>
     <temporary score="183">YES</temporary>
   </item>
-  <item nodeId="node-0xd53d220">
-    <command xml:space="preserve">1</command>
-    <result xml:space="preserve">No such option is available.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="119">YES</temporary>
-    <children>
-      <child nodeId="node-0xd53d1d0" />
-    </children>
-  </item>
-  <item nodeId="node-0xd53d1d0">
-    <command xml:space="preserve">2</command>
-    <result xml:space="preserve">
-*** Run-time problem P23: Attempt to look up a non-existent entry at column 2, row 2 of the table &apos;Table of Black Mail Queries&apos;.
-
-
-
-&gt;</result>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="118">YES</temporary>
-  </item>
   <item nodeId="node-0xdcdff40">
     <command xml:space="preserve">talk to boss</command>
     <result xml:space="preserve">You could say: 
@@ -188,15 +163,6 @@ Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="296">YES</temporary>
-  </item>
-  <item nodeId="node-0x1c2be4e0">
-    <command xml:space="preserve">x redwood stock</command>
-    <result xml:space="preserve">Stock that you own that you can sell any number of. Type &quot;sell redwood stock&quot; followed by the number you want to sell or &quot;puchase redwood stock&quot; followed by the number you want to buy. You currently have 20 redwood stock.
-
-&gt;</result>
-    <played>YES</played>
-    <changed>YES</changed>
-    <temporary score="119">YES</temporary>
   </item>
   <item nodeId="node-0xd53ce00">
     <command xml:space="preserve">Sell orange</command>
@@ -446,6 +412,82 @@ You can see Stapler here.
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="283">YES</temporary>
+  </item>
+  <item nodeId="node-0x1ee27e10">
+    <command xml:space="preserve">sell orange stock 100</command>
+    <result xml:space="preserve">Now you have 0 Orange stock and 20000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="305">YES</temporary>
+    <children>
+      <child nodeId="node-0x1ee251e0" />
+    </children>
+  </item>
+  <item nodeId="node-0x1ee251e0">
+    <command xml:space="preserve">sell backward stock 100</command>
+    <result xml:space="preserve">Now you have 0 backward stock and 35000 dollars.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="305">YES</temporary>
+    <children>
+      <child nodeId="node-0x22557f40" />
+    </children>
+  </item>
+  <item nodeId="node-0x22557f40">
+    <command xml:space="preserve">sell redwood stock 20</command>
+    <result xml:space="preserve">Now you have 0 redwood stock and 37000 dollars.
+
+The computer stops its insistant bleeping just as a voice booms out from a hidden speaker, &quot;All employees come directly to the meeting room.&quot; You recall the meeting room is south out of your office, west through the hallway into the elevator, down to the ground floor, and finally south from the lobby.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="305">YES</temporary>
+    <children>
+      <child nodeId="node-0x225ef990" />
+    </children>
+  </item>
+  <item nodeId="node-0x225ef990">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Floor One Hallway
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="305">YES</temporary>
+    <children>
+      <child nodeId="node-0x1eed9440" />
+    </children>
+  </item>
+  <item nodeId="node-0x1eed9440">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">
+Floor One Elevator
+The company elevator is lined by decorative wodden panneling. A poster is a fixed to the wall directly across from the door and three buttons are just to the right of the door. They read Ground Floor, Floor One, and Floor Two. The exit is to the west.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="305">YES</temporary>
+    <children>
+      <child nodeId="node-0x225bbc10" />
+    </children>
+  </item>
+  <item nodeId="node-0x225bbc10">
+    <command xml:space="preserve">push floor two button</command>
+    <result xml:space="preserve">You disinterestedly drum out a tatto on the posters wooden frame waiting for the elevator&apos;s door to ding open. Finally you step out into a expansive reception room.
+
+Reception
+You can see Attendant here.
+
+&gt;</result>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="304">YES</temporary>
   </item>
   <item nodeId="node-0x11567980">
     <command xml:space="preserve">i</command>
