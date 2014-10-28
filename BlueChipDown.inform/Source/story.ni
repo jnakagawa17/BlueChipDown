@@ -170,7 +170,7 @@ Instead of casting Answer Phone:
 			Move Cabinet Key to player;
 			
 Casting Consult is an action applying to nothing.
-Understand "123-4567" as casting Consult.
+Understand "123-4567" or "call 123-4567" as casting Consult.
 Instead of casting Consult:
 	If player is in Boss's Cubical:
 		if Gamestate is 4:
@@ -189,44 +189,65 @@ Understand "Go Home" as casting sleep.
 Instead of casting sleep:
 	say "Another day ends as you lock in your final trades. You arrive back in the lobby after another long day.";
 	if gamestate is 2:
-		decrease orange-price by 60;
-		decrease Philip'sorange-price by 60;
-		increase redwood-price by 10;
-		increase Philip'sredwood-price by 10;
-		increase backward-price by 50;
-		increase Philip'sbackward-price by 50;
+		decrease orange-price of the orange stock by 60;
+		decrease Philip'sorange-price of the Philip'sorange stock by 60;
+		increase redwood-price of the redwood stock by 10;
+		increase Philip'sredwood-price of the Philip'sredwood stock by 10;
+		increase backward-price of the backward stock by 50;
+		increase Philip'sbackward-price of the Philip'sbackward stock by 50;
 		move Today's Newspaper to the void;
 		move Client to Cafe;
 		Move Player to Lobby;
+		move Ground Floor Button to Lobby Elevator;
+		move Floor One Button to Lobby Elevator;
+		move Floor Two Button to Lobby Elevator;
+		move Poster to Lobby Elevator;
+		increase gamestate by 1;
 	Otherwise:
 		if gamestate is 3:
-			decrease orange-price by 20;
-			decrease Philip'sorange-price by 20;
-			increase redwood-price by 30;
-			increase Philip'sredwood-price by 30;
-			decrease backward-price by 40;
-			decrease Philip'sbackward-price by 40;
+			decrease orange-price of the orange stock by 20;
+			decrease Philip'sorange-price of the Philip'sorange stock by 20;
+			increase redwood-price of the redwood stock by 30;
+			increase Philip'sredwood-price of the Philip'sredwood stock by 30;
+			decrease backward-price of the backward stock by 40;
+			decrease Philip'sbackward-price of the Philip'sbackward stock by 40;
+			move call card to Boss's Cubical;
 			move Client to the Void;
 			Move Player to Lobby;
+			move Ground Floor Button to Lobby Elevator;
+			move Floor One Button to Lobby Elevator;
+			move Floor Two Button to Lobby Elevator;
+			move Poster to Lobby Elevator;
+			increase gamestate by 1;
 		Otherwise:
 			if gamestate is 4:
-				decrease orange-price by 30;
-				decrease Philip'sorange-price by 30;
-				increase redwood-price by 20;
-				increase Philip'sredwood-price by 20;
-				increase backward-price by 5;
-				increase Philip'sbackward-price by 5;
+				decrease orange-price of the orange stock by 30;
+				decrease Philip'sorange-price of the Philip'sorange stock by 30;
+				increase redwood-price of the redwood stock by 20;
+				increase Philip'sredwood-price of the Philip'sredwood stock by 20;
+				increase backward-price of the backward stock by 5;
+				increase Philip'sbackward-price of the Philip'sbackward stock by 5;
 				Increase Consultant'sConversation by 5;
 				Move Player to Lobby;
+				move Ground Floor Button to Lobby Elevator;
+				move Floor One Button to Lobby Elevator;
+				move Floor Two Button to Lobby Elevator;
+				move Poster to Lobby Elevator;
+				increase gamestate by 1;
 			Otherwise:
 				if gamestate is 5:
-					increase orange-price by 250;
-					increase Philip'sorange-price by 250;
-					decrease redwood-price by 35;
-					increase Philip'sredwood-price by 35;
-					increase backward-price by 20;
-					increase Philip'sbackward-price by 20;
+					increase orange-price of the orange stock by 250;
+					increase Philip'sorange-price of the Philip'sorange stock by 250;
+					decrease redwood-price of the redwood stock by 35;
+					increase Philip'sredwood-price of the Philip'sredwood stock by 35;
+					increase backward-price of the backward stock by 20;
+					increase Philip'sbackward-price of the Philip'sbackward stock by 20;
 					Move Player to Lobby;
+					move Ground Floor Button to Lobby Elevator;
+					move Floor One Button to Lobby Elevator;
+					move Floor Two Button to Lobby Elevator;
+					move Poster to Lobby Elevator;
+					increase gamestate by 1;
 
 backward stock is a thing carried by the player.The printed name is "backward stock x [backwardshare-count]". backward stock has a number called backwardshare-count. backward stock has a number called backward-price. The backward-price of the backward stock is usually 150. The backwardshare-count of the backward stock is usually 100. The description of backward stock is "Stock that you own that you can sell any number of. Type 'sell backward stock' followed by the number you want to sell or 'puchase backward stock' followed by the number you want to buy. You currently have [backwardshare-count] backward stock. They cost [backward-price] dollars a share."
 
@@ -413,7 +434,7 @@ Corded Phone is scenery. It is in Boss's Cubical. The description is "The phone 
 
 Filling Cabinet is in Boss's Cubical. Filling Cabinet is an openable container. Filling Cabinet is lockable and locked. It is undescribed. The description is "This is where your Boss keeps all his records. Perhaps there may be something incriminating inside but you Boss has the key." Cabinet Key unlocks the Filling Cabinet.
 
-Notes is a thing. It is in Filling Cabinet. It is undescribed. The description is "You knew your Boss would be to lazy to cover his tracks. Scattered throughout the various files are notes from conversations with the employes of numerous companies talking about products before they had been publicly announced. These are most definitely illegal and more than enough to get your Boss arrested but maybe there won't be a need for that perhaps you should talk to him."
+Notes is a thing. It is in Filling Cabinet. The description is "You knew your Boss would be to lazy to cover his tracks. Scattered throughout the various files are notes from conversations with the employes of numerous companies talking about products before they had been publicly announced. These are most definitely illegal and more than enough to get your Boss arrested but maybe there won't be a need for that perhaps you should talk to him."
 
 Desk is scenery. It is in Boss's Cubical. "Made of plastic the desk is rather sparsely deccorated only having a computer and phone sitting on top of it."
 
@@ -491,7 +512,7 @@ Cafe is a room. It is north of Lobby. "This is where the less succsessful financ
 Client is a woman. It is in the void.
 
 Instead of talking to Client:
-	say "You could say: [if Client'sConversation is 0][Line break][bracket]1[close bracket]'Hello. How are you doing today?'[Line break][bracket]2[close bracket]'So why did you call me?'[otherwise if Client'sConversation is 1][Line break][bracket]3[close bracket]'When the stock market is in turmoil like it is now you have the chance to make much more than if it were stable. I have acsess to numerous charts and projections created by our best analyists. Have no fear I will keep your money safe.'[Line break][otherwise if player carries Notes][Bracket]4[Close Bracket]'I'm going to make more of it.'[otherwise if Client'sConversation is 2][Line break][bracket]5[close bracket]'Redwood'[Line break][bracket]6[close bracket]'Orange'[Line break][bracket]7[close bracket]'Backward'";
+	say "You could say: [if Client'sConversation is 0][Line break][bracket]1[close bracket]'Hello. How are you doing today?'[Line break][bracket]2[close bracket]'So why did you call me?'[otherwise if Client'sConversation is 1][Line break][bracket]3[close bracket]'When the stock market is in turmoil like it is now you have the chance to make much more than if it were stable. I have acsess to numerous charts and projections created by our best analyists. Have no fear I will keep your money safe.'[Line break][Bracket]4[Close Bracket]'I'm going to make more of it.'[otherwise if Client'sConversation is 2][Line break][bracket]5[close bracket]'Redwood'[Line break][bracket]6[close bracket]'Orange'[Line break][bracket]7[close bracket]'Backward'";
 
 Meeting Room is a room. It is south of Lobby. "The room is dominated by a by a large glass table placed squarely in the center of the room. In the front of the room is a projector screen and back to the north is the lobby."
 
@@ -518,7 +539,7 @@ Instead of talking to Attendant:
 
 CEO Office is a room. It is west of Reception. 
 
-Call Card is a thing. It is in the void. "Financial Analyst for Hire [line break] to contact us at '123-4567'"
+Call Card is a thing. It is in the void. The description is "Financial Analyst for Hire [line break] Contact us at '123-4567'"
 
 The Void is a room.
 
