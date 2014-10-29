@@ -44,6 +44,8 @@ Check talking to: say "[The noun] doesn't reply."
 
 [Global:] TempLoop is a number that varies. TempLoop is 0.
 
+[Global:] TempCon is a number that varies. TempCon is 0.
+
 [Global:] FinalCheck is a number that varies. FinalCheck is 0.
 
 [taken from http://www.musicwords.net/if/InformHandbook.pdf chapter 9]
@@ -65,7 +67,7 @@ Every turn:
 				if orangeshare-count is 0:
 					if backwardshare-count is 0:
 						if redwoodshare-count is 0:
-							say "You phone begins to ring again."
+							say "You phone begins to ring again.";
 							increase TempLoop by 1;
 	
 Every turn:
@@ -97,9 +99,14 @@ Instead of casting Ask For Key:
 					say "'Ok, I'll do it.' you say. 'My charts predict a rise in the worth of redwood.' he responds.";
 					increase Consultant'sConversation by 1;
 	Otherwise:
-		If Player is in Cafe:
-			say "'Hello. How are you doing today?' you ask. 'I would be a lot better if you wouldn't waste my time with pleasantries. I want to know what the Hell you are doing with my money!'";
-			increase client'sConversation by 1;
+		if player is in Reception:
+			if Attendant'sConversation is 1:
+				say "'May I speak Jonathan?' you enquire. 'Do you have an appointment?' the woman responds.";
+				increase attendant'sconversation by 1;
+		Otherwise:
+			If Player is in Cafe:
+				say "'Hello. How are you doing today?' you ask. 'I would be a lot better if you wouldn't waste my time with pleasantries. I want to know what the Hell you are doing with my money!'";
+				increase client'sConversation by 1;
 			
 Casting Be Rude is an action applying to nothing.
 Understand "2" as casting Be Rude.
@@ -115,6 +122,11 @@ Instead of casting Be Rude:
 		If Player is in Cafe:
 			say "'So why did you call me?' you ask. 'Ah, someone who gets straight to the point I like that. I want to know what you are planning to do with my money.'";
 			increase Client'sConversation by 1;
+		Otherwise:
+			if player is in Reception:
+				if Attendant'sConversation is 1:
+					say "'Hello, how has your day been?' you ask. 'Not great dear. Jonathan in recent years hasn't been very kind to me. And I fear that after these recent firings I'm going to be worked harder than ever.'";
+					increase attendant'sconversation by 1;
 			
 Casting Be Polite is an action applying to nothing.
 Understand "3" as casting Be Polite.
@@ -129,7 +141,15 @@ Instead of casting Be Polite:
 			if Client'sConversation is 1:
 				say "'When the stock market is in turmoil like it is now you have the chance to make much more than if it were stable. I have acsess to numerous charts and projections created by our best analyists. Have no fear I will keep your money safe.' you say. 'All your analysists predictions are rubish. I have my money invested in three different brokers and they constantly give me contradicting information. What stock do you intend to invest in right now?'";
 				increase Client'sConversation by 1;
-		
+		Otherwise:
+			if player is in Reception:
+				if Attendant'sConversation is 2:
+					if TempLoop is 1:
+						say "'Yes, he asked for me.' you say. 'Ok, head right in.' she responds.";
+						increase attendant'sconversation by 1;
+					otherwise:
+						say "'Yes, he asked for me.' you say. 'I don't see any appointments sorry.' she responds.";
+					decrease attendant'sconversation by 1;
 			
 Casting Take Over is an action applying to nothing.
 Understand "4" as casting Take Over.
@@ -146,6 +166,11 @@ Instead of casting Take Over:
 				say "'I'm going to make more of it.' you say. 'I like that' she responds. 'I think you are going to make a good broker so I'll give you some advice. One of my other brokers tells me that redwood is going to do well soon. Well that's all for now.' She stands up and exits.";
 				increase Client'sConversation by 2;
 				move Client to the void;
+		Otherwise:
+			if player is in Reception:
+				if Attendant'sConversation is 2:
+					say "'Nevermind.' you say.";
+					decrease attendant'sconversation by 1;
 			
 Casting Being Correct is an action applying to nothing.
 Understand "5" as casting Being Correct.
@@ -155,6 +180,13 @@ Instead of casting Being Correct:
 			say "'Redwood' you guess. 'Well mabey you are smarter than I thought. That's what some of my other brokers tell me. Well that's all for now.' She gets up and leaves.";
 			increase Client'sConversation by 1;
 			Move client to the void;
+	Otherwise:
+		if player is in Reception:
+			if Attendant'sConversation is 3:
+				say "'Well perhaps he has grown complancent and it's time for him to be replaced.' you say. 'You know mabey you're right. I think you would make a much better Boss's than him. Take this card it has Jonathan's password on it see what you can do with that.' Just then Jonthan exits his office saying, 'I'll be back in a second. I just need to use the bathroom for a second.'";
+				decrease attendant'sconversation by 2;
+				Move Jonathan to the void;
+				Increase TempCon by 1;
 				
 Casting Being wrong is an action applying to nothing.
 Understand "6" as casting Being wrong.
@@ -191,17 +223,17 @@ Instead of casting Answer Phone:
 					otherwise:
 						if TempLoop is 1:
 							if Money is 249240:
-								say "'Who is this?' you ask. 'It's Jonathan again. I would like to speak to you. Come to my office on the second floor.' he says."
+								say "'Who is this?' you ask. 'It's Jonathan again. I would like to speak to you. Come to my office on the second floor.' he says.";
 								increase TheEnd by 1;
 							otherwise:
 								if money is greater than 150000:
-									say "'Who is this?' you ask. 'It's Jonathan again. I would like to speak to you. Come to my office on the second floor.' he says."
+									say "'Who is this?' you ask. 'It's Jonathan again. I would like to speak to you. Come to my office on the second floor.' he says.";
 									increase TheEnd by 2;
 								otherwise:
 									if money is greater than 50000:
-										end the story finally saying "'Who is this?' you ask. 'It's Jonathan again. You have had your four days. All things considered you have done ok. But I decided you need to be replaced with someone more qualified.' he says."
+										end the story finally saying "'Who is this?' you ask. 'It's Jonathan again. You have had your four days. All things considered you have done ok. But I decided you need to be replaced with someone more qualified.' he says.";
 									otherwise:
-										end the story finally saying "'Who is this?' you ask. 'It's Jonathan again. You have had your four days. Your proformance has been unsatisfactory. We are going to replace you with another.' he says."
+										end the story finally saying "'Who is this?' you ask. 'It's Jonathan again. You have had your four days. Your proformance has been unsatisfactory. We are going to replace you with another.' he says.";
 										
 			
 Casting Consult is an action applying to nothing.
@@ -212,6 +244,15 @@ Instead of casting Consult:
 			if Consultant'sConversation is 0:
 				say "'Hello are you a financial analyst?' you ask. ''That is correct. For the small fee of 5,000 dollars I can give you my prediction. [line break][bracket]1[close bracket]'Ok'[line break][bracket]2[close bracket]'No thanks'";
 				increase Consultant'sConversation by 1;
+
+Casting Hack is an action applying to nothing.
+Understand "Jonathan is the best" or "type Jonathan is the best" as casting Hack.
+Instead of casting Hack:
+	If player is in CEO Office:
+		if Gamestate is 6:
+			if TempCon is 1:
+				say "The computer dings and the lock screen disappears revealing the folder Pictures and his Imgur account. The imgur account reads 'Put a photo in imgur to upload it.'";
+				increase TempCon by 1;
 
 Old Computer is scenery. It is in Boss's Cubical.
 
@@ -283,6 +324,7 @@ Instead of casting sleep:
 					move Floor Two Button to Lobby Elevator;
 					move Poster to Lobby Elevator;
 					increase gamestate by 1;
+					increase attendant'sconversation by 1;
 
 backward stock is a thing carried by the player.The printed name is "backward stock x [backwardshare-count]". backward stock has a number called backwardshare-count. backward stock has a number called backward-price. The backward-price of the backward stock is usually 150. The backwardshare-count of the backward stock is usually 100. The description of backward stock is "Stock that you own that you can sell any number of. Type 'sell backward stock' followed by the number you want to sell or 'puchase backward stock' followed by the number you want to buy. You currently have [backwardshare-count] backward stock. They cost [backward-price] dollars a share."
 
@@ -573,11 +615,21 @@ Reception is a room. It is south of Floor Two Elevator.
 Attendant is a woman. It is in Reception.
 
 Instead of talking to Attendant:
-	say "You could say: [if Attendant'sConversation is 0]You have nothing to say[otherwise if Attendant'sConversation is 1][Line break][bracket]1[close bracket]'May I speak Jonathan?'[Line break][otherwise if Attendant'sConversation is 2][bracket]2[close bracket]'Because I said so and thats the only reason you should need!'";
+	say "You could say: [if Attendant'sConversation is 0]You have nothing to say[otherwise if Attendant'sConversation is 1][Line break][bracket]1[close bracket]'May I speak Jonathan?'[Line break][bracket]2[close bracket]'Hello, how has your day been?'[Line break][otherwise if Attendant'sConversation is 2][bracket]3[close bracket]'Yes, he ask for me.'[Line break][bracket]4[close bracket]'Nevermind.'[Line break][otherwise if Attendant'sConversation is 3][bracket]5[close bracket]'Well perhaps he has grown complancent and it's time for him to be replaced.'";
 
-CEO Office is a room. It is west of Reception. 
+CEO Office is a room. It is west of Reception. "[If Jonathan is in CEO Office]Jonathan posses a beautiful office overlooking a stunning view. In the middle of the room is a wooden desk with a computer sitting on top of it."
+
+Antique Desk is scenery. It is in CEO Office. The description is "An"
+
+New Computer is scenery. It is in CEO Office. The description is "[if TempCon is 2] The computer displays the folder Pictures and his Imgur account. The imgur account reads 'Put a photo in imgur to upload it.'[otherwise] The screen is password locked."
+
+Jonathan is a man. It is in CEO Office. 
+
+Fancy Computer is scenery. It is in CEO Office. The description is "The newest top of the line computer. Humms gentally on the CEO's desk. The screen is currently obsucred by a password lock."
 
 Call Card is a thing. It is in the void. The description is "Financial Analyst for Hire [line break] Contact us at '123-4567'"
+
+Password Card is a thing. It is in the void. The description is "The card reads, 'Jonathan is the best'"
 
 The Void is a room.
 
